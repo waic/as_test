@@ -18,6 +18,23 @@ H4
 テストコード (テストファイルへのリンク):
 WAIC-CODE-0003-02
 
+テストコードのソース（抜粋）
+<div class="jis-testcode">
+<div>
+<ul style="float: left; margin: 0; padding: 0;">
+<li style="display: inline; margin-right: 5px;"><a href="#">携帯サイト</a></li>
+<li style="display: inline;"><a href="#">サイトマップ</a></li>
+</ul>
+<form method="post" name="search" style="float: right">
+<div>
+<input type="text" tabindex="1">
+<input type="submit" value="検索" tabindex="1">
+</div>
+</form>
+</div>
+</div>
+
+
 テスト手順 (視覚閲覧環境):
 キーボード操作：Tabキーを押下してフォーカス移動順序を確認する。
 
