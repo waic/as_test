@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0010-02</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons">
+<link rel="stylesheet" type="text/css" href="../jis-common.css" media="screen, print">
+</head>
+
+<body>
+
+<h1>scope 属性に関するテストファイル作成のための参考コード</h1>
+
+	<h2>Techniques for WCAG 2.0 H63 の例1</h2>
+	<p><a href="https://www.w3.org/TR/WCAG20-TECHS/H63.html#H63-examples">https://www.w3.org/TR/WCAG20-TECHS/H63.html#H63-examples</a></p>
+
+	<!-- { testarea -->
+	<div class="jis-testcode">
+	<table border="1">
+	  <caption>Contact Information</caption>
+	  <tr>
+	    <td></td>
+	    <th scope="col">Name</th>
+	    <th scope="col">Phone#</th>
+	    <th scope="col">Fax#</th>
+	    <th scope="col">City</th>
+	  </tr><tr>
+	    <td>1.</td>
+	    <th scope="row">Joel Garner</th>
+	    <td>412-212-5421</td>
+	    <td>412-212-5400</td>	
+	    <td>Pittsburgh</td>
+	  </tr><tr>
+	    <td>2.</td>
+	    <th scope="row">Clive Lloyd</th>
+	    <td>410-306-1420</td>
+	    <td>410-306-5400</td>
+	    <td>Baltimore</td>
+	  </tr><tr>
+	    <td>3.</td>
+	    <th scope="row">Gordon Greenidge</th>
+	    <td>281-564-6720</td>
+	    <td>281-511-6600</td>
+	    <td>Houston</td>
+	  </tr>
+	</table>
+	</div>
+	<!-- testarea } -->
+
+
+	<h2>th要素が1つしかない例</h2>
+	<p>テーブル内にth要素が1つしかなく、行見出しなのか列見出しなのか判別が難しい場合に、scope属性を用いると恩恵があるのではないか。</p>
+	<!-- { testarea -->
+	<div class="jis-testcode">
+	<table border="1">
+	  <caption>Contact Information</caption>
+	  <tr>
+	    <td></td>
+	    <td>Name</td>
+	    <td>Phone#</td>
+	    <td>Fax#</td>
+	    <th scope="row">City</th>
+	  </tr><tr>
+	    <td>1.</td>
+	    <td>Joel Garner</td>
+	    <td>412-212-5421</td>
+	    <td>412-212-5400</td>	
+	    <td>Pittsburgh</td>
+	  </tr><tr>
+	    <td>2.</td>
+	    <td>Clive Lloyd</td>
+	    <td>410-306-1420</td>
+	    <td>410-306-5400</td>
+	    <td>Baltimore</td>
+	  </tr><tr>
+	    <td>3.</td>
+	    <td>Gordon Greenidge</td>
+	    <td>281-564-6720</td>
+	    <td>281-511-6600</td>
+	    <td>Houston</td>
+	  </tr>
+	</table>
+	</div>
+	<!-- testarea } -->
+
+<p>上のテーブルでは、1行目の4列目「City」にのみ th scope="row" が指定されている。想定される挙動は以下の通り。</p>
+
+<ul>
+<li>3列目から4列目に移動すると、「City Pittsburgh」のように読み上げる</li>
+<li>2行目から1行目に移動したときは、Phone#やFax#とだけ読み、Cityは読み上げない。</li>
+</ul>
+
+<p>最初の挙動だけではthを解釈しているのか、scope属性まで解釈しているのか判断できないが、2番目のように読み上げれば、thではなくscope属性を解釈していることまで判断できるのではないか。</p>
+
+
+</body>
+</html>
