@@ -7,7 +7,7 @@ WAIC-TEST-0010-06
 scope属性を用いて、見出しセルとデータセルを関連付けている場合の読み上げ(1)
 
 テストの目的:
-このテストは、scope属性を用いて、見出しセルとデータセルを関連付けている場合に、同じ列のデータセルを移動した際、データセルの前に行見出しセルが読み上げられるかどうかについて確認するためものである
+このテストは、scope="row"を用いている場合に、見出しセルとデータセルを適切に関連付けて解釈しているかどうかについて確認するためものである
 
 テストの対象となる達成基準 (複数):
 1.3.1
@@ -20,81 +20,29 @@ WAIC-CODE-0010-02
 
 テストコードのソース（抜粋）
 <div class="jis-testcode">
-<p>営業部およびマーケティング部のメンバーの連絡先は以下の通りです。</p>
 <table border="1">
-<caption>営業部連絡先一覧</caption>
-<thead>
+<caption>Contact Information</caption>
 <tr>
-<th scope="col">名前</th>
-<th scope="col">電話</th>
-<th scope="col">Fax</th>
-<th scope="col">住所</th>
+<td></td>
+<td>First Name</td>
+<th scope="col">Last Name</th>
+<td>City</td>
+</tr><tr>
+<td>1.</td>
+<td>Joel</td>
+<td>Garner</td>
+<td>Pittsburgh</td>
+</tr><tr>
+<td>2.</td>
+<th scope="row">Clive</th>
+<td>Lloyd</th>
+<td>Baltimore</td>
+</tr><tr>
+<td>3.</td>
+<td>Gordon</td>
+<td>Greenidge</td>
+<td>Houston</td>
 </tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">クリーブ・ロイド</th>
-<td>410-306-1420</td>
-<td>410-306-5400</td>
-<td>バルチモア</td>
-</tr>
-<tr>
-<th scope="row">ゴードン・グリーニッジ</th>
-<td>281-564-6720</td>
-<td>281-511-6600</td>
-<td>ヒューストン</td>
-</tr>
-<tr>
-<th scope="row">ジョエル・ガーナー</th>
-<td>412-212-5421</td>
-<td>412-212-5400</td>
-<td>ピッツバーグ</td>
-</tr>
-<tr>
-<th scope="row">ステファニー・ウェン</th>
-<td>408-746-8000</td>
-<td>408-992-2671</td>
-<td>カリフォルニア</td>
-</tr>
-</tbody>
-</table>
-
-<table border="1">
-<caption>マーケティング部連絡先一覧</caption>
-<thead>
-<tr>
-<th scope="col">名前</th>
-<th scope="col">電話</th>
-<th scope="col">Fax</th>
-<th scope="col">住所</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th scope="row">リチャード・パウエル</th>
-<td>410-306-1250</td>
-<td>410-306-6610</td>
-<td>バルチモア</td>
-</tr>
-<tr>
-<th scope="row">キャサリン・ウィンストン</th>
-<td>281-564-2013</td>
-<td>281-511-3122</td>
-<td>ヒューストン</td>
-</tr>
-<tr>
-<th scope="row">ベン・ワイル</th>
-<td>412-212-4415</td>
-<td>412-212-7901</td>
-<td>ピッツバーグ</td>
-</tr>
-<tr>
-<th scope="row">ポーラ・ミルナー</th>
-<td>408-746-0144</td>
-<td>408-992-6631</td>
-<td>カリフォルニア</td>
-</tr>
-</tbody>
 </table>
 </div>
 
@@ -108,16 +56,19 @@ WAIC-CODE-0010-02
 なし
 
 テスト手順 (音声閲覧環境):
-テーブル内の同じ列のセルを移動し、読み上げ内容を確認する
+テーブル内のセルを移動し、読み上げ内容を確認する
 
 判断基準 (音声閲覧環境):
-同じ列のセルを移動した際、データセルの前に行見出しセルの内容が読み上げられればOK、読み上げられなければNG
+以下の1.および2.がともに満たされればOK、いずれか一方でも満たされなければNG.
+1. 「Clive」の行へ移動したときに、データセルの内容とともに見出しセルの内容「Clive」を読み上げる。
+2. セル「Greenidge」から「Gordon」に移動したとき、「Clive」を読み上げない。
+
 
 テスト実施時の注意点 (音声閲覧環境):
-例えば「営業部連絡先一覧」の表において、「ヒューストン」から「ピッツバーグ」へ移動した際、「ジョエル・ガーナー　ピッツバーグ」と読み上げられればOKとする
+なし
 
 関連する要素や属性:
-th要素, td要素
+値に"row"を持つscope属性, th要素, td要素
 
 公開日:
 2015年X月X日
