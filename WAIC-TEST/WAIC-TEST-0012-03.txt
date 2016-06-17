@@ -25,11 +25,10 @@ WAIC-CODE-0012-03
 <form action="#" method="post">
 <p>
 <input type="radio" name="flavor" id="choc" value="chocolate" />
-<label for="choc">チョコレートタイプ</label><br />
-<input type="radio" name="flavor" id="cream" value="cream" />
-<label for="cream">クリームたっぷりタイプ</label><br />
-<input type="radio" name="flavor" id="honey" value="honey" />
 <label for="honey">はちみつがけタイプ</label><br />
+<label><input type="radio" name="flavor" id="cream" value="cream" /> クリームたっぷりタイプ</label><br />
+<input type="radio" name="flavor" id="honey" value="honey" />
+<label for="choc">チョコレートタイプ</label><br />
 <input type="submit" value="購入" />
 </p>
 </form>
@@ -49,7 +48,7 @@ WAIC-CODE-0012-03
 テストファイル内を操作し、その結果を確認する
 
 判断基準 (音声閲覧環境):
-ラジオボタンにフォーカスを移動した際、関連付けられたラベル「チョコレートタイプ」、「クリームたっぷりタイプ」、「はちみつがけタイプ」を読み上げればOK、読み上げなければNG
+ラジオボタンにフォーカスを移動した際、それぞれと関連付けられたラベル「チョコレートタイプ」、「クリームたっぷりタイプ」、「はちみつがけタイプ」を知るための何らかの手段が提供されていればOK、提供されていなければNG
 
 テスト実施時の注意点 (音声閲覧環境):
 なし

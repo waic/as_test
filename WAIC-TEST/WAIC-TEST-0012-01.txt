@@ -20,8 +20,14 @@ WAIC-CODE-0012-01
 
 テストコードのソース（抜粋）
 <div class="jis-testcode">
-<label for="firstname">お名前</label> 
+<div id="labelrow">
+<label for="lastname">姓</label> <label for="firstname">名</label>
+</div>
+<div>
+<input type="text" name="lastname" id="lastname" />
 <input type="text" name="firstname" id="firstname" />
+</div>
+<div id="inputInLabel"><label>住所: <input type="text" name="address" id="address" /></label></div>
 </div>
 
 
@@ -38,7 +44,7 @@ WAIC-CODE-0012-01
 テストファイル内を操作し、その結果を確認する
 
 判断基準 (音声閲覧環境):
-テキストボックスにフォーカスを移動した際、関連付けられたラベル「お名前」を読み上げればOK、読み上げなければNG
+テキストボックスにフォーカスを移動した際、それぞれと関連付けられたラベル「姓」「名」「住所」を知るための何らかの手段が提供されていればOK、提供されていなければNG
 
 テスト実施時の注意点 (音声閲覧環境):
 なし

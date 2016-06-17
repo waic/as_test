@@ -5,14 +5,28 @@
 <title>WAIC-CODE-0012-01</title>
 <meta name="copyright" content="This document is licensed under a Creative Commons">
 <link rel="stylesheet" type="text/css" href="../jis-common.css" media="screen, print">
+<style>
+#labelrow label {
+	margin: 1em 8em 0 0;
+}
+#inputInLabel {
+	margin: 0.5em 0;
+}
+</style>
 </head>
 
 <body>
 
 	<!-- { testarea -->
 	<div class="jis-testcode">
-		<label for="firstname">お名前</label> 
+	<div id="labelrow">
+		<label for="lastname">姓</label> <label for="firstname">名</label> 
+	</div>
+	<div>
+		<input type="text" name="lastname" id="lastname" />
 		<input type="text" name="firstname" id="firstname" />
+	</div>
+	<div id="inputInLabel"><label>住所: <input type="text" name="address" id="address" /></label></div>
 	</div>
 	<!-- testarea } -->
 
