@@ -24,10 +24,10 @@ WAIC-CODE-0012-01
 <label for="lastname">姓</label> <label for="firstname">名</label>
 </div>
 <div>
-<input type="text" name="lastname" id="lastname" />
-<input type="text" name="firstname" id="firstname" />
+<input type="text" name="lastname" id="lastname">
+<input type="text" name="firstname" id="firstname">
 </div>
-<div id="inputInLabel"><label>住所: <input type="text" name="address" id="address" /></label></div>
+<div id="inputInLabel"><label>住所: <input type="text" name="address" id="address"></label></div>
 </div>
 
 
@@ -35,7 +35,7 @@ WAIC-CODE-0012-01
 テストファイルを操作し、その結果を確認する
 
 判断基準 (視覚閲覧環境):
-ラベル「お名前」をクリックした際、そのラベルと関連付けられているテキストボックスにフォーカスが当たればOK、当たらなければNG。
+ラベル「姓」「名」「住所」をクリックした際、そのラベルと関連付けられているテキストボックスにフォーカスが当たればOK、当たらなければNG。
 
 テスト実施時の注意点 (視覚閲覧環境):
 なし

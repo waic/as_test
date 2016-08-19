@@ -21,16 +21,16 @@ WAIC-CODE-0012-02
 テストコードのソース（抜粋）
 <div class="jis-testcode">
 <p>物件の詳細情報や写真をご覧になる場合は、各物件のチェックボックスにチェックを入れて「詳細情報を見る」ボタンをクリックしてください</p>
-<dl>
-<dt><label for="yamadasou">山田荘</label></dt>
-<dd><ul>
+<div>
+<label for="yamadasou">山田荘</label>
+<ul>
 <li>最寄り駅：○○駅　徒歩5分</li>
 <li>間取り：2DK(45平方メートル）</li>
 <li>築年数：23年</li>
-</ul></dd>
-<dd><input type="checkbox" id="yamadasou" name="" checked="checked" /></dd>
-</dl>
-<div><label><input type="checkbox" id="tanakaapart" name="computerskills" />田中アパート</label></div>
+</ul>
+<input type="checkbox" id="yamadasou" name="bukken" checked="checked">
+</div>
+<div><label><input type="checkbox" id="tanakaapart" name="bukken">田中アパート</label></div>
 </div>
 
 
@@ -38,7 +38,7 @@ WAIC-CODE-0012-02
 テストファイルを操作し、その結果を確認する
 
 判断基準 (視覚閲覧環境):
-ラベル「HTML」をクリックした際、関連付けられたチェックボックスの状態（「チェックあり」と「チェックなし」）を切り替えることができればOK、できなければNG
+ラベル「山田荘」「田中アパート」をクリックした際、それぞれと関連付けられたチェックボックスの状態（「チェックあり」と「チェックなし」）を切り替えることができればOK、できなければNG
 
 テスト実施時の注意点 (視覚閲覧環境):
 なし
@@ -47,7 +47,7 @@ WAIC-CODE-0012-02
 テストファイル内を操作し、その結果を確認する
 
 判断基準 (音声閲覧環境):
-チェックボックスにフォーカスを移動した際、それぞれと関連付けられたラベル「山田荘」「田中アパート」をを知るための何らかの手段が提供されていればOK、提供されていなければNG
+チェックボックスにフォーカスを移動した際、それぞれと関連付けられたラベル「山田荘」「田中アパート」を知るための何らかの手段が提供されていればOK、提供されていなければNG
 
 テスト実施時の注意点 (音声閲覧環境):
 なし
