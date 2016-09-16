@@ -24,10 +24,10 @@ WAIC-CODE-0012-01
 <label for="lastname">姓</label> <label for="firstname">名</label>
 </div>
 <div>
-<input type="text" name="lastname" id="lastname">
-<input type="text" name="firstname" id="firstname">
+1. <input type="text" name="lastname" id="lastname">
+2. <input type="text" name="firstname" id="firstname">
 </div>
-<div id="inputInLabel"><label>住所: <input type="text" name="address" id="address"></label></div>
+<div id="inputInLabel">3. <label>住所: <input type="text" name="address" id="address"></label></div>
 </div>
 
 
@@ -35,7 +35,10 @@ WAIC-CODE-0012-01
 テストファイルを操作し、その結果を確認する
 
 判断基準 (視覚閲覧環境):
-ラベル「姓」「名」「住所」をクリックした際、そのラベルと関連付けられているテキストボックスにフォーカスが当たればOK、当たらなければNG。
+次の(1)～(3)をすべて満たしていればOK、1つでも満たしていなければNG
+(1) ラベル「姓」をクリックすると1.のテキストボックスにフォーカスがあたる
+(2) ラベル「名」をクリックすると2.のテキストボックスにフォーカスがあたる
+(3) ラベル「住所」をクリックすると3.のテキストボックスにフォーカスがあたる
 
 テスト実施時の注意点 (視覚閲覧環境):
 なし
@@ -44,7 +47,12 @@ WAIC-CODE-0012-01
 テストファイル内を操作し、その結果を確認する
 
 判断基準 (音声閲覧環境):
-テキストボックスにフォーカスを移動した際、それぞれと関連付けられたラベル「姓」「名」「住所」を知るための何らかの手段が提供されていればOK、提供されていなければNG
+それぞれのテキストボックスにフォーカスを移動した際、以下のリストのとおりに関連付けられたラベルを知るための何らかの手段が提供されていればOK、提供されていなければNG
+
+1.のテキストボックス：ラベル「姓」
+2.のテキストボックス：ラベル「名」
+3.のテキストボックス：ラベル「住所」
+
 
 テスト実施時の注意点 (音声閲覧環境):
 なし
