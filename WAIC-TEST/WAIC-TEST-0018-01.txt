@@ -4,7 +4,7 @@
 WAIC-TEST-0018-01
 
 テストのタイトル:
-fieldset 要素及び legend 要素への対応
+fieldset 要素及び legend 要素への対応(1)
 
 テストの目的:
 このテストは、fieldset 要素及び legend 要素を用いている場合に、それを適切に処理しているかどうかについて確認するためのものである
@@ -37,13 +37,13 @@ WAIC-CODE-0018-01
 <fieldset>
 <legend>坊っちゃんの作者は？</legend>
 <input type="radio" id="ryunosuke" name="bocchan" checked="checked" value="a">
-<label for="shakesp">芥川龍之介</label><br>
+<label for="ryunosuke">芥川龍之介</label><br>
 <input type="radio" id="soseki" name="bocchan" value="b">
-<label for="kipling">夏目漱石</label><br>
+<label for="soseki">夏目漱石</label><br>
 <input type="radio" id="ogai" name="bocchan" value="c">
-<label for="gbshaw">森鴎外</label><br>
+<label for="ogai">森鴎外</label><br>
 </fieldset>
-<p>正解はウェブサイトをご確認ください。</p>
+<p><input type="radio" id="yasunari" name="outOfFieldset" value="k"><label for="yasunari">川端康成</label></p>
 </div>
 
 テスト手順 (視覚閲覧環境):
@@ -59,16 +59,16 @@ WAIC-CODE-0018-01
 テストファイル内を開いて、その内容を確認する
 
 判断基準 (音声閲覧環境):
-以下の(1)から(3)をすべて満たしていればOK、1つでも満たしていなければNG
+以下の(1)から(4)をすべて満たしていればOK、1つでも満たしていなければNG
 (1) 「ウィリアム・シェイクスピア」に差し掛かったときに、legend要素の内容である「ハムレットの作者は?」が通知される
-(2) 「ウィリアム・シェイクスピア」に差し掛かったときに、legend要素の内容である「坊っちゃんの作者は?」が通知される
-(3) fieldset要素の開始位置及び終了位置を知るための何らかの手段が提供されている
+(2) 「芥川龍之介」に差し掛かったときに、legend要素の内容である「坊っちゃんの作者は?」が通知される(3) 「川端康成」に差し掛かったときに、直前のfieldset要素内のグループの一員と混同されるような通知をしていない
+(4) fieldset要素の開始位置及び終了位置を知るための何らかの手段が提供されている
 
 テスト実施時の注意点
 なし
 
 関連する要素や属性:
-iframe要素, title属性
+fieldset要素, legend要素
 
 公開日:
 2015年X月X日

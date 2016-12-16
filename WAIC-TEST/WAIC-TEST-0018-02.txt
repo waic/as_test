@@ -4,7 +4,7 @@
 WAIC-TEST-0018-02
 
 テストのタイトル:
-fieldset 要素及び legend 要素への対応
+fieldset 要素及び legend 要素への対応(2)
 
 テストの目的:
 このテストは、fieldset 要素及び legend 要素を用いている場合に、それを適切に処理しているかどうかについて確認するためのものである
@@ -20,24 +20,31 @@ WAIC-CODE-0018-02
 
 テストコードのソース（抜粋）
 <div class="jis-testcode">
-<p>商品の配送先、及びご自宅住所を記入してください。</p>
-<form action="http://example.com/adduser" method="post">
+<p>文学に関するアンケートです。</p>
 <fieldset>
-<legend>ご自宅</legend>
-<label for="raddress">住所: </label>
-<input type="text" id="raddress" name="raddress">
-<label for="rzip">郵便番号: </label>
-<input type="text" id="rzip" name="rzip">
+<legend>好きな外国の作家は？</legend>
+<input type="checkbox" id="shakesp" name="nobelist01" value="a">
+<label for="shakesp">ウィリアム・シェイクスピア</label><br>
+<input type="checkbox" id="kipling" name="nobelist02" value="b">
+<label for="kipling">ラドヤード・キップリング</label><br>
+<input type="checkbox" id="gbshaw" name="nobelist03" value="c">
+<label for="gbshaw">ジョージ・バーナード・ショー</label><br>
+<input type="checkbox" id="hem" name="nobelist04" value="d">
+<label for="hem">アーネスト・ヘミングウェイ</label><br>
+<input type="checkbox" id="dickens" name="nobelist05" value="e">
+<label for="dickens">チャールズ・ディケンズ</label>
 </fieldset>
 <fieldset>
-<legend>商品の送付先</legend>
-<label for="paddress">住所: </label>
-<input type="text" id="paddress" name="paddress">
-<label for="pzip">郵便番号: </label>
-<input type="text" id="pzip" name="pzip">
+<legend>好きな日本の作家は？</legend>
+<input type="checkbox" id="ryunosuke" name="nobelist06" value="a">
+<label for="ryunosuke">芥川龍之介</label><br>
+<input type="checkbox" id="soseki" name="nobelist07" value="b">
+<label for="soseki">夏目漱石</label><br>
+<input type="checkbox" id="ogai" name="nobelist08" value="c">
+<label for="ogai">森鴎外</label><br>
 </fieldset>
-</form>
-<p>記入が済みましたら「お支払い情報の選択」へお進みください。</p>
+<p><input type="checkbox" id="yasunari" name="outOfFieldset" value="k"><label for="yasunari">川端康成</label></p>
+<p>回答が終わりましたら「送信」ボタンをクリックしてください。</p>
 </div>
 
 テスト手順 (視覚閲覧環境):
@@ -53,15 +60,17 @@ WAIC-CODE-0018-02
 テストファイル内を開いて、その内容を確認する
 
 判断基準 (音声閲覧環境):
-以下の(1), (2)をともに満たしていればOK、いずれか一方でも満たしていなければNG
-(1) テキストフィールドにフォーカスを移動した際、対応するlegend要素の内容「ご自宅」または「商品の送付先」が通知される
-(3) fieldset要素の開始位置及び終了位置を知るための何らかの手段が提供されている
+以下の(1)から(4)をすべて満たしていればOK、1つでも満たしていなければNG
+(1) 1つ目のfieldset要素内の各チェックボックスに差し掛かったときに、legend要素の内容である「好きな外国の作家は?」が通知される
+(2) 2つ目のfieldset要素内の各チェックボックスに差し掛かったときに、legend要素の内容である「好きな日本の作家は?」が通知される
+(3) 「川端康成」に差し掛かったときに、直前のfieldset要素内のグループの一員と混同されるような通知をしていない
+(4) fieldset要素の開始位置及び終了位置を知るための何らかの手段が提供されている
 
 テスト実施時の注意点
 なし
 
 関連する要素や属性:
-iframe要素, title属性
+fieldset要素, legend要素
 
 公開日:
 2015年X月X日
