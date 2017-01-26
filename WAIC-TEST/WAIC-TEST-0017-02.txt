@@ -7,7 +7,7 @@ WAIC-TEST-0017-02
 iframe要素への対応(2)
 
 テストの目的:
-このテストは、iframe要素を用いている場合に、それを適切に処理しているかどうかについて確認するためのものである
+このテストは、ブロックスキップを実装する目的でiframe要素を用いている場合に、ユーザエージェントを用いて適切にスキップできるかどうかについて確認するためのものである
 
 テストの対象となる達成基準 (複数):
 2.4.1
@@ -22,8 +22,6 @@ WAIC-CODE-0017-01
 <div class="jis-testcode">
 <p>インラインフレームを用いてWAICサイトを表示しています。</p>
 <iframe src="http://waic.jp/" id="testiframe1" name="testiframe1" title="ウェブアクセシビリティ基盤委員会" width="500" height="500"><a href="http://waic.jp/">WAIC ウェブサイトへ</a></iframe>
-<p>また、WCAG2.0の日本語訳も表示しています。</p>
-<iframe src="http://waic.jp/docs/WCAG20/Overview.html" id="testiframe2" name="testiframe2" title="WCAG2.0日本語訳" width="500" height="500"><a href="http://waic.jp/docs/WCAG20/Overview.html">ウェブ・コンテンツ・アクセシビリティ・ガイドライン（WCAG）2.0</a></iframe>
 <p>詳細はウェブサイトをご確認ください。</p>
 </div>
 
@@ -37,18 +35,16 @@ WAIC-CODE-0017-01
 なし
 
 テスト手順 (音声閲覧環境):
-テストファイル内を開いて、その内容を確認する
+テストファイルを操作して、その結果を確認する
 
 判断基準 (音声閲覧環境):
-以下の(1), (2)をともに満たしていればOK、いずれか一方でも満たしていなければNG
-(1) 1つ目のiframe要素と2つ目のiframe要素を行き来するための何らかの手段が提供されている
-(2) iframe要素の内外を行き来するための何らかの手段が提供されている
+iframe要素の末尾に直接移動するための何らかの手段が提供されていればOK、提供されていなければNG
 
 テスト実施時の注意点
 なし
 
 関連する要素や属性:
-iframe要素, title属性
+iframe要素
 
 公開日:
 2015年X月X日
