@@ -1,0 +1,78 @@
+
+
+テストID:
+WAIC-TEST-0010-06
+
+テストのタイトル:
+scope属性を用いて、見出しセルとデータセルを関連付けている場合の読み上げ(1)
+
+テストの目的:
+このテストは、scope="row"を用いている場合に、見出しセルとデータセルを適切に関連付けて解釈しているかどうかについて確認するためものである
+
+テストの対象となる達成基準 (複数):
+1.3.1
+
+関連する達成方法 (複数):
+H63
+
+テストコード (テストファイルへのリンク):
+WAIC-CODE-0010-02
+
+テストコードのソース（抜粋）
+<div class="jis-testcode">
+<table border="1">
+<caption>Contact Information</caption>
+<tr>
+<td></td>
+<td>First Name</td>
+<th scope="col">Last Name</th>
+<td>City</td>
+</tr><tr>
+<td>1.</td>
+<td>Joel</td>
+<td>Garner</td>
+<td>Pittsburgh</td>
+</tr><tr>
+<td>2.</td>
+<th scope="row">Clive</th>
+<td>Lloyd</th>
+<td>Baltimore</td>
+</tr><tr>
+<td>3.</td>
+<td>Gordon</td>
+<td>Greenidge</td>
+<td>Houston</td>
+</tr>
+</table>
+</div>
+
+テスト手順 (視覚閲覧環境):
+テスト不要
+
+期待される結果 (視覚閲覧環境):
+なし
+
+テスト実施時の注意点 (視覚閲覧環境):
+なし
+
+テスト手順 (音声閲覧環境):
+テーブル内のセルを移動し、読み上げ内容を確認する
+
+期待される結果 (音声閲覧環境):
+以下の1.および2.がともに満たされればOK、いずれか一方でも満たされなければNG.
+1. 「Clive」の行へ移動したときに、データセルの内容とともに見出しセルの内容「Clive」を読み上げる。
+2. セル「Greenidge」から「Gordon」に移動したとき、「Clive」を読み上げない。
+
+
+テスト実施時の注意点 (音声閲覧環境):
+なし
+
+関連する要素や属性:
+値に"row"を持つscope属性, th要素, td要素
+
+公開日:
+2015年X月X日
+
+更新日:
+2015年X月X日
+
