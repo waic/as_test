@@ -1,5 +1,4 @@
 
-
 テストID:
 WAIC-TEST-0012-01
 
@@ -18,19 +17,22 @@ H44
 テストコード (テストファイルへのリンク):
 WAIC-CODE-0012-01
 
-テストコードのソース（抜粋）
+テストコードのソース（抜粋）:
 <div class="jis-testcode">
 <div id="labelrow">
-<label for="lastname">姓</label> <label for="firstname">名</label>
+<label for="lastname">姓</label> <label for="firstname">名</label> 
 </div>
 <div>
 1. <input type="text" name="lastname" id="lastname">
 2. <input type="text" name="firstname" id="firstname">
 </div>
-<div class="inputInLabel">3. <label>住所: <input type="text" name="address" id="address"></label></div>
-<div class="inputInLabel">4. <label><input type="text" name="tel" id="tel">:電話番号</label> ハイフンは不要</div>
+<div class="inputInLabel">
+3. <label>住所: <input type="text" name="address" id="address"></label>
 </div>
-
+<div class="inputInLabel">
+4. <label><input type="text" name="tel" id="tel">:電話番号</label> ハイフンは不要
+</div>
+</div>
 
 テスト手順 (視覚閲覧環境):
 テストファイルを操作し、その結果を確認する
@@ -44,7 +46,7 @@ WAIC-CODE-0012-01
 (5) 「ハイフンは不要」をクリックしても4.のテキストボックスにフォーカスがあたらない
 
 テスト実施時の注意点 (視覚閲覧環境):
-なし
+
 
 テスト手順 (音声閲覧環境):
 テストファイル内を操作し、その結果を確認する
@@ -60,16 +62,11 @@ WAIC-CODE-0012-01
 
 (2) 4.のテキストボックスにフォーカスを移動した際、「ハイフンは不要」を読み上げない
 
-
 テスト実施時の注意点 (音声閲覧環境):
 期待される結果(2)では、テキストボックスとラベルの位置関係からではなく、label要素内のテキストとテキストボックスのみを関連付けているかどうかを確認している。
 
 関連する要素や属性:
 type="text"を持つinput要素, label要素
 
-公開日:
-2015年X月X日
-
-更新日:
-2015年X月X日
-
+バージョン:
+1.0

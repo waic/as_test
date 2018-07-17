@@ -1,5 +1,4 @@
 
-
 テストID:
 WAIC-TEST-0003-01
 
@@ -18,7 +17,7 @@ H4
 テストコード (テストファイルへのリンク):
 WAIC-CODE-0003-01
 
-テストコードのソース（抜粋）
+テストコードのソース（抜粋）:
 <div class="jis-testcode">
 <form action="#" method="post">
 <table>
@@ -45,13 +44,21 @@ WAIC-CODE-0003-01
 </tr>
 <tr>
 <th>カードのデザイン</th>
-<td><label><input type="radio" value="watermelon" name="dest1design" title="1番目の受取人へのカードデザイン：スイカ" tabindex="4">スイカ</label><br><label><input type="radio" value="fireworks" name="dest1design" title="1番目の受取人へのカードデザイン：花火" tabindex="5">花火</label></td>
-<td><label><input type="radio" value="watermelon" name="dest2design" title="2番目の受取人へのカードデザイン：スイカ" tabindex="13">スイカ</label><br><label><input type="radio" value="fireworks" name="dest2design" title="2番目の受取人へのカードデザイン：花火" tabindex="14">花火</label></td>
+<td>
+<label><input type="radio" value="watermelon" name="dest1design" title="1番目の受取人へのカードデザイン：スイカ" tabindex="4">スイカ</label><br><label><input type="radio" value="fireworks" name="dest1design" title="1番目の受取人へのカードデザイン：花火" tabindex="5">花火</label>
+</td>
+<td>
+<label><input type="radio" value="watermelon" name="dest2design" title="2番目の受取人へのカードデザイン：スイカ" tabindex="13">スイカ</label><br><label><input type="radio" value="fireworks" name="dest2design" title="2番目の受取人へのカードデザイン：花火" tabindex="14">花火</label>
+</td>
 </tr>
 <tr>
 <th>オプション</th>
-<td><label><input type="checkbox" value="" name="dest1stamp" title="1番目の受取人へのオリジナルスタンプ" tabindex="6">オリジナルスタンプ</label><br><label><input type="checkbox" value="" name="dest1melody" title="1番目の受取人へのメロディカード" tabindex="7">メロディカード</label></td>
-<td><label><input type="checkbox" value="" name="dest2stamp" title="2番目の受取人へのオリジナルスタンプ" tabindex="15">オリジナルスタンプ</label><br><label><input type="checkbox" value="" name="dest2melody" title="2番目の受取人へのメロディカード" tabindex="16">メロディカード</label></td>
+<td>
+<label><input type="checkbox" value="" name="dest1stamp" title="1番目の受取人へのオリジナルスタンプ" tabindex="6">オリジナルスタンプ</label><br><label><input type="checkbox" value="" name="dest1melody" title="1番目の受取人へのメロディカード" tabindex="7">メロディカード</label>
+</td>
+<td>
+<label><input type="checkbox" value="" name="dest2stamp" title="2番目の受取人へのオリジナルスタンプ" tabindex="15">オリジナルスタンプ</label><br><label><input type="checkbox" value="" name="dest2melody" title="2番目の受取人へのメロディカード" tabindex="16">メロディカード</label>
+</td>
 </tr>
 <tr>
 <th>メッセージ</th>
@@ -60,12 +67,13 @@ WAIC-CODE-0003-01
 </tr>
 <tr>
 <th>確認</th>
-<td><button type="button" name="dest1conf" tabindex="9">1番目の受取人へのカードプレビュー</button></td>
+<td><button type="button" name="dest1conf" tabindex="9">1番目の受取人へカードプレビュー</button></td>
 <td><button type="button" name="dest2conf" tabindex="18">2番目の受取人へのカードプレビュー</button></td>
 </tr>
 </table>
-<p><input type="submit" value="注文内容の確認" name="submit" title="注文内容の確認" tabindex="19"> &nbsp; <input type="reset" value="入力内容のリセット" name="reset" title="入力内容のリセット" tabindex="20"></p>
-</form></div>
+<p><input type="submit" value="注文内容の確認" name="submit" title="注文内容の確認" tabindex="19">   <input type="reset" value="入力内容のリセット" name="reset" title="入力内容のリセット" tabindex="20"></p>
+</form>
+</div>
 
 テスト手順 (視覚閲覧環境):
 キーボード操作：Tabキーを押下してフォーカスの移動順序を確認する。
@@ -94,9 +102,8 @@ WAIC-CODE-0003-01
 注文内容の確認
 入力内容のリセット
 
-
 テスト実施時の注意点 (視覚閲覧環境):
-なし
+
 
 テスト手順 (音声閲覧環境):
 キーボード操作：Tabキーを押下してフォーカスの移動順序を確認する。
@@ -126,14 +133,10 @@ WAIC-CODE-0003-01
 入力内容のリセット
 
 テスト実施時の注意点 (音声閲覧環境):
-なし
+
 
 関連する要素や属性:
 type="text"を持つinput要素, type="radio"を持つinput要素, type="checkbox"を持つinput要素, type="submit"を持つinput要素, type="reset"を持つinput要素, type="button"を持つbutton要素, tabindex属性
 
-公開日:
-2015年X月X日
-
-更新日:
-2015年X月X日
-
+バージョン:
+1.0

@@ -1,5 +1,4 @@
 
-
 テストID:
 WAIC-TEST-0012-02
 
@@ -18,7 +17,7 @@ H44
 テストコード (テストファイルへのリンク):
 WAIC-CODE-0012-02
 
-テストコードのソース（抜粋）
+テストコードのソース（抜粋）:
 <div class="jis-testcode">
 <p>物件の詳細情報や写真をご覧になる場合は、各物件のチェックボックスにチェックを入れて「詳細情報を見る」ボタンをクリックしてください</p>
 <div>
@@ -30,10 +29,13 @@ WAIC-CODE-0012-02
 </ul>
 1. <input type="checkbox" id="yamadasou" name="bukken">
 </div>
-<div>2. <label><input type="checkbox" id="tanakaapart" name="bukken">田中アパート</label></div>
-<div>3. <label>佐藤マンション<input type="checkbox" id="satomansyon" name="bukken"></label> 定期借家</div>
+<div>
+2. <label><input type="checkbox" id="tanakaapart" name="bukken">田中アパート</label>
 </div>
-
+<div>
+3. <label>佐藤マンション<input type="checkbox" id="satomansyon" name="bukken"></label> 定期借家
+</div>
+</div>
 
 テスト手順 (視覚閲覧環境):
 テストファイルを操作し、その結果を確認する
@@ -46,7 +48,7 @@ WAIC-CODE-0012-02
 (4) 「定期借家」をクリックしても、3. のチェックボックスにフォーカスがあたらない
 
 テスト実施時の注意点 (視覚閲覧環境):
-なし
+
 
 テスト手順 (音声閲覧環境):
 テストファイル内を操作し、その結果を確認する
@@ -67,9 +69,5 @@ WAIC-CODE-0012-02
 関連する要素や属性:
 type="checkbox"を持つinput要素, label要素
 
-公開日:
-2015年X月X日
-
-更新日:
-2015年X月X日
-
+バージョン:
+1.0

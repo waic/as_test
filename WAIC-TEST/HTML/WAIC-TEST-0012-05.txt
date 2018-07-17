@@ -1,5 +1,4 @@
 
-
 テストID:
 WAIC-TEST-0012-05
 
@@ -18,10 +17,10 @@ H65
 テストコード (テストファイルへのリンク):
 WAIC-CODE-0012-05
 
-テストコードのソース（抜粋）
+テストコードのソース（抜粋）:
 <div class="jis-testcode">
-<p>電話番号: 1. <input id="areaCode" name="form01" title="市外局番" type="text" size="3" value=""> - 2. <input id="exchange" name="form02" title="市内局番" type="text" size="3" value=""> - 3. <input id="lastDigits" name="form03" title="加入者番号" type="text" size="4" value=""></p></div>
-
+<p>電話番号: 1. <input id="areaCode" name="form01" title="市外局番" type="text" size="3" value=""> - 2. <input id="exchange" name="form02" title="市内局番" type="text" size="3" value=""> - 3. <input id="lastDigits" name="form03" title="加入者番号" type="text" size="4" value=""></p>
+</div>
 
 テスト手順 (視覚閲覧環境):
 テストファイル内を操作して、その結果を確認する
@@ -37,7 +36,7 @@ WAIC-CODE-0012-05
 3. のテキストフィールド:加入者番号
 
 テスト実施時の注意点 (視覚閲覧環境):
-なし
+
 
 テスト手順 (音声閲覧環境):
 テストファイル内を操作し、その結果を確認する
@@ -49,16 +48,11 @@ WAIC-CODE-0012-05
 2. のテキストボックス:title属性値「市内局番」
 3. のテキストボックス:title属性値「加入者番号」
 
-
 テスト実施時の注意点 (音声閲覧環境):
-なし
+
 
 関連する要素や属性:
 type="text"を持つinput要素, title属性
 
-公開日:
-2015年X月X日
-
-更新日:
-2015年X月X日
-
+バージョン:
+1.0

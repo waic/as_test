@@ -1,5 +1,4 @@
 
-
 テストID:
 WAIC-TEST-0003-03
 
@@ -18,11 +17,12 @@ H4
 テストコード (テストファイルへのリンク):
 WAIC-CODE-0003-03
 
-テストコードのソース（抜粋）
+テストコードのソース（抜粋）:
 <div class="jis-testcode">
-<div><a href="#" tabindex="4">リンク 1</a> <a href="#" tabindex="3">リンク 2</a> <a href="#" tabindex="2">リンク 3</a> <a href="#" tabindex="1">リンク 4</a> <a href="#" tabindex="0">リンク 5</a> <a href="#" tabindex="-1">リンク 6</a> <a href="#" tabindex="0">リンク 7</a></div>
+<div>
+<a href="#" tabindex="4">リンク 1</a> <a href="#" tabindex="3">リンク 2</a> <a href="#" tabindex="2">リンク 3</a> <a href="#" tabindex="1">リンク 4</a> <a href="#" tabindex="0">リンク 5</a> <a href="#" tabindex="-1">リンク 6</a> <a href="#" tabindex="0">リンク 7</a>
 </div>
-
+</div>
 
 テスト手順 (視覚閲覧環境):
 キーボード操作：Tabキーを押下してフォーカスの移動順序を確認する。
@@ -41,7 +41,7 @@ WAIC-CODE-0003-03
 2. リンク6 (tabindex="-1")にはフォーカスが当たらない。
 
 テスト実施時の注意点 (視覚閲覧環境):
-なし
+
 
 テスト手順 (音声閲覧環境):
 キーボード操作：Tabキーを押下してフォーカスの移動順序を確認する。
@@ -60,14 +60,10 @@ WAIC-CODE-0003-03
 2. リンク6 (tabindex="-1")にはフォーカスが当たらない。
 
 テスト実施時の注意点 (音声閲覧環境):
-なし
+
 
 関連する要素や属性:
 a要素, tabindex属性
 
-公開日:
-2015年X月X日
-
-更新日:
-2015年X月X日
-
+バージョン:
+1.0
