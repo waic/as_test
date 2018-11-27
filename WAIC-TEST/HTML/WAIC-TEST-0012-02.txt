@@ -30,8 +30,12 @@ WAIC-CODE-0012-02
 </ul>
 1. <input type="checkbox" id="yamadasou" name="bukken">
 </div>
-<div>2. <label><input type="checkbox" id="tanakaapart" name="bukken">田中アパート</label></div>
-<div>3. <label>佐藤マンション<input type="checkbox" id="satomansyon" name="bukken"></label> 定期借家</div>
+<div>
+2. <label><input type="checkbox" id="tanakaapart" name="bukken">田中アパート</label>
+</div>
+<div>
+3. <label>佐藤マンション<input type="checkbox" id="satomansyon" name="bukken"></label> 定期借家
+</div>
 </div>
 
 テスト手順 (視覚閲覧環境) :

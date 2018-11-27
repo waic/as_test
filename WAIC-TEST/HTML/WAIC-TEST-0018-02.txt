@@ -34,6 +34,7 @@ WAIC-CODE-0018-02
 <input type="checkbox" id="dickens" name="nobelist05" value="e">
 <label for="dickens">チャールズ・ディケンズ</label>
 </fieldset>
+
 <fieldset>
 <legend>好きな日本の作家は？</legend>
 <input type="checkbox" id="ryunosuke" name="nobelist06" value="a">
@@ -43,7 +44,9 @@ WAIC-CODE-0018-02
 <input type="checkbox" id="ogai" name="nobelist08" value="c">
 <label for="ogai">森鴎外</label><br>
 </fieldset>
+
 <p><input type="checkbox" id="yasunari" name="outOfFieldset" value="k"><label for="yasunari">川端康成</label></p>
+
 <p>回答が終わりましたら「送信」ボタンをクリックしてください。</p>
 </div>
 

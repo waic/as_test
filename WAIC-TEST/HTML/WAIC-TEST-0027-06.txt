@@ -19,6 +19,7 @@ main 要素の role 属性に main を指定した場合、main ランドマー�
 WAIC-CODE-0027-03
 
 テストコードのソース (抜粋) :
+<div>
 <div role="banner">
 <h1>ウェブアクセシビリティ基盤委員会</h1>
 </div>
@@ -31,6 +32,8 @@ WAIC-CODE-0027-03
 
 <div role="contentinfo">
 <p>Twitter や Facebook でも情報発信しています。</p>
+</div>
+
 </div>
 
 テスト手順 (視覚閲覧環境) :

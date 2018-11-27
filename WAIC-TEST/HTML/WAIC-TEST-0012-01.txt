@@ -21,14 +21,18 @@ WAIC-CODE-0012-01
 テストコードのソース (抜粋) :
 <div>
 <div id="labelrow">
-<label for="lastname">姓</label> <label for="firstname">名</label>
+<label for="lastname">姓</label> <label for="firstname">名</label> 
 </div>
 <div>
 1. <input type="text" name="lastname" id="lastname">
 2. <input type="text" name="firstname" id="firstname">
 </div>
-<div class="inputInLabel">3. <label>住所: <input type="text" name="address" id="address"></label></div>
-<div class="inputInLabel">4. <label><input type="text" name="tel" id="tel">:電話番号</label> ハイフンは不要</div>
+<div class="inputInLabel">
+3. <label>住所: <input type="text" name="address" id="address"></label>
+</div>
+<div class="inputInLabel">
+4. <label><input type="text" name="tel" id="tel">:電話番号</label> ハイフンは不要
+</div>
 </div>
 
 テスト手順 (視覚閲覧環境) :
