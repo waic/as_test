@@ -19,7 +19,7 @@ H80
 WAIC-CODE-0019-04
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <h2>ロイヤルパームホテル</h2>
 <ul class="horizontal">
 <li><a href="#">地図</a></li>

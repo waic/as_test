@@ -19,7 +19,7 @@ H49
 WAIC-CODE-0015-06
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <p>水の化学式は H<sub>2</sub>O です。</p>
 </div>
 

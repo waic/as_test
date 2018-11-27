@@ -19,7 +19,7 @@ H48
 WAIC-CODE-0014-02
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <p>オムレツの材料は以下の通りです。</p>
 <ul>
 <li>牛乳</li>

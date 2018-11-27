@@ -19,7 +19,7 @@ H81
 WAIC-CODE-0019-05
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <ul>
 <li>年次報告書 2016年度版
 <ul>

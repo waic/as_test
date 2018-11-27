@@ -19,7 +19,7 @@ H4
 WAIC-CODE-0003-02
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <div>
 <ul style="float: left; margin: 0; padding: 0;">
 <li style="display: inline; margin-right: 5px;"><a href="#">携帯サイト</a></li>

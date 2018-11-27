@@ -19,7 +19,7 @@ div 要素の role 属性に main を指定した場合、main ランドマー�
 WAIC-CODE-0026-01
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <h1>ウェブアクセシビリティ基盤委員会</h1>
 <div role="main">
 <p>WAIC の最新情報は以下をご参照ください。</p>
