@@ -27,17 +27,21 @@ WAIC-CODE-0010-02
 <td>First Name</td>
 <th scope="col">Last Name</th>
 <td>City</td>
-</tr><tr>
+</tr>
+<tr>
 <td>1.</td>
 <td>Joel</td>
 <td>Garner</td>
 <td>Pittsburgh</td>
-</tr><tr>
+</tr>
+<tr>
 <td>2.</td>
 <th scope="row">Clive</th>
-<td>Lloyd</th>
+<td>Lloyd
+</td>
 <td>Baltimore</td>
-</tr><tr>
+</tr>
+<tr>
 <td>3.</td>
 <td>Gordon</td>
 <td>Greenidge</td>

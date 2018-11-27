@@ -28,6 +28,7 @@ WAIC-CODE-0019-04
 <li><a href="http://waic.jp/">お客様の声</a></li>
 <li><a href="#">ご予約</a></li>
 </ul>
+
 <h2>ホテルスリーリバーズ</h2>
 <ul class="horizontal">
 <li><a href="#">地図</a></li>
