@@ -19,7 +19,7 @@ H49
 WAIC-CODE-0015-01
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <p>つねづね思っていることですが、<em>猫は</em>かわいらしい動物です。</p>
 <p>そして、<em class="test-0015-normal">犬は</em>とても従順な動物です。</p>
 <p>さらに、<span class="test-0015-italic">亀は</span>長生きする動物です。</p>

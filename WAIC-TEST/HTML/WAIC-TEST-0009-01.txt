@@ -19,7 +19,7 @@ H37
 WAIC-CODE-0009-01
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <p><img src="img/logo.png" alt="ウェブアクセシビリティ基盤委員会" width="334" height="77"></p>
 </div>
 

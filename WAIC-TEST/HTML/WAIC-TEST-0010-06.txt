@@ -19,7 +19,7 @@ H63
 WAIC-CODE-0010-02
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <table border="1">
 <caption>Contact Information</caption>
 <tr>

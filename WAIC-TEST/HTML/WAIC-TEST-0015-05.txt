@@ -19,7 +19,7 @@ H49
 WAIC-CODE-0015-05
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <p>亜鉛イオンは Zn<sup>2+</sup></p>
 </div>
 

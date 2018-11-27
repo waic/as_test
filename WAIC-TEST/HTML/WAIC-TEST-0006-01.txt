@@ -19,7 +19,7 @@ H30
 WAIC-CODE-0006-01
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <a href="http://waic.jp/">ウェブアクセシビリティ基盤委員会</a>
 </div>
 

@@ -19,7 +19,7 @@ H48
 WAIC-CODE-0014-03
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <p>重要な用語の意味を説明します。</p>
 <dl>
 <dt>略語 (abbreviation)</dt>

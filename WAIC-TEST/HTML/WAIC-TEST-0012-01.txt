@@ -19,7 +19,7 @@ H44
 WAIC-CODE-0012-01
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <div id="labelrow">
 <label for="lastname">姓</label> <label for="firstname">名</label>
 </div>

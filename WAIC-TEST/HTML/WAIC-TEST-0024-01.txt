@@ -19,7 +19,7 @@ H97
 WAIC-CODE-0024-01
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <h1>ウェブアクセシビリティ基盤委員会</h1>
 <nav>
 <a href="index.html">ホーム</a>

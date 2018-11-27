@@ -19,7 +19,7 @@ H51
 WAIC-CODE-0010-01
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <table border="1">
 <caption>営業部連絡先一覧</caption>
 <thead>

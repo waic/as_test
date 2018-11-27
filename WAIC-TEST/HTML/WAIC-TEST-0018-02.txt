@@ -19,7 +19,7 @@ H71
 WAIC-CODE-0018-02
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <p>文学に関するアンケートです。</p>
 <fieldset>
 <legend>好きな外国の作家は？</legend>

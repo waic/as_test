@@ -24,7 +24,7 @@ WAIC-CODE-0016-01
 （中略）
 </head>
 <body>
-<div class="jis-testcode">
+<div>
 <p>The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.</p>
 </div>
 

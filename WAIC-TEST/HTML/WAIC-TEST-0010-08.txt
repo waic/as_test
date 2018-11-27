@@ -19,7 +19,7 @@ H43
 WAIC-CODE-0010-03
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <table border="1">
 <tr>
 <td rowspan="2">全国</td>

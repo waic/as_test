@@ -19,7 +19,7 @@ H4
 WAIC-CODE-0003-01
 
 テストコードのソース (抜粋) :
-<div class="jis-testcode">
+<div>
 <form action="#" method="post">
 <table>
 <caption>グリーティングカードのオーダーフォーム</caption>
