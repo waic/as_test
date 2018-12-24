@@ -128,8 +128,8 @@ WAIC-CODE-0003-01
 関連する要素や属性 :
 type="text" を持つ input 要素 , type="radio" を持つ input 要素 , type="checkbox" を持つ input 要素 , type="submit" を持つ input 要素 , type="reset" を持つ input 要素 , type="button" を持つ button 要素 , tabindex 属性
 
-公開日 :
-2018 年 X 月 X 日
 
-更新日 :
-2018 年 X 月 X 日
+
+
+
+
