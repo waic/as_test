@@ -20,7 +20,8 @@ WAIC-CODE-0012-05
 
 テストコードのソース (抜粋) :
 <div>
-<p>電話番号: 1. <input id="areaCode" name="form01" title="市外局番" type="text" size="3" value=""> - 2. <input id="exchange" name="form02" title="市内局番" type="text" size="3" value=""> - 3. <input id="lastDigits" name="form03" title="加入者番号" type="text" size="4" value=""></p></div>
+<p>電話番号: 1. <input id="areaCode" name="form01" title="市外局番" type="text" size="3" value=""> - 2. <input id="exchange" name="form02" title="市内局番" type="text" size="3" value=""> - 3. <input id="lastDigits" name="form03" title="加入者番号" type="text" size="4" value=""></p>
+</div>
 
 テスト手順 (視覚閲覧環境) :
 テストファイルを操作し、結果を確認
