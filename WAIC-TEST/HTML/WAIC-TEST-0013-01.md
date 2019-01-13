@@ -19,10 +19,12 @@ H45
 WAIC-CODE-0013-01
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <p><img src="img/WAIC-CODE-0013-01.gif" alt="会員数の遷移グラフ" longdesc="WAIC-CODE-0013-01-ref1.html"></p>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 一時保留
 

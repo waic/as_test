@@ -19,6 +19,7 @@ H65
 WAIC-CODE-0012-04
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <label for="searchTerm">検索:</label><input id="searchTerm" type="text" size="30" value="" name="searchTerm">
 <select title="検索範囲を選択" id="scope">
@@ -28,6 +29,7 @@ WAIC-CODE-0012-04
 </select>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 テストファイルを操作し、結果を確認
 

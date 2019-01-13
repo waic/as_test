@@ -19,6 +19,7 @@ H57
 WAIC-CODE-0016-01
 
 # テストコードのソース (抜粋)
+```html
 <html lang="en">
 <head>
 （中略）
@@ -28,6 +29,7 @@ WAIC-CODE-0016-01
 <p>The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.</p>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 一時保留
 

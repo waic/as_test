@@ -19,12 +19,14 @@ H30
 WAIC-CODE-0006-02
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <a href="http://waic.jp/">
 <img src="img/logo.png" alt="ウェブアクセシビリティ基盤委員会" height="77" width="334">
 </a>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認
 

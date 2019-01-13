@@ -19,6 +19,7 @@ H4
 WAIC-CODE-0003-01
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <form action="#" method="post">
 <table>
@@ -67,6 +68,7 @@ WAIC-CODE-0003-01
 <p><input type="submit" value="注文内容の確認" name="submit" title="注文内容の確認" tabindex="19"> &nbsp; <input type="reset" value="入力内容のリセット" name="reset" title="入力内容のリセット" tabindex="20"></p>
 </form></div>
 
+```
 # テスト手順 (視覚閲覧環境)
 キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認
 

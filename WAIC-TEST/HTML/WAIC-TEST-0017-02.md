@@ -19,6 +19,7 @@ H64, H70
 WAIC-CODE-0017-01
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <p>インラインフレームを用いてWAICサイトを表示しています。</p>
 <iframe src="http://waic.jp/" id="testiframe1" name="testiframe1" title="ウェブアクセシビリティ基盤委員会" width="500" height="500"><a href="http://waic.jp/">WAIC ウェブサイトへ</a></iframe>
@@ -27,6 +28,7 @@ WAIC-CODE-0017-01
 <p>詳細はウェブサイトをご確認ください。</p>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 一時保留
 

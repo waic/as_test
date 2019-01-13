@@ -19,6 +19,7 @@ H4
 WAIC-CODE-0003-02
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <div>
 <ul style="float: left; margin: 0; padding: 0;">
@@ -34,6 +35,7 @@ WAIC-CODE-0003-02
 </div>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認
 

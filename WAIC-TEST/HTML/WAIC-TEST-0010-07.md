@@ -19,6 +19,7 @@ H63
 WAIC-CODE-0010-02
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <table border="1">
 <caption>Contact Information</caption>
@@ -50,6 +51,7 @@ WAIC-CODE-0010-02
 </table>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 テスト不要
 

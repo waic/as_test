@@ -19,10 +19,12 @@ H30
 WAIC-CODE-0002-02
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <a href="./inc/pdf/WAIC-CODE-0002-02-ref1.pdf">施設ご利用の手引き<img src="img/WAIC-CODE-0002-02.gif" alt="PDFファイル" width="50" height="26"></a>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認
 

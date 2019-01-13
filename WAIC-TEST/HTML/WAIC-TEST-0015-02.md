@@ -19,12 +19,14 @@ H49
 WAIC-CODE-0015-02
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <p>つねづね思っていることですが、<strong>猫は</strong>かわいらしい動物です。</p>
 <p>そして、<strong class="test-0015-normal">犬は</strong>とても従順な動物です。</p>
 <p>さらに、<span class="test-0015-bold">亀は</span>長生きする動物です。</p>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 一時保留
 

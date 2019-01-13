@@ -19,6 +19,7 @@ H85
 WAIC-CODE-0022-01
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <form action="../../../../../jis2010-as-tests/201205/A/HTMLandXHTML/sample.cgi" method="post">
 <label for="food">好きな食べ物は何ですか？</label>
@@ -42,6 +43,7 @@ WAIC-CODE-0022-01
 </form>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 テスト不要
 

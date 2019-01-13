@@ -19,12 +19,14 @@ H36
 WAIC-CODE-0008-01
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <form action="http://example.com/prog/text-read" method="post">
 <p><input type="image" name="submit" src="img/H36.gif" alt="送信"></p>
 </form>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 表示 : ブラウザの設定を変更して画像非表示にし、表示内容を確認
 

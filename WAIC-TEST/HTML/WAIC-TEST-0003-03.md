@@ -19,10 +19,12 @@ H4
 WAIC-CODE-0003-03
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <a href="#" tabindex="4">リンク 1</a> <a href="#" tabindex="3">リンク 2</a> <a href="#" tabindex="2">リンク 3</a> <a href="#" tabindex="1">リンク 4</a> <a href="#" tabindex="0">リンク 5</a> <a href="#" tabindex="-1">リンク 6</a> <a href="#" tabindex="0">リンク 7</a>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 キーボード操作 : Tab キーを押下し、フォーカスの移動順序を確認
 

@@ -19,6 +19,7 @@ H44
 WAIC-CODE-0012-01
 
 # テストコードのソース (抜粋)
+```html
 <div>
 <div id="labelrow">
 <label for="lastname">姓</label> <label for="firstname">名</label> 
@@ -35,6 +36,7 @@ WAIC-CODE-0012-01
 </div>
 </div>
 
+```
 # テスト手順 (視覚閲覧環境)
 テストファイルを操作し、結果を確認
 
