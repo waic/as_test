@@ -21,7 +21,7 @@ H32
 # テストコードのソース (抜粋)
 ```html
 <div>
-<form action="WAIC-CODE-0007-01-ref.html" method="get">
+<form action="[WAIC-CODE-0007-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0007-01.html)-ref.html" method="get">
 <p>メーリングリストに登録する場合は、メールアドレスを入力して「申し込む」ボタンを押してください。</p>
 <div>
 <label for="address">メールアドレスを入力してください：</label><input type="text" id="address" name="address"><input type="submit" value="申し込む">
@@ -36,7 +36,7 @@ H32
 
 # 期待される結果 (視覚閲覧環境)
 次の 1. 〜 2. をすべて満たしている
-1. WAIC-CODE-0007-01-ref.html に遷移する
+1. [WAIC-CODE-0007-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0007-01.html)-ref.html に遷移する
 2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されている
 
 # テスト実施時の注意点 (視覚閲覧環境)
@@ -47,7 +47,7 @@ H32
 
 # 期待される結果 (音声閲覧環境)
 次の 1. 〜 2. をすべて満たしている
-1. WAIC-CODE-0007-01-ref.html に遷移する
+1. [WAIC-CODE-0007-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0007-01.html)-ref.html に遷移する
 2. 入力したメールアドレスが URL エンコーディングされ、URL の末尾に付加されている
 
 # テスト実施時の注意点 (音声閲覧環境)

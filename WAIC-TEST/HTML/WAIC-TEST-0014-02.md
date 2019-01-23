@@ -27,7 +27,7 @@ H48
 <li>卵</li>
 <li>バター</li>
 </ul>
-<p>作り方の詳細は「<a href="WAIC-CODE-0014-01.html">オムレツの作り方</a>」をご覧ください。</p>
+<p>作り方の詳細は「<a href="[WAIC-CODE-0014-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-01.html).html">オムレツの作り方</a>」をご覧ください。</p>
 </div>
 
 ```

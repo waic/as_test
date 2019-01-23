@@ -26,7 +26,7 @@ H48
 <li>ボウルにたまごと牛乳を入れ、混ぜます。</li>
 <li>塩とコショウを加えます。</li>
 </ol>
-<p>材料については「<a href="WAIC-CODE-0014-02.html">オムレツの材料</a>」をご覧ください。</p>
+<p>材料については「<a href="[WAIC-CODE-0014-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-02.html).html">オムレツの材料</a>」をご覧ください。</p>
 </div>
 
 ```

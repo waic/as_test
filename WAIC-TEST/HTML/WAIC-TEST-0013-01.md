@@ -21,7 +21,7 @@ H45
 # テストコードのソース (抜粋)
 ```html
 <div>
-<p><img src="img/WAIC-CODE-0013-01.gif" alt="会員数の遷移グラフ" longdesc="WAIC-CODE-0013-01-ref1.html"></p>
+<p><img src="img/[WAIC-CODE-0013-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0013-01.html).gif" alt="会員数の遷移グラフ" longdesc="[WAIC-CODE-0013-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0013-01.html)-ref1.html"></p>
 </div>
 
 ```

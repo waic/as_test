@@ -22,12 +22,12 @@ H37
 ```html
 <div>
 <p>各売り場への直通電話番号につきましては<a href="#">お問い合わせ先一覧</a>をご参照ください。</p>
-<img src="img/WAIC-CODE-0004-01.gif" alt="デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。" width="300" height="400" usemap="#Map">
+<img src="img/[WAIC-CODE-0004-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html).gif" alt="デパートのフロアガイド。各階について詳しくお知りになりたい場合は各階をクリックしてください。" width="300" height="400" usemap="#Map">
 <map name="Map" id="Map">
-<area shape="poly" coords="0,  0,265,  0,300, 30,300,108,265,102,0,102" href="WAIC-CODE-0004-01-ref4.html" alt="4F雑貨 書籍">
-<area shape="poly" coords="0,102,265,102,300,108,300,207,265,202,0,202" href="WAIC-CODE-0004-01-ref3.html" alt="3F衣料品">
-<area shape="poly" coords="0,202,265,202,300,207,300,304,265,301,0,301" href="WAIC-CODE-0004-01-ref2.html" alt="2Fお菓子 その他食品">
-<area shape="poly" coords="0,301,265,301,300,304,300,400,265,400,0,400" href="WAIC-CODE-0004-01-ref1.html" alt="1F生鮮食品">
+<area shape="poly" coords="0,  0,265,  0,300, 30,300,108,265,102,0,102" href="[WAIC-CODE-0004-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html)-ref4.html" alt="4F雑貨 書籍">
+<area shape="poly" coords="0,102,265,102,300,108,300,207,265,202,0,202" href="[WAIC-CODE-0004-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html)-ref3.html" alt="3F衣料品">
+<area shape="poly" coords="0,202,265,202,300,207,300,304,265,301,0,301" href="[WAIC-CODE-0004-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html)-ref2.html" alt="2Fお菓子 その他食品">
+<area shape="poly" coords="0,301,265,301,300,304,300,400,265,400,0,400" href="[WAIC-CODE-0004-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0004-01.html)-ref1.html" alt="1F生鮮食品">
 </map>
 
 <p>店舗へのアクセスにつきましては<a href="#">周辺地図</a>をご参照ください。</p>
