@@ -16,7 +16,7 @@ html 要素の lang 属性に指定したページの言語で表示・読み上
 H57
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0016-01
+[WAIC-CODE-0016-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html)
 
 # テストコードのソース (抜粋)
 ```html

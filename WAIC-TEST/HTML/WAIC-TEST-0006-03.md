@@ -16,7 +16,7 @@ a 要素に指定したテキスト (title 属性あり)
 H33
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0006-03
+[WAIC-CODE-0006-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0006-03.html)
 
 # テストコードのソース (抜粋)
 ```html

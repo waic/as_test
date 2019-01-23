@@ -16,7 +16,7 @@ main 要素に指定した main ランドマークの先頭へ直接移動でき
 今のところなし
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0027-02
+[WAIC-CODE-0027-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0027-02.html)
 
 # テストコードのソース (抜粋)
 ```html

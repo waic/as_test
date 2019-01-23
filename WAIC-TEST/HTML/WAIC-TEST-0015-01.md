@@ -16,7 +16,7 @@ em 要素を指定してセマンティックにマークアップした強調�
 H49
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0015-01
+[WAIC-CODE-0015-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-01.html)
 
 # テストコードのソース (抜粋)
 ```html

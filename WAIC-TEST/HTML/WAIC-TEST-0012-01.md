@@ -16,7 +16,7 @@ label 要素に指定したラベルとテキスト入力フィールドが関�
 H44
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0012-01
+[WAIC-CODE-0012-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-01.html)
 
 # テストコードのソース (抜粋)
 ```html

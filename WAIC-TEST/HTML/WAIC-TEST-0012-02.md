@@ -16,7 +16,7 @@ label 要素に指定したラベルとチェックボックスが関連付い�
 H44
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0012-02
+[WAIC-CODE-0012-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-02.html)
 
 # テストコードのソース (抜粋)
 ```html

@@ -16,7 +16,7 @@ nav 要素を指定して関連したリンクをグループ化した場合、�
 なし
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0024-02
+[WAIC-CODE-0024-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0024-02.html)
 
 # テストコードのソース (抜粋)
 ```html

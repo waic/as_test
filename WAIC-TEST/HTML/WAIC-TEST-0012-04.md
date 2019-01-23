@@ -16,7 +16,7 @@ title 属性に指定したラベルとセレクトメニューが関連付い�
 H65
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0012-04
+[WAIC-CODE-0012-04](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-04.html)
 
 # テストコードのソース (抜粋)
 ```html

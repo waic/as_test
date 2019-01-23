@@ -16,7 +16,7 @@ ol 要素に指定した順序付きリストが表示・読み上げされる�
 H48
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0014-01
+[WAIC-CODE-0014-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-01.html)
 
 # テストコードのソース (抜粋)
 ```html

@@ -16,7 +16,7 @@ h1 要素を section 要素の中に入れた場合、h1 要素に指定した�
 H42
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0011-02
+[WAIC-CODE-0011-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0011-02.html)
 
 # テストコードのソース (抜粋)
 ```html

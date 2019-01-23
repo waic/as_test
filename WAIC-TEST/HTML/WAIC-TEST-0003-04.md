@@ -16,7 +16,7 @@ WAIC-TEST-0003-04
 H4
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0003-04
+[WAIC-CODE-0003-04](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0003-04.html)
 
 # テストコードのソース (抜粋)
 ```html

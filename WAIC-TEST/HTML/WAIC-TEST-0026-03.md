@@ -16,7 +16,7 @@ main 要素の role 属性に main を指定した場合、main ランドマー�
 今のところなし
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0026-03
+[WAIC-CODE-0026-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0026-03.html)
 
 # テストコードのソース (抜粋)
 ```html
