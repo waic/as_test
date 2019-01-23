@@ -30,7 +30,7 @@ if(!$uri_path){
 	&message('パスを指定してください。');
 	exit;
 }
-if($uri_path !~ m|^/?[-_A-Za-z0-9]\.html?$|o){
+if($uri_path !~ m|^/?[-_A-Za-z0-9]+\.html?$|o){
 	&message('指定されたパスにはリダイレクトできません。') ;
 	exit;
 }
