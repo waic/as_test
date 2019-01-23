@@ -16,7 +16,7 @@ WAIC-TEST-0001-01
 H2, H30
 
 # テストコード (テストファイルへのリンク)
-[WAIC-CODE-0001-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0001-01.html)
+WAIC-CODE-0001-01
 
 # テストコードのソース (抜粋)
 ```html
