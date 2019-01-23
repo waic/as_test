@@ -16,7 +16,7 @@ dl 要素に指定した説明リストが表示・読み上げされるかの�
 H48
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0014-03
+[WAIC-CODE-0014-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-03.html)
 
 # テストコードのソース (抜粋)
 ```html

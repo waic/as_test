@@ -16,7 +16,7 @@ h1 要素〜 h6 要素に指定した見出しが表示・読み上げされる�
 H42
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0011-01
+[WAIC-CODE-0011-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0011-01.html)
 
 # テストコードのソース (抜粋)
 ```html

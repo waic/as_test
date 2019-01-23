@@ -16,12 +16,12 @@ WAIC-TEST-0002-02
 H30
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0002-02
+[WAIC-CODE-0002-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0002-02.html)
 
 # テストコードのソース (抜粋)
 ```html
 <div>
-<a href="./inc/pdf/WAIC-CODE-0002-02-ref1.pdf">施設ご利用の手引き<img src="img/WAIC-CODE-0002-02.gif" alt="PDFファイル" width="50" height="26"></a>
+<a href="./inc/pdf/[WAIC-CODE-0002-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0002-02.html)-ref1.pdf">施設ご利用の手引き<img src="img/[WAIC-CODE-0002-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0002-02.html).gif" alt="PDFファイル" width="50" height="26"></a>
 </div>
 
 ```

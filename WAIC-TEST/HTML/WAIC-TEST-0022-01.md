@@ -16,7 +16,7 @@ select 要素内の option 要素をグループ化するために optgroup 要�
 H85
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0022-01
+[WAIC-CODE-0022-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0022-01.html)
 
 # テストコードのソース (抜粋)
 ```html

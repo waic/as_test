@@ -16,7 +16,7 @@ nav 要素を指定して関連したリンクをグループ化した場合、�
 H97
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0024-01
+[WAIC-CODE-0024-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0024-01.html)
 
 # テストコードのソース (抜粋)
 ```html

@@ -16,7 +16,7 @@ fieldset 要素及び legend 要素によってテキスト入力フィールド
 H71
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0018-03
+[WAIC-CODE-0018-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0018-03.html)
 
 # テストコードのソース (抜粋)
 ```html

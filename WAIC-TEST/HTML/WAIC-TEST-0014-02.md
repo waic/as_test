@@ -16,7 +16,7 @@ ul 要素に指定した順序なしリストが表示・読み上げされる�
 H48
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0014-02
+[WAIC-CODE-0014-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-02.html)
 
 # テストコードのソース (抜粋)
 ```html
@@ -27,7 +27,7 @@ WAIC-CODE-0014-02
 <li>卵</li>
 <li>バター</li>
 </ul>
-<p>作り方の詳細は「<a href="WAIC-CODE-0014-01.html">オムレツの作り方</a>」をご覧ください。</p>
+<p>作り方の詳細は「<a href="[WAIC-CODE-0014-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-01.html).html">オムレツの作り方</a>」をご覧ください。</p>
 </div>
 
 ```

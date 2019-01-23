@@ -16,7 +16,7 @@ id 属性及び headers 属性を指定した場合、テーブルのデータ�
 H43
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0010-03
+[WAIC-CODE-0010-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-03.html)
 
 # テストコードのソース (抜粋)
 ```html

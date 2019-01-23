@@ -16,7 +16,7 @@ a 要素に指定した画像 (代替テキストあり)
 H30
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0006-02
+[WAIC-CODE-0006-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0006-02.html)
 
 # テストコードのソース (抜粋)
 ```html

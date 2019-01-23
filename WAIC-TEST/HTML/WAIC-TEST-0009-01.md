@@ -16,7 +16,7 @@ WAIC-TEST-0009-01
 H37
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0009-01
+[WAIC-CODE-0009-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0009-01.html)
 
 # テストコードのソース (抜粋)
 ```html

@@ -16,7 +16,7 @@ fieldset 要素及び legend 要素によってチェックボックスをグル
 H71
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0018-02
+[WAIC-CODE-0018-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0018-02.html)
 
 # テストコードのソース (抜粋)
 ```html

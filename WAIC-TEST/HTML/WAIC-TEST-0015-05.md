@@ -16,7 +16,7 @@ sup 要素を指定してセマンティックにマークアップした上付�
 H49
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0015-05
+[WAIC-CODE-0015-05](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-05.html)
 
 # テストコードのソース (抜粋)
 ```html
