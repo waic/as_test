@@ -16,7 +16,7 @@ fieldset 要素及び legend 要素によってラジオボタンをグループ
 H71
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0018-01
+[WAIC-CODE-0018-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0018-01.html)
 
 # テストコードのソース (抜粋)
 ```html

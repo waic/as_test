@@ -16,7 +16,7 @@ title 要素に指定したページタイトルが表示・読み上げされ�
 H25
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0005-01
+[WAIC-CODE-0005-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0005-01.html)
 
 # テストコードのソース (抜粋)
 ```html

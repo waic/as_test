@@ -16,7 +16,7 @@ blockquote 要素を指定してセマンティックにマークアップした
 H49
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0015-03
+[WAIC-CODE-0015-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-03.html)
 
 # テストコードのソース (抜粋)
 ```html

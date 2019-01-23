@@ -16,7 +16,7 @@ h1 要素〜 h6 要素へ直接移動して読み上げられるかの確認
 H69
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0011-01
+[WAIC-CODE-0011-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0011-01.html)
 
 # テストコードのソース (抜粋)
 ```html

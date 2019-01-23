@@ -16,7 +16,7 @@ longdesc 属性に指定したリソースと画像が関連付いているか�
 H45
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0013-01
+[WAIC-CODE-0013-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0013-01.html)
 
 # テストコードのソース (抜粋)
 ```html

@@ -16,7 +16,7 @@ q 要素を指定してセマンティックにマークアップした引用部
 H49
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0015-04
+[WAIC-CODE-0015-04](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-04.html)
 
 # テストコードのソース (抜粋)
 ```html

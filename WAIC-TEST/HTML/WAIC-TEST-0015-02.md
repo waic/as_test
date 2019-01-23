@@ -16,7 +16,7 @@ strong 要素を指定してセマンティックにマークアップした重�
 H49
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0015-02
+[WAIC-CODE-0015-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-02.html)
 
 # テストコードのソース (抜粋)
 ```html

@@ -16,7 +16,7 @@ title 属性に指定したインラインフレームの説明及び代替コ�
 H64
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0017-01
+[WAIC-CODE-0017-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0017-01.html)
 
 # テストコードのソース (抜粋)
 ```html

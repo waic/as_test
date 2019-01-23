@@ -16,7 +16,7 @@ figure 要素及び figcaption 要素を指定してグループ化したコン�
 今のところなし
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0025-01
+[WAIC-CODE-0025-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0025-01.html)
 
 # テストコードのソース (抜粋)
 ```html

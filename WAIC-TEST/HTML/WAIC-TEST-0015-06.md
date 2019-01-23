@@ -16,7 +16,7 @@ sub 要素を指定してセマンティックにマークアップした下付�
 H49
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0015-06
+[WAIC-CODE-0015-06](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0015-06.html)
 
 # テストコードのソース (抜粋)
 ```html

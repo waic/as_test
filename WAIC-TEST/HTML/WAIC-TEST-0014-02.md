@@ -16,7 +16,7 @@ ul 要素に指定した順序なしリストが表示・読み上げされる�
 H48
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0014-02
+[WAIC-CODE-0014-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-02.html)
 
 # テストコードのソース (抜粋)
 ```html

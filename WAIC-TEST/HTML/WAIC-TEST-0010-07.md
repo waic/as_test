@@ -16,7 +16,7 @@ scope 属性を指定した場合、テーブルのデータセルと見出し�
 H63
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0010-02
+[WAIC-CODE-0010-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-02.html)
 
 # テストコードのソース (抜粋)
 ```html

@@ -16,7 +16,7 @@ title 属性に指定したラベルとテキスト入力フィールドが関�
 H65
 
 # テストコード (テストファイルへのリンク)
-WAIC-CODE-0012-05
+[WAIC-CODE-0012-05](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-05.html)
 
 # テストコードのソース (抜粋)
 ```html
