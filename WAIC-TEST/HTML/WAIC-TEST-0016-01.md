@@ -19,8 +19,21 @@ H57
 [WAIC-CODE-0016-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html), [WAIC-CODE-0016-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-02.html)
 
 # テストコードのソース (抜粋)
+## WAIC-CODE-0016-01
 ```html
 <html lang="ja">
+<head>
+（中略）
+</head>
+<body>
+<div>
+<p>12345</p>
+</div>
+
+```
+## WAIC-CODE-0016-02
+```html
+<html lang="en">
 <head>
 （中略）
 </head>

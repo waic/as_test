@@ -19,7 +19,17 @@ H57
 WAIC-CODE-0016-01, WAIC-CODE-0016-02
 
 テストコードのソース (抜粋) :
+WAIC-CODE-0016-01 :
 <html lang="ja">
+<head>
+（中略）
+</head>
+<body>
+<div>
+<p>12345</p>
+</div>
+WAIC-CODE-0016-02 :
+<html lang="en">
 <head>
 （中略）
 </head>
