@@ -27,8 +27,7 @@ H97
 <a href="about.html">WAIC について</a>
 <a href="inquiry.html">お問い合わせ</a>
 </nav>
-
-<p>WAIC の最新情報は以下をご参照ください。</p>
+<a href="/news/">ニュース一覧</a>
 
 </div>
 
