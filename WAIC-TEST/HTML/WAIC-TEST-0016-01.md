@@ -16,9 +16,22 @@ html 要素の lang 属性に指定したページの言語で表示・読み上
 H57
 
 # テストコード (テストファイルへのリンク)
-[WAIC-CODE-0016-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html)
+[WAIC-CODE-0016-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-01.html), [WAIC-CODE-0016-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0016-02.html)
 
 # テストコードのソース (抜粋)
+## WAIC-CODE-0016-01
+```html
+<html lang="ja">
+<head>
+（中略）
+</head>
+<body>
+<div>
+<p>12345</p>
+</div>
+
+```
+## WAIC-CODE-0016-02
 ```html
 <html lang="en">
 <head>
@@ -26,7 +39,7 @@ H57
 </head>
 <body>
 <div>
-<p>The power of the Web is in its universality. Access by everyone regardless of disability is an essential aspect.</p>
+<p>12345</p>
 </div>
 
 ```
@@ -40,10 +53,10 @@ H57
 なし
 
 # テスト手順 (音声閲覧環境)
-テストファイルを読み上げ、内容を確認
+WAIC-CODE-0016-01.html 及び WAIC-CODE-0016-02.html を開いて読み上げ方を確認
 
 # 期待される結果 (音声閲覧環境)
-英語の音声合成エンジンを用いて読み上げられる
+WAIC-CODE-0016-01.html と WAIC-CODE-0016-02.html の読み上げ方が異なる
 
 # テスト実施時の注意点 (音声閲覧環境)
 lang 属性による音声エンジンの自動切り替えが有効な設定になっているか、テスト実施前にスクリーンリーダーの設定内容を確認すること
