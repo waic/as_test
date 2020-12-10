@@ -23,17 +23,17 @@ nav 要素を指定して関連したリンクをグループ化した場合、�
 <div>
 <h1>ウェブアクセシビリティ基盤委員会</h1>
 <nav>
-<a href="organization.html">組織</a>
-<a href="docs.html">JIS X 8341-3 関連ドキュメント</a>
-<a href="event.html">イベント</a>
+<div><a href="organization.html">組織</a></div>
+<div><a href="docs.html">JIS X 8341-3 関連ドキュメント</a></div>
+<div><a href="event.html">イベント</a></div>
 </nav>
 
 <p>WAIC は、JIS X 8341-3 の普及・啓発・定着を通してウェブアクセシビリティの促進を目指して活動しています。</p>
 
 <nav>
-<a href="index.html">ホーム</a>
-<a href="about.html">WAIC について</a>
-<a href="inquiry.html">お問い合わせ</a>
+<div><a href="index.html">ホーム</a></div>
+<div><a href="about.html">WAIC について</a></div>
+<div><a href="inquiry.html">お問い合わせ</a></div>
 </nav>
 
 </div>
