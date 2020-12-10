@@ -23,9 +23,9 @@ H97
 <div>
 <h1>ウェブアクセシビリティ基盤委員会</h1>
 <nav>
-<a href="index.html">ホーム</a>
-<a href="about.html">WAIC について</a>
-<a href="inquiry.html">お問い合わせ</a>
+<div><a href="index.html">ホーム</a></div>
+<div><a href="about.html">WAIC について</a></div>
+<div><a href="inquiry.html">お問い合わせ</a></div>
 </nav>
 <a href="/news/">ニュース一覧</a>
 
