@@ -4,7 +4,7 @@
 WAIC-TEST-0025-01
 
 # テストのタイトル
-コンテンツのグループ化 (figure 要素及び figcaption 要素) (figure 要素内の最後に figcaption 要素)
+コンテンツのグループ化 (figure 要素及び figcaption 要素) (figure 要素内の最初に figcaption 要素)
 
 # テストの目的
 figure 要素及び figcaption 要素を指定してグループ化したコンテンツが読み上げられるかの確認
