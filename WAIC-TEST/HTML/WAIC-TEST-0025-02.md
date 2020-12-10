@@ -1,7 +1,7 @@
 
 
 # テスト ID
-WAIC-TEST-0025-01
+WAIC-TEST-0025-02
 
 # テストのタイトル
 コンテンツのグループ化 (figure 要素及び figcaption 要素) (figure 要素内の最後に figcaption 要素)
@@ -16,15 +16,15 @@ figure 要素及び figcaption 要素を指定してグループ化したコン�
 今のところなし
 
 # テストコード (テストファイルへのリンク)
-[WAIC-CODE-0025-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0025-01.html)
+[WAIC-CODE-0025-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0025-02.html)
 
 # テストコードのソース (抜粋)
 ```html
 <div>
 <h1>2017年度第1回 WAIC セミナー</h1>
 <figure>
+<img src="./img/WAIC-CODE-0025-02.jpg" alt="タブレットを手にプレゼンする伊敷の写真">
 <figcaption>セッション1の様子</figcaption>
-<img src="./img/WAIC-CODE-0025-01.jpg" alt="タブレットを手にプレゼンする伊敷の写真">
 </figure>
 
 <p>今後の WAIC セミナー開催予定については以下をご参照ください。</p>
