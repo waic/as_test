@@ -4,7 +4,7 @@
 WAIC-TEST-0025-01
 
 テストのタイトル :
-コンテンツのグループ化 (figure 要素及び figcaption 要素)
+コンテンツのグループ化 (figure 要素及び figcaption 要素) (figure 要素内の最初に figcaption 要素)
 
 テストの目的 :
 figure 要素及び figcaption 要素を指定してグループ化したコンテンツが読み上げられるかの確認
@@ -22,8 +22,8 @@ WAIC-CODE-0025-01
 <div>
 <h1>2017年度第1回 WAIC セミナー</h1>
 <figure>
-<img src="./img/WAIC-CODE-0025-01.jpg" alt="タブレットを手にプレゼンする伊敷の写真">
 <figcaption>セッション1の様子</figcaption>
+<img src="./img/WAIC-CODE-0025-01.jpg" alt="タブレットを手にプレゼンする伊敷の写真">
 </figure>
 
 <p>今後の WAIC セミナー開催予定については以下をご参照ください。</p>
@@ -46,8 +46,7 @@ WAIC-CODE-0025-01
 次の 1. 〜 4. をすべて満たしている
 1. figure 要素に差し掛かると、この部分が figure 要素であることを判別できるように通知される
 2. figure 要素の開始位置及び終了位置を知るための何らかの手段が提供されている
-3. figcaption 要素に差し掛かると、この部分が figcaption 要素であることを判別できるように通知される
-4. figcaption 要素の開始位置及び終了位置を知るための何らかの手段が提供されている
+3. figcaption 要素の内容が他の要素と区別できる何らかの手段が提供されている
 
 テスト実施時の注意点 (音声閲覧環境) :
 なし
