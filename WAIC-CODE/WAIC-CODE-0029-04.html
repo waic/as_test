@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0029-04</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+
+<link rel="stylesheet" href="css/tooltip1_inline.css" type="text/css">
+<script type="text/javascript" src="js/tooltip1_inline.js"></script>
+<script type="text/javascript" src="../js/widgets_inline.js"></script>
+<script type="text/javascript" src="../js/globals.js"></script>
+<link rel="icon" href="http://www.cites.uiuc.edu/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="http://www.cites.uiuc.edu/favicon.ico" type="image/x-icon">
+
+</head>
+
+<body onload="initApp()">
+
+<div id="container">
+
+<h1>ツールチップ 例1</h1>
+<h2>アカウントの作成</h2>
+<div class="text">
+<label for="first">名前:</label>
+
+<input type="text" id="first" name="first" size="20"
+      onmouseover="tooltipShow(event, this, 'tp1');"
+      onfocus="tooltipShow(event, this, 'tp1');"
+      aria-describedby="tp1"
+      aria-required="false"/>
+
+<div id="tp1" role="tooltip" aria-hidden="true">名前は任意です。</div>
+</div>
+
+</body>
+</html>
