@@ -8,26 +8,14 @@
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
 
-<style type="text/css">
-div.form p { clear:left; margin: 0.3em 0;}
-.left {
-  float:left;
-  width:400px;
-}
-.right {
-  width:100px;
-  text-align:right;
-}
-</style>
+
 <script type="text/javascript">
 //<![CDATA[
 
 // array entries for each button on the page that associates the button id
 // with the id of the element containing the text which describes the button
 var buttonIds = new Array();
-buttonIds["fontB"]= "fontDesc";
-buttonIds["colorB"] = "colorDesc";
-buttonIds["customB"] = "customDesc";
+buttonIds["buttonClose"]= "descriptionClose";
 
 // function that is run after the page has loaded to set the aria-describedBy
 // property on each of the elements referenced by the array of id values
@@ -57,17 +45,19 @@ window.onload=setDescribedBy;
 </script>
 </head>
 <body>
-<p>このページのボタンは、Accessible Rich Internet Applicationsのaria-describedbyプロパティを使用して、ボタンの動作に関するより詳細な情報を提供します。ボタンの動作に関する詳細な情報を提供します。</p>
-<div class="form">
-<p><span class="left" id="fontDesc" >このページで使用するフォントフェイスとサイズの選択</span>
-  <span class="right"><button id="fontB" onclick="doAction('Fonts');">フォント</button></span>
-</p>
-<p><span class="left" id="colorDesc" >このページで使用する色を選択</span>
-  <span class="right"><button id="colorB" onclick="doAction('Colors');">色</button></span>
-</p>
-<p><span class="left" id="customDesc" >このページで使われているレイアウトやスタイルをカスタマイズ</span>
-  <span class="right"><button id="customB" onclick="doAction('Customize');">カスタマイズ</button></span>
-</p>
+
+<a href="https://waic.jp/">メインページへ戻る</a>
+
+<hr>
+
+<button aria-label="閉じる" id="buttonClose" onclick="doAction('buttonClose');">X</button>
+<p>情報を入力後、閉じるボタンを押してください。</p>
+<div id="descriptionClose">このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。</div>
+
+<hr>
+
+<a href="https://waic.jp/">メインページへ戻る</a>
+
 </div>
 </body>
 </html>

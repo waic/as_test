@@ -21,17 +21,9 @@ ARIA1
 
 # テストコードのソース (抜粋)
 ```html
-<div class="form">
-<p><span class="left" id="fontDesc" >このページで使用するフォントフェイスとサイズの選択</span>
-  <span class="right"><button id="fontB" onclick="doAction('Fonts');">フォント</button></span>
-</p>
-<p><span class="left" id="colorDesc" >このページで使用する色を選択</span>
-  <span class="right"><button id="colorB" onclick="doAction('Colors');">色</button></span>
-</p>
-<p><span class="left" id="customDesc" >このページで使われているレイアウトやスタイルをカスタマイズ</span>
-  <span class="right"><button id="customB" onclick="doAction('Customize');">カスタマイズ</button></span>
-</p>
-</div>
+<button aria-label="閉じる" id="buttonClose" onclick="doAction('buttonClose');">X</button>
+<p>情報を入力後、閉じるボタンを押してください。</p>
+<div id="descriptionClose">このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。</div>
 ```
 # テスト手順 (視覚閲覧環境)
 テスト不要
