@@ -15,9 +15,13 @@
 <link rel="icon" href="http://www.cites.uiuc.edu/favicon.ico" type="image/x-icon">
 <link rel="shortcut icon" href="http://www.cites.uiuc.edu/favicon.ico" type="image/x-icon">
 
+<style>
+#tp1 {display: none;}
+</style>
+
 </head>
 
-<body onload="initApp()">
+<body>
 
 <div id="container">
 
@@ -26,13 +30,9 @@
 <div class="text">
 <label for="first">名前:</label>
 
-<input type="text" id="first" name="first" size="20"
-      onmouseover="tooltipShow(event, this, 'tp1');"
-      onfocus="tooltipShow(event, this, 'tp1');"
-      aria-describedby="tp1"
-      aria-required="false"/>
+<input type="text" id="first" name="first" size="20" aria-describedby="tp1" aria-required="false"/>
 
-<div id="tp1" role="tooltip" aria-hidden="true">名前は任意です。</div>
+<div id="tp1" aria-hidden="true">名前は任意です。</div>
 </div>
 
 </body>

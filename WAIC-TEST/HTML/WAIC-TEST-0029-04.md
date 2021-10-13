@@ -7,7 +7,7 @@ WAIC-TEST-0029-04
 ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する
 
 # テストの目的
-input 要素に aria-describedby 属性で関連付けをおこなった場合、関連付けられた要素の内容が読み上げられるかの確認
+input 要素に隠された aria-describedby 属性で関連付けをおこなった場合、関連付けられた要素の内容が読み上げられるかの確認
 
 # テストの対象となる達成基準 (複数)
 1.3.1
@@ -23,11 +23,7 @@ ARIA1
 ```html
 <label for="first">名前:</label>
 
-<input type="text" id="first" name="first" size="20"
-      onmouseover="tooltipShow(event, this, 'tp1');"
-      onfocus="tooltipShow(event, this, 'tp1');"
-      aria-describedby="tp1"
-      aria-required="false"/>
+<input type="text" id="first" name="first" size="20" aria-describedby="tp1" aria-required="false"/>
 
 <div id="tp1" role="tooltip" aria-hidden="true">名前は任意です。</div>
 ```
@@ -42,7 +38,7 @@ ARIA1
 
 # テスト手順 (音声閲覧環境)
 input要素にフォーカスを合わせる。
-aria-describedby属性で関連付けられた文章が読み上げられることを確認する。
+隠された aria-describedby属性で関連付けられた文章が読み上げられることを確認する。
 
 # 期待される結果 (音声閲覧環境)
 input要素にフォーカスを合わせた際、aria-describedby属性で関連付けられた文章が読み上げられる。
