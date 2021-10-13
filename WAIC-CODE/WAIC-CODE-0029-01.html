@@ -7,13 +7,28 @@
 <meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+
+<script>
+function myDialog(theAction){
+  alert("ウィンドウを閉じます");
+}
+</script>
+
 </head>
 
 <body>
 
-<button aria-label="閉じる" aria-describedby="descriptionClose" onclick="myDialog.close()">X</button>
+<a href="https://waic.jp/">メインページへ戻る</a>
 
+<hr>
+
+<button aria-label="閉じる" aria-describedby="descriptionClose" onclick="myDialog()">X</button>
+<p>情報を入力後、閉じるボタンを押してください。</p>
 <div id="descriptionClose">このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。</div>
+
+<hr>
+
+<a href="https://waic.jp/">メインページへ戻る</a>
 
 </body>
 </html>

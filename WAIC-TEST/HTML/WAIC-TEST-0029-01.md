@@ -21,9 +21,10 @@ ARIA1
 
 # テストコードのソース (抜粋)
 ```html
-<button aria-label="閉じる" aria-describedby="descriptionClose" onclick="myDialog.close()">X</button>
-
+<button aria-label="閉じる" aria-describedby="descriptionClose" onclick="myDialog()">X</button>
+<p>情報を入力後、閉じるボタンを押してください。</p>
 <div id="descriptionClose">このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。</div>
+
 ```
 # テスト手順 (視覚閲覧環境)
 テスト不要
