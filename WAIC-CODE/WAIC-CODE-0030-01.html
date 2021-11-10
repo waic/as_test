@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0030-01</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+</head>
+
+<body>
+<form action="#" method="post"  id="login1" onsubmit="return errorCheck1()">
+  <p>Note: [*]denotes mandatory field</p>
+  <p>
+    <label for="usrname">Login name: </label>
+    <input type="text" name="usrname" id="usrname" aria-required="true"/>[*]
+  </p>
+  <p>
+    <label for="pwd">Password</label>
+    <input type="password" name="pwd" id="pwd" size="12" aria-required="true" />[*]
+  </p>
+  <p>
+    <input type="submit" value="Login" id="next_btn" name="next_btn"/>
+  </p>
+
+</form>
+</body>
+</html>
