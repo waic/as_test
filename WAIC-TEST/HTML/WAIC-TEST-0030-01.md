@@ -17,7 +17,8 @@ aria-required プロパティによって必須項目を特定する(required �
 # テストコード (テストファイルへのリンク) :
 WAIC-CODE-0030-01
 
-# テストコードのソース (抜粋) :
+# テストコードのソース (抜粋)
+
 <form action="#" method="post"  id="login1" onsubmit="return errorCheck1()">
   <p>Note: [*]denotes mandatory field</p>
   <p>
@@ -47,6 +48,7 @@ WAIC-CODE-0030-01
 テストファイルを操作し、結果を確認
 
 # 期待される結果 (音声閲覧環境) 
+
 
 # テスト実施時の注意点 (音声閲覧環境) 
 なし
