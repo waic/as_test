@@ -6,7 +6,7 @@ aria-required プロパティによって必須項目を特定する(required �
 
 # テストの目的 
 
-
+aria-required属性が設定された要素にフォーカスを移動した際、支援技術に必須であることが伝わることを確認する
 # テストの対象となる達成基準 (複数) :
 1.3.1
 3.3.3
@@ -15,22 +15,22 @@ aria-required プロパティによって必須項目を特定する(required �
 ARIA2
 
 # テストコード (テストファイルへのリンク) :
-WAIC-CODE-0030-01
+[WAIC-CODE-0030-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0030-01.html)
 
 # テストコードのソース (抜粋)
 
 <form action="#" method="post"  id="login1" onsubmit="return errorCheck1()">
-  <p>Note: [*]denotes mandatory field</p>
+  <p>注：[*]は必須項目を示します。</p>
   <p>
-    <label for="usrname">Login name: </label>
+    <label for="usrname">ログインネーム</label>
     <input type="text" name="usrname" id="usrname" aria-required="true"/>[*]
   </p>
   <p>
-    <label for="pwd">Password</label>
+    <label for="pwd">パスワード</label>
     <input type="password" name="pwd" id="pwd" size="12" aria-required="true" />[*]
   </p>
   <p>
-    <input type="submit" value="Login" id="next_btn" name="next_btn"/>
+    <input type="submit" value="ログイン" id="next_btn" name="next_btn"/>
   </p>
 
 </form>
@@ -49,9 +49,10 @@ WAIC-CODE-0030-01
 
 # 期待される結果 (音声閲覧環境) 
 
+aria-required属性が設定された要素にフォーカスを移動した際、支援技術に必須であることが伝わる
 
 # テスト実施時の注意点 (音声閲覧環境) 
 なし
 
 # 関連する要素や属性 :
-form要素
+aria-required 属性が指定されているinput 要素
