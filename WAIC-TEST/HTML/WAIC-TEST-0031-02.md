@@ -1,0 +1,55 @@
+
+
+# テスト ID
+WAIC-TEST-0031-02
+
+# テストのタイトル
+ユーザインタフェース コンポーネントの役割 (role) を明示するために、WAI-ARIA ロールを使用する
+
+# テストの目的
+ul 要素および li 要素に role 属性を指定した場合、該当の role 属性が通知されるかの確認
+
+# テストの対象となる達成基準 (複数)
+4.1.2
+
+# 関連する達成方法 (複数)
+ARIA4
+
+# テストコード (テストファイルへのリンク)
+[WAIC-CODE-0031-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0031-02.html)
+
+# テストコードのソース (抜粋)
+```html
+<ul role="tree" tabindex="0">
+  <li role="treeitem">鳥</li>
+  <li role="treeitem">猫
+    <ul role="group">
+      <li role="treeitem">シャム</li>
+      <li role="treeitem">タビー</li>
+    </ul>
+  </li>
+</ul>
+```
+
+# テスト手順 (視覚閲覧環境)
+テスト不要
+
+# 期待される結果 (視覚閲覧環境)
+なし
+
+# テスト実施時の注意点 (視覚閲覧環境)
+なし
+
+# テスト手順 (音声閲覧環境)
+テストファイルを操作し、結果を確認
+
+# 期待される結果 (音声閲覧環境)
+ul 要素、および li 要素にフォーカスを合わせた際、各要素が tree, treeitem であることが通知される。
+
+# テスト実施時の注意点 (音声閲覧環境)
+なし
+
+# 関連する要素や属性
+role="tree" をもつ ul 要素、role="treeitem" をもつ li 要素、role="group" をもつ ul 要素。
+
+
