@@ -58,8 +58,8 @@ H85
 
 # 期待される結果 (音声閲覧環境)
 次の 1. 〜 2. をすべて満たしている
-1. optgroup 要素の label 属性値を知るための何らかの手段が提供されている
-2. optgroup 要素の切り替わる位置 (グループの開始位置及び終了位置) を知るための何らかの手段が提供されている
+1. optgroup 要素の label 属性値を知るための[何らかの手段](https://github.com/waic/as_test/blob/master/term.md#%E4%BD%95%E3%82%89%E3%81%8B%E3%81%AE%E6%89%8B%E6%AE%B5)が提供されている
+2. optgroup 要素の切り替わる位置 (グループの開始位置及び終了位置) を知るための[何らかの手段](https://github.com/waic/as_test/blob/master/term.md#%E4%BD%95%E3%82%89%E3%81%8B%E3%81%AE%E6%89%8B%E6%AE%B5)が提供されている
 
 # テスト実施時の注意点 (音声閲覧環境)
 なし
