@@ -20,10 +20,10 @@ ARIA4
 
 # テストコードのソース (抜粋)
 ```html
-<div role="toolbar" tabindex="0" id="customToolbar" onkeydown="return optionKeyEvent(event);" onkeypress="return optionKeyEvent(event);" onclick="return optionClickEvent(event);" onblur="hideFocus()" onfocus="showFocus()">
-     <img src="img/btn1.gif" role="button" tabindex="-1" alt="Home" id="b1" title="Home">
-     <img src="img/btn2.gif" role="button" tabindex="-1" alt="Refresh" id="b2" title="Refresh">
-     <img src="img/btn3.gif" role="button" tabindex="-1" alt="Help" id="b3" title="Help">
+<div role="toolbar" tabindex="0">
+    <button>Home</button>
+    <button>Refresh</button>
+    <button>Help</button>
 </div>
 ```
 
