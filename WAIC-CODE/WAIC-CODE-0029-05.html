@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+ARIA 1.0//EN" "https://www.w3.org/WAI/ARIA/schemata/xhtml-aria-1.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja">
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=utf-8" />
+<title>WAIC-CODE-0029-05</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+
+<style type="text/css">
+div.form p { clear:left; margin: 0.3em 0;}
+.left {
+  float:left;
+  width:400px;
+}
+.right {
+  width:100px;
+  text-align:right;
+}
+</style>
+</head>
+<body>
+<p>このページのボタンでは、Accessible Rich Internet Applicationsのaria-describedbyプロパティを使用して、ボタンの動作に関する詳細な情報を提供しています。</p>
+<div class="form">
+<p><span class="left" id="fontDesc" >このページで使用するフォントフェイスとサイズの選択</span>
+<span class="right"><button id="fontB" onclick="doAction('Fonts');" aria-describedby="fontDesc">
+フォント</button></span></p>
+<p><span class="left" id="colorDesc" >このページで使用する色を選択</span>
+<span class="right"><button id="colorB" onclick="doAction('Colors');" aria-describedby="colorDesc">
+色</button></span></p>
+<p><span class="left" id="customDesc" >このページで使われているレイアウトやスタイルをカスタマイズ</span>
+<span class="right"><button id="customB" onclick="doAction('Customize');" aria-describedby="customDesc">
+カスタマイズ</button></span></p>
+</div>
+</body>
+</html>

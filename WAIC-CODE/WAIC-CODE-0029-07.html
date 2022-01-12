@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0029-07</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+</head>
+
+<body>
+
+<p><span id="fontLabel">フォントの選択</span>
+    <span id="fontDesc">このページで使用するフォントフェイスとサイズの選択</span>
+    <button id="fontB" onclick="doAction('Fonts');" aria-labelledby="fontLabel" aria-describedby="fontDesc">フォント</button>
+</p>
+<p><span id="colorLabel">色の選択</span>
+    <span id="colorDesc">このページで使用する色を選択</span>
+    <button id="colorB" onclick="doAction('Colors');" aria-labelledby="colorLabel" aria-describedby="colorDesc">色</button>
+</p>
+<p><span id="customLabel">その他のカスタマイズの選択</span>
+    <span id="customDesc">このページで使われているレイアウトやスタイルをカスタマイズ</span>
+    <button id="customB" onclick="doAction('Customize');" aria-labelledby="customLabel" aria-describedby="customDesc">カスタマイズ</button>
+</p>
+
+</body>
+</html>

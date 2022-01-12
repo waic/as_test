@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0029-06</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+// array entries for each button on the page that associates the button id
+// with the id of the element containing the text which describes the button
+var buttonIds = new Array();
+buttonIds["buttonClose"]= "descriptionClose";
+
+// function that is run after the page has loaded to set the aria-describedBy
+// property on each of the elements referenced by the array of id values
+function setDescribedBy(){
+  if (buttonIds){
+    var buttons = document.getElementsByTagName("button");
+    if (buttons){
+      var buttonId;
+      for(var i=0; i<buttons.length; i++){
+        buttonId = buttons[i].id;
+        if (buttonId && buttonIds[buttonId]){
+          buttons[i].setAttribute("aria-describedby", buttonIds[buttonId]);
+        }
+      }
+    }
+  }
+}
+
+// simulated action function - currently just displays an alert
+function doAction(theAction){
+  alert("Perform the " + theAction + " action");
+}
+
+window.onload=setDescribedBy;
+
+//]]>
+</script>
+</head>
+<body>
+
+<a href="https://waic.jp/">メインページへ戻る</a>
+
+<hr>
+
+<button aria-label="閉じる" id="buttonClose" onclick="doAction('buttonClose');">X</button>
+<p>情報を入力後、閉じるボタンを押してください。</p>
+<div id="descriptionClose">このウィンドウを閉じると、入力された情報は破棄され、メインページに戻ります。</div>
+
+<hr>
+
+<a href="https://waic.jp/">メインページへ戻る</a>
+
+</body>
+</html>
