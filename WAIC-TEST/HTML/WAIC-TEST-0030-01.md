@@ -2,11 +2,12 @@
 WAIC-TEST-0030-01
 
 # テストのタイトル 
-aria-required プロパティによって必須項目を特定する(required プロパティが label 要素の後に置かれるアスタリスクによって示されている)
+aria-required 属性によって必須項目を特定する(required 属性が label 要素の後に置かれるアスタリスクによって示されている)
 
 # テストの目的 
 
 aria-required属性が設定された要素にフォーカスを移動した際、支援技術に必須であることが伝わることを確認する
+
 # テストの対象となる達成基準 (複数) :
 1.3.1
 3.3.3
@@ -18,6 +19,8 @@ ARIA2
 [WAIC-CODE-0030-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0030-01.html)
 
 # テストコードのソース (抜粋)
+
+```html
 
 <form action="#" method="post"  id="login1" onsubmit="return errorCheck1()">
   <p>注：[*]は必須項目を示します。</p>
@@ -34,6 +37,8 @@ ARIA2
   </p>
 
 </form>
+
+```
 
 # テスト手順 (視覚閲覧環境) 
 テスト不要
