@@ -20,7 +20,7 @@ ARIA4
 
 # テストコードのソース (抜粋)
 ```html
-<div role="toolbar" tabindex="0">
+<div role="toolbar">
     <button>Home</button>
     <button>Refresh</button>
     <button>Help</button>
@@ -40,7 +40,10 @@ ARIA4
 テストファイルを操作し、結果を確認
 
 # 期待される結果 (音声閲覧環境)
-div 要素にフォーカスを合わせた際、toolbar であることが通知される。
+次の 1. 〜 3. をすべて満たしている
+1. 矢印キーなどで要素を順に移動し toolbar に差し掛かった場合、toolbar であることが通知される。
+2. tab キーで移動し button 要素にフォーカスし toolbar に差し掛かった場合、toolbar であることが通知される。
+3. toolbar を通過した場合、toolbar を終了したことが通知される
 
 # テスト実施時の注意点 (音声閲覧環境)
 なし
