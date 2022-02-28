@@ -1,47 +1,56 @@
-# �e�X�g ID
+# テスト ID
 WAIC-TEST-0032-01
 
-# �e�X�g�̃^�C�g��
-�����N�e�L�X�g�̈ꕔ���\���ɂ��邽�߂ɁACSS ���g�p����
+# テストのタイトル
+リンクテキストの一部を非表示にするために、CSS を使用する
 
-# �e�X�g�̖ړI
-��\���ɔz�u���ꂽa�v�f�������N�̖ړI��������Ă��邱�Ƃ��m�F����B
+# テストの目的
+非表示に配置されたa要素がリンクの目的を説明していることを確認する。
 
-# �e�X�g�̑ΏۂƂȂ�B��� (����)
+# テストの対象となる達成基準 (複数)
 2.4.4
 2.4.9
 
-# �֘A����B�����@ (����)
+# 関連する達成方法 (複数)
 G91
 H33
 
-# �e�X�g�R�[�h (�e�X�g�t�@�C���ւ̃����N)
+# テストコード (テストファイルへのリンク)
 WAIC-CODE-0032-01
 
-# �e�X�g�R�[�h�̃\�[�X (����)
+# テストコードのソース (抜粋)
 ```html
-<p>���V���g���́A�o�ϐ������h������v��𔭕\���܂����B
-  <a href="#"><span class="visually-hidden">���V���g�����o�ϐ������h������</span>
-  �S���\��</a></p>
+	.visually-hidden {
+   clip-path: inset(100%);
+   clip: rect(1px, 1px, 1px, 1px);
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+   white-space: nowrap;
+   width: 1px;
+}
+<p>ワシントンは、経済成長を刺激する計画を発表しました。
+  <a href="#"><span class="visually-hidden">ワシントンが経済成長を刺激する</span>
+  全文表示</a></p>
 ```
-# �e�X�g�菇 (���o�{����)
-�e�X�g�t�@�C���𑀍삵�A���ʂ��m�F�B
+# テスト手順 (視覚閲覧環境)
+テストファイルを操作し、結果を確認。
 
-# ���҂���錋�� (���o�{����)
-�����N�̖ړI��������Ă��郊���N�e�L�X�g�͕\�����ꂸ�A
-�h�S���\���h�̃����N�e�L�X�g�݂̂��\�������
+# 期待される結果 (視覚閲覧環境)
+“ワシントンが経済成長を刺激する”は表示されず、
+“全文表示”のリンクテキストのみが表示される
 
-# �e�X�g���{���̒��ӓ_ (���o�{����)
-�Ȃ�
+# テスト実施時の注意点 (視覚閲覧環境)
+なし
 
-# �e�X�g�菇 (�����{����)
-�e�X�g�t�@�C���𑀍삵�A���ʂ��m�F�B
+# テスト手順 (音声閲覧環境)
+テストファイルを操作し、結果を確認。
 
-# ���҂���錋�� (�����{����)
-��\���ɂ��ꂽa�v�f�������N�̖ړI�̐����Ƃ��ēǂݏグ����B
+# 期待される結果 (音声閲覧環境)
+非表示にされた“ワシントンが経済成長を刺激する”が読み上げられる。
 
-# �e�X�g���{���̒��ӓ_ (�����{����)
-�Ȃ�
+# テスト実施時の注意点 (音声閲覧環境)
+なし
 
-# �֘A����v�f�⑮��
-a�v�f�Atitle����
+# 関連する要素や属性
+a要素
