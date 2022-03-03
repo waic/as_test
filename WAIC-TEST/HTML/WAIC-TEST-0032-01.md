@@ -19,8 +19,8 @@ H33
 WAIC-CODE-0032-01
 
 # テストコードのソース (抜粋)
-```html
-	.visually-hidden {
+```css
+.visually-hidden {
    clip-path: inset(100%);
    clip: rect(1px, 1px, 1px, 1px);
    height: 1px;
@@ -29,10 +29,14 @@ WAIC-CODE-0032-01
    white-space: nowrap;
    width: 1px;
 }
+```
+
+```html
 <p>ワシントンは、経済成長を刺激する計画を発表しました。
   <a href="#"><span class="visually-hidden">ワシントンが経済成長を刺激する</span>
   全文表示</a></p>
 ```
+
 # テスト手順 (視覚閲覧環境)
 テストファイルを操作し、結果を確認。
 
