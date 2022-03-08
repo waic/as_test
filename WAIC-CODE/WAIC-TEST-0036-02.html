@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0033-01</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+	
+<style type="text/css">
+      input.text:focus {
+        background-color: #7FFF00; 
+        color: #000;
+      }
+      input[type=checkbox]:focus + label, input[type=radio]:focus + label {
+        background-color: #FF6; 
+        color: #000; 
+      }
+    </style>
+</head>
+<body>
+    <form method="post" action="form.php">
+      <p><label for="fname">名前: </label>
+        <input class="text" type="text" name="fname" id="fname" />
+      </p>
+      <p>
+        <input type="radio" name="sex" value="male" id="sm" /> <label for="sm">男性</label><br />
+        <input type="radio" name="sex" value="female" id="sf" /> <label for="sf">女性</label>
+      <p>
+    </form>
+  </body>
+</html>
