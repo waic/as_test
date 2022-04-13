@@ -21,11 +21,11 @@ ARIA4
 # テストコードのソース (抜粋)
 ```html
 <ul role="tree" tabindex="0">
-  <li role="treeitem">鳥</li>
-  <li role="treeitem">猫
-    <ul role="group">
-      <li role="treeitem">シャム</li>
-      <li role="treeitem">タビー</li>
+  <li role="treeitem" tabindex="0">鳥</li>
+  <li role="treeitem" tabindex="0">猫
+    <ul role="group" tabindex="0">
+      <li role="treeitem" tabindex="0">シャム</li>
+      <li role="treeitem" tabindex="0">タビー</li>
     </ul>
   </li>
 </ul>
