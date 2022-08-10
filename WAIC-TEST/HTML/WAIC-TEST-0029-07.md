@@ -4,7 +4,7 @@
 WAIC-TEST-0029-07
 
 # テストのタイトル
-ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby プロパティを使用する
+ユーザインターフェース コントロールに対する説明ラベルを提供するために、aria-describedby 属性を使用する (button要素 : aria-labelledby属性と併用)
 
 # テストの目的
 button 要素に aria-labelledby 属性と aria-describedby属性の両方で関連付けをおこなった場合、関連付けられた要素の内容が読み上げられるかの確認
