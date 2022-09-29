@@ -4,7 +4,7 @@
 WAIC-TEST-0029-05
 
 # テストのタイトル
-aria-describedby 属性による説明ラベルの提供 (input要素 : xhtml文書)
+aria-describedby 属性による説明ラベルの提供 (input要素 : XHTML文書)
 
 # テストの目的
 application/xhtml+xml の MIME タイプのドキュメントにおいて、button 要素に aria-describedby 属性で関連付けをおこなった場合、関連付けられた要素の内容が読み上げられるかの確認
