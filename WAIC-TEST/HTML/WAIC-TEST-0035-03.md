@@ -1,35 +1,35 @@
-# �e�X�g ID
+# テスト ID
 WAIC-TEST-0035-03
 
-# �e�X�g�̃^�C�g��
-�����ړI�̉摜��t�����邽�߂ɁACSS ���g�p����
+# テストのタイトル
+装飾目的の画像を付加するために、CSS を使用する（タブなどの要素の角丸表現の背景画像）
 
-# �e�X�g�̖ړI
-�^�u�v�f�̊p�ۉ摜�������ړI�Ƃ���CSS�̔w�i�摜�Ƃ��Ďw�肳��Ă��邩�m�F����B
+# テストの目的
+タブ要素の角丸画像が装飾目的としてCSSの背景画像として指定されているか確認する。
 
-# �e�X�g�̑ΏۂƂȂ�B��� 
+# テストの対象となる達成基準 
 1.1.1
 
-# �֘A����B�����@ (����)
+# 関連する達成方法 (複数)
 C30
 F3
 
-# �e�X�g�R�[�h (�e�X�g�t�@�C���ւ̃����N)
+# テストコード (テストファイルへのリンク)
 [WAIC-CODE-0035-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0035-03.html)
 
-# �e�X�g�R�[�h�̃\�[�X (����)
+# テストコードのソース (抜粋)
 ```HTML
 <div id="theComments">
     <div class="aComment">
       <blockquote>
-        <p>����ɂ��́A�W�����B���̃e�N�j�b�N�͂ƂĂ��C�ɓ����Ă��āA�����̃E�F�u�T�C�g�Ŏg���Ă݂悤�Ǝv���Ă��܂��B</p>
+        <p>こんにちは、ジョン。このテクニックはとても気に入っていて、自分のウェブサイトで使ってみようと思っています。</p>
       </blockquote>
       <div class="submitter">
-        <cite><a href="http://example.com/">�����̉��a��</a> �G���{�j�A���</cite>
+        <cite><a href="http://example.com/">匿名の臆病者</a> エルボニアより</cite>
       </div>
     </div>
     <div class="aComment">
-�c
+…
  </div>
 </div>
 ```
@@ -43,24 +43,24 @@ div#theComments { width:600px; }
     margin:0; padding-top:30px; }
 ```
 
-# �e�X�g�菇 (���o�{����)
-�e�X�g�t�@�C���𑀍삵�A���ʂ��m�F�B
-���[�U�G�[�W�F���g�ŃX�^�C���V�[�g�����ɂ����e���m�F�B
+# テスト手順 (視覚閲覧環境)
+テストファイルを操作し、結果を確認。
+ユーザエージェントでスタイルシート無効にし内容を確認。
 
-# ���҂���錋�� (���o�{����)
-�X�^�C���V�[�g�����ɂ��摜����\���ƂȂ�B
+# 期待される結果 (視覚閲覧環境)
+スタイルシート無効により画像が非表示となる。
 
-# �e�X�g���{���̒��ӓ_ (���o�{����)
-�Ȃ�
+# テスト実施時の注意点 (視覚閲覧環境)
+なし
 
-# �e�X�g�菇 (�����{����)
-�e�X�g�t�@�C���𑀍삵�A���ʂ��m�F�B
+# テスト手順 (音声閲覧環境)
+テストファイルを操作し、結果を確認。
 
-# ���҂���錋�� (�����{����)
-�摜�Ƃ��ēǂݏグ���Ȃ��B
+# 期待される結果 (音声閲覧環境)
+画像として読み上げられない。
 
-# �e�X�g���{���̒��ӓ_ (�����{����)
-�Ȃ�
+# テスト実施時の注意点 (音声閲覧環境)
+なし
 
-# �֘A����v�f�⑮��
-�Ȃ�
+# 関連する要素や属性
+なし
