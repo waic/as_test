@@ -2,7 +2,7 @@
 WAIC-TEST-0030-01
 
 # テストのタイトル 
-aria-required 属性による必須項目の特定（required プロパティをlabel要素の後に置かれるアスタリスクによって示す）
+aria-required 属性による必須項目の特定（input要素、select要素、textarea要素）
 
 # テストの目的 
 
