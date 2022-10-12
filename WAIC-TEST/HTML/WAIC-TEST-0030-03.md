@@ -5,7 +5,6 @@ WAIC-TEST-0030-03
 aria-required 属性による必須項目の特定（role=radioを指定したラジオボタン）
 
 # テストの目的 
-
 aria-required属性、role属性が設定された要素にフォーカスを移動した際、支援技術に必須であることが伝わることを確認する
 
 # テストの対象となる達成基準 (複数) :
@@ -19,24 +18,20 @@ ARIA2
 [WAIC-CODE-0030-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0030-03.html)
 
 # テストコードのソース (抜粋)
-
 ```html
 <style type="text/css">
 .aria-required=true {
   border: red thin solid;
-}
-.data-required=true:after {
-  content: url('/iconStar.gif');
 }
 </style>
 
 <form action="#" method="post" id="alerts1">
   <label for="acctnum" data-required="true">口座番号</label>
   <input size="12" type="text" id="acctnum" aria-required="true" name="acctnum" />
-  <p id="radio_label" data-required="true">残高が$3,000を超えたらアラートを送信する</p>
-  <ul  id="rg" role="radiogroup" aria-required="true" aria-labelledby="radio_label">
-    <li id="rb1" role="radio">はい</li>
-    <li id="rb2" role="radio">いいえ</li>
+  <p id="radio_label">残高が$3,000を超えたらアラートを送信する</p>
+  <ul role="radiogroup" aria-required="true" aria-labelledby="radio_label" tabindex="0">
+    <li role="radio">はい</li>
+    <li role="radio">いいえ</li>
   </ul>
 </form>
 ```
@@ -48,21 +43,16 @@ ARIA2
 なし
 
 # テスト実施時の注意点 (視覚閲覧環境) 
-
 なし
 
 # テスト手順 (音声閲覧環境) 
-
 テストファイルを操作し、結果を確認
 
 # 期待される結果 (音声閲覧環境) 
-
 aria-required属性が設定された要素にフォーカスを移動した際、支援技術に必須であることが伝わる
 
 # テスト実施時の注意点 (音声閲覧環境) 
-
 なし
 
 # 関連する要素や属性 :
-
-aria-required 属性が指定されているinput 要素
+aria-required 属性が指定されているinput 要素、role="radiogroup"を持つul要素、role="radio"を持つli要素
