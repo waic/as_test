@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0030-03</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+</head>
+
+<body>
+<form action="#" method="post" id="alerts1">
+  <label for="acctnum" data-required="true">口座番号</label>
+  <input size="12" type="text" id="acctnum" aria-required="true" name="acctnum" />
+  <p id="radio_label" data-required="true">残高が$3,000を超えたらアラートを送信する</p>
+  <ul  id="rg" role="radiogroup" aria-required="true" aria-labelledby="radio_label">
+    <li id="rb1" role="radio">はい</li>
+    <li id="rb2" role="radio">いいえ</li>
+  </ul>
+</form>
+
+[aria-required=true] {
+  border: red thin solid;
+}
+[data-required=true]:after {
+  content: url('/iconStar.gif');
+}
+
+</body>
+</html>
