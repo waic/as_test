@@ -21,6 +21,15 @@ ARIA2
 # テストコードのソース (抜粋)
 
 ```html
+<style type="text/css">
+.aria-required=true {
+  border: red thin solid;
+}
+.data-required=true:after {
+  content: url('/iconStar.gif');
+}
+</style>
+
 <form action="#" method="post" id="alerts1">
   <label for="acctnum" data-required="true">口座番号</label>
   <input size="12" type="text" id="acctnum" aria-required="true" name="acctnum" />
@@ -30,16 +39,6 @@ ARIA2
     <li id="rb2" role="radio">いいえ</li>
   </ul>
 </form>
-```
-
-```css
-[aria-required=true] {
-  border: red thin solid;
-}
-[data-required=true]:after {
-  content: url('/iconStar.gif');
-}
-
 ```
 
 # テスト手順 (視覚閲覧環境) 

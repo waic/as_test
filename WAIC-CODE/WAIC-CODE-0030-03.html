@@ -10,6 +10,15 @@
 </head>
 
 <body>
+<style type="text/css">
+.aria-required=true {
+  border: red thin solid;
+}
+.data-required=true:after {
+  content: url('/iconStar.gif');
+}
+</style>
+
 <form action="#" method="post" id="alerts1">
   <label for="acctnum" data-required="true">口座番号</label>
   <input size="12" type="text" id="acctnum" aria-required="true" name="acctnum" />
@@ -19,13 +28,5 @@
     <li id="rb2" role="radio">いいえ</li>
   </ul>
 </form>
-
-[aria-required=true] {
-  border: red thin solid;
-}
-[data-required=true]:after {
-  content: url('/iconStar.gif');
-}
-
 </body>
 </html>
