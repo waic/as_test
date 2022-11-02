@@ -19,21 +19,12 @@ ARIA2
 
 # テストコードのソース (抜粋)
 ```html
-<style type="text/css">
-.aria-required=true {
-  border: red thin solid;
-}
-</style>
 
-<form action="#" method="post" id="alerts1">
-  <label for="acctnum" data-required="true">口座番号</label>
-  <input size="12" type="text" id="acctnum" aria-required="true" name="acctnum" />
   <p id="radio_label">残高が$3,000を超えたらアラートを送信する</p>
   <ul role="radiogroup" aria-required="true" aria-labelledby="radio_label" tabindex="0">
     <li role="radio">はい</li>
     <li role="radio">いいえ</li>
   </ul>
-</form>
 ```
 
 # テスト手順 (視覚閲覧環境) 
