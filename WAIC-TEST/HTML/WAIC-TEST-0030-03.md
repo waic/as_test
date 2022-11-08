@@ -64,20 +64,20 @@ ARIA2
 <h2>aria-required属性が設定されていない</h2>
 
 <!-- input[type="text"] -->
-<p id="usrname">ログインネーム</p>
-  <div role="textbox" aria-labelledby="usrname" tabindex="0"></div>
+<p id="usrname2">ログインネーム</p>
+  <div role="textbox" aria-labelledby="usrname2" tabindex="0"></div>
 
 <!-- input[type="password"] -->
 <!-- 相談事項：対応する role が不明（仮で role="textbox" を指定 ） -->
-<p id="pwd">パスワード</p>
-  <div role="textbox" aria-labelledby="pwd" tabindex="0"></div>
+<p id="pwd2">パスワード</p>
+  <div role="textbox" aria-labelledby="pwd2" tabindex="0"></div>
 
 <!-- select, option -->
-<p id="os_pc">利用しているOS(PC)</p>
+<p id="os_pc2">利用しているOS(PC)</p>
   <!-- select 閉じた状態 (select) -->
-  <div role="combobox" aria-controls="combobox-target" aria-expanded="false" tabindex="0">選択してください</div>
+  <div role="combobox" aria-controls="combobox-target2" aria-expanded="false" tabindex="0">選択してください</div>
   <!-- select 開いた状態で表示される内容 (option) -->
-  <div role="listbox" aria-labelledby="os_pc" id="combobox-target">
+  <div role="listbox" aria-labelledby="os_pc2" id="combobox-target2">
     <div role="option" aria-selected="true" tabindex="0">Windows</div>
     <div role="option" aria-selected="false" tabindex="0">macOS</div>
   </div>
@@ -85,22 +85,22 @@ ARIA2
 <!-- select, option : value が空のパターン必要？ -->
 
 <!-- input[type="radio"] -->
-<p id="sr">スクリーンリーダーの利用状況</p>
-  <div role="radiogroup" aria-labelledby="sr">
+<p id="sr2">スクリーンリーダーの利用状況</p>
+  <div role="radiogroup" aria-labelledby="sr2">
   <div role="radio" aria-checked="true" tabindex="0">利用している</div>
   <div role="radio" aria-checked="false" tabindex="0">利用していない</div>
   </div>
 
 <!-- input[type="checkbox"] -->
-<p id="sr_type">利用しているスクリーンリーダー</p>
-  <div role="group" aria-labelledby="sr_type">
+<p id="sr_type2">利用しているスクリーンリーダー</p>
+  <div role="group" aria-labelledby="sr_type2">
   <div role="checkbox" aria-checked="true" tabindex="0">PC-Talker</div>
   <div role="checkbox" aria-checked="false" tabindex="0">NVDA</div>
   </div>
 
 <!-- textarea -->
-<p id="other">その他コメント</p>
-  <div role="textbox" aria-multiline="true" aria-labelledby="other" tabindex="0"></div>
+<p id="other2">その他コメント</p>
+  <div role="textbox" aria-multiline="true" aria-labelledby="other2" tabindex="0"></div>
 ```
 
 # テスト手順 (視覚閲覧環境) 
