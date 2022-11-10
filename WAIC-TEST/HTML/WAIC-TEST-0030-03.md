@@ -25,22 +25,10 @@ ARIA2
 <p id="usrname">ログインネーム</p>
   <div role="textbox" aria-labelledby="usrname" aria-required="true" tabindex="0"></div>
 
-<!-- input[type="password"] -->
-<!-- 相談事項：対応する role が不明（仮で role="textbox" を指定 ） -->
-<p id="pwd">パスワード</p>
-  <div role="textbox" aria-labelledby="pwd" aria-required="true" tabindex="0"></div>
-
 <!-- select, option -->
 <p id="os_pc">利用しているOS(PC)</p>
   <!-- select 閉じた状態 (select) -->
   <div role="combobox" aria-controls="combobox-target" aria-expanded="false" aria-required="true" tabindex="0">選択してください</div>
-  <!-- select 開いた状態で表示される内容 (option) -->
-  <div role="listbox" aria-labelledby="os_pc" id="combobox-target" aria-required="true">
-    <div role="option" aria-selected="true" tabindex="0">Windows</div>
-    <div role="option" aria-selected="false" tabindex="0">macOS</div>
-  </div>
-
-<!-- select, option : value が空のパターン必要？ -->
 
 <!-- input[type="radio"] -->
 <p id="sr">スクリーンリーダーの利用状況</p>
@@ -67,22 +55,10 @@ ARIA2
 <p id="usrname2">ログインネーム</p>
   <div role="textbox" aria-labelledby="usrname2" tabindex="0"></div>
 
-<!-- input[type="password"] -->
-<!-- 相談事項：対応する role が不明（仮で role="textbox" を指定 ） -->
-<p id="pwd2">パスワード</p>
-  <div role="textbox" aria-labelledby="pwd2" tabindex="0"></div>
-
 <!-- select, option -->
 <p id="os_pc2">利用しているOS(PC)</p>
   <!-- select 閉じた状態 (select) -->
   <div role="combobox" aria-controls="combobox-target2" aria-expanded="false" tabindex="0">選択してください</div>
-  <!-- select 開いた状態で表示される内容 (option) -->
-  <div role="listbox" aria-labelledby="os_pc2" id="combobox-target2">
-    <div role="option" aria-selected="true" tabindex="0">Windows</div>
-    <div role="option" aria-selected="false" tabindex="0">macOS</div>
-  </div>
-
-<!-- select, option : value が空のパターン必要？ -->
 
 <!-- input[type="radio"] -->
 <p id="sr2">スクリーンリーダーの利用状況</p>
@@ -101,6 +77,7 @@ ARIA2
 <!-- textarea -->
 <p id="other2">その他コメント</p>
   <div role="textbox" aria-multiline="true" aria-labelledby="other2" tabindex="0"></div>
+
 ```
 
 # テスト手順 (視覚閲覧環境) 
