@@ -99,4 +99,4 @@ aria-required属性が設定された要素にフォーカスを移動した際�
 矢印キーなどは使用せず、タブキーのみを使用してテストを行う
 
 # 関連する要素や属性 :
-aria-required 属性, role 属性値として "textbox" "combobox" "listbox" "radiogroup" "checkbox" のいずれかを持つ div要素
+aria-required 属性, role 属性値として "textbox" "combobox" "radiogroup" "checkbox" のいずれかを持つ div要素
