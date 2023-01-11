@@ -1,31 +1,31 @@
-# ƒeƒXƒg ID
+# ãƒ†ã‚¹ãƒˆ ID
 WAIC-TEST-0036-02
 
-# ƒeƒXƒg‚Ìƒ^ƒCƒgƒ‹
-ƒ†[ƒUƒCƒ“ƒ^ƒtƒF[ƒXƒRƒ“ƒ|[ƒlƒ“ƒg‚ªƒtƒH[ƒJƒX‚ðŽó‚¯‚Æ‚Á‚½‚Æ‚«‚Ì’ñŽ¦‚ð•ÏX‚·‚é‚½‚ß‚ÉACSS ‚ðŽg—p‚·‚é
+# ãƒ†ã‚¹ãƒˆã®ã‚¿ã‚¤ãƒˆãƒ«
+CSSã«ã‚ˆã‚‹èƒŒæ™¯è‰²ã®é©ç”¨ (ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã•ã‚ŒãŸå…¥åŠ›ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰)
 
-# ƒeƒXƒg‚Ì–Ú“I
-ƒtƒH[ƒJƒX‚ðŽó‚¯Žæ‚Á‚½—v‘f‚Ì”wŒi–”‚Íƒ{[ƒ_[‚ÌF‚ª•Ï‰»‚·‚é‚±‚Æ‚ðŠm”F‚µA‚»‚Ì—v‘f‚ªƒtƒH[ƒJƒX‚ðŽ¸‚Á‚½‚Æ‚«A”wŒi–”‚Íƒ{[ƒ_[‚ÌF‚Ì•ÏX‚ªœ‹Ž‚³‚ê‚é‚±‚Æ‚ðŠm”F‚·‚éB
+# ãƒ†ã‚¹ãƒˆã®ç›®çš„
+CSS ã®ç–‘ä¼¼è¦ç´ ã§ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’å—ã‘å–ã£ãŸå…¥åŠ›ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ãŒå¼·èª¿è¡¨ç¤ºã•ã‚Œã‚‹
 
-# ƒeƒXƒg‚Ì‘ÎÛ‚Æ‚È‚é’B¬Šî€ (•¡”)
+# ãƒ†ã‚¹ãƒˆã®å¯¾è±¡ã¨ãªã‚‹é”æˆåŸºæº– (è¤‡æ•°)
 1.4.1
 2.4.7
 
-# ŠÖ˜A‚·‚é’B¬•û–@ (•¡”)
-‚È‚µ
+# é–¢é€£ã™ã‚‹é”æˆæ–¹æ³• (è¤‡æ•°)
+ãªã—
 
-# ƒeƒXƒgƒR[ƒh (ƒeƒXƒgƒtƒ@ƒCƒ‹‚Ö‚ÌƒŠƒ“ƒN)
+# ãƒ†ã‚¹ãƒˆã‚³ãƒ¼ãƒ‰ (ãƒ†ã‚¹ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã¸ã®ãƒªãƒ³ã‚¯)
 [WAIC-CODE-0036-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0036-02.html)
 
-# ƒeƒXƒgƒR[ƒh‚Ìƒ\[ƒX (”²ˆ)
+# ãƒ†ã‚¹ãƒˆã‚³ãƒ¼ãƒ‰ã®ã‚½ãƒ¼ã‚¹ (æŠœç²‹)
 ```HTML
 <form method="post" action="form.php">
-      <p><label for="fname">–¼‘O: </label>
+      <p><label for="fname">åå‰: </label>
         <input class="text" type="text" name="fname" id="fname" />
       </p>
       <p>
-        <input type="radio" name="sex" value="male" id="sm" /> <label for="sm">’j«</label><br />
-        <input type="radio" name="sex" value="female" id="sf" /> <label for="sf">—«</label>
+        <input type="radio" name="sex" value="male" id="sm" /> <label for="sm">ç”·æ€§</label><br />
+        <input type="radio" name="sex" value="female" id="sf" /> <label for="sf">å¥³æ€§</label>
       <p>
     </form>
 ```
@@ -41,23 +41,23 @@ WAIC-TEST-0036-02
       }
 ```
 
-# ƒeƒXƒgŽè‡ (Ž‹Šo‰{——ŠÂ‹«)
-ƒeƒXƒgƒtƒ@ƒCƒ‹‚ð‘€ì‚µAŒ‹‰Ê‚ðŠm”F
+# ãƒ†ã‚¹ãƒˆæ‰‹é † (è¦–è¦šé–²è¦§ç’°å¢ƒ)
+ãƒ†ã‚¹ãƒˆãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ“ä½œã—ã€çµæžœã‚’ç¢ºèª
 
-# Šú‘Ò‚³‚ê‚éŒ‹‰Ê (Ž‹Šo‰{——ŠÂ‹«)
-ƒ}ƒEƒXA‚Ü‚½‚ÍƒL[ƒ{[ƒh‘€ì‚Å“ü—ÍƒtƒB[ƒ‹ƒh‚ªƒtƒH[ƒJƒX‚ðŽó‚¯Žæ‚Á‚½‚Æ‚«‚É”wŒiF‚ª“K—p‚³‚êAƒtƒH[ƒJƒX‚ªŠO‚ê‚½Û‚ÉA”wŒiF‚Ì•ÏX‚ªœ‹Ž‚³‚ê‚éB
+# æœŸå¾…ã•ã‚Œã‚‹çµæžœ (è¦–è¦šé–²è¦§ç’°å¢ƒ)
+ãƒžã‚¦ã‚¹ã€ã¾ãŸã¯ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰æ“ä½œã§å…¥åŠ›ãƒ•ã‚£ãƒ¼ãƒ«ãƒ‰ãŒãƒ•ã‚©ãƒ¼ã‚«ã‚¹ã‚’å—ã‘å–ã£ãŸã¨ãã«èƒŒæ™¯è‰²ãŒé©ç”¨ã•ã‚Œã€ãƒ•ã‚©ãƒ¼ã‚«ã‚¹ãŒå¤–ã‚ŒãŸéš›ã«ã€èƒŒæ™¯è‰²ã®å¤‰æ›´ãŒé™¤åŽ»ã•ã‚Œã‚‹ã€‚
 
-# ƒeƒXƒgŽÀŽ{Žž‚Ì’ˆÓ“_ (Ž‹Šo‰{——ŠÂ‹«)
-‚È‚µ
+# ãƒ†ã‚¹ãƒˆå®Ÿæ–½æ™‚ã®æ³¨æ„ç‚¹ (è¦–è¦šé–²è¦§ç’°å¢ƒ)
+ãªã—
 
-# ƒeƒXƒgŽè‡ (‰¹º‰{——ŠÂ‹«)
-‚È‚µ
+# ãƒ†ã‚¹ãƒˆæ‰‹é † (éŸ³å£°é–²è¦§ç’°å¢ƒ)
+ãªã—
 
-# Šú‘Ò‚³‚ê‚éŒ‹‰Ê (‰¹º‰{——ŠÂ‹«)
-‚È‚µ
+# æœŸå¾…ã•ã‚Œã‚‹çµæžœ (éŸ³å£°é–²è¦§ç’°å¢ƒ)
+ãªã—
 
-# ƒeƒXƒgŽÀŽ{Žž‚Ì’ˆÓ“_ (‰¹º‰{——ŠÂ‹«)
-‚È‚µ
+# ãƒ†ã‚¹ãƒˆå®Ÿæ–½æ™‚ã®æ³¨æ„ç‚¹ (éŸ³å£°é–²è¦§ç’°å¢ƒ)
+ãªã—
 
-# ŠÖ˜A‚·‚é—v‘f‚â‘®«
-‚È‚µ
+# é–¢é€£ã™ã‚‹è¦ç´ ã‚„å±žæ€§
+ãªã—
