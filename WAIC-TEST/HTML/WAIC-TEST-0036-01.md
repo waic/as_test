@@ -1,32 +1,32 @@
-# �e�X�g ID
+# テスト ID
 WAIC-TEST-0036-01
 
-# �e�X�g�̃^�C�g��
-���[�U�C���^�t�F�[�X�R���|�[�l���g���t�H�[�J�X���󂯂Ƃ����Ƃ��̒񎦂�ύX���邽�߂ɁACSS ���g�p����
+# テストのタイトル
+CSSによる背景色の適用 (フォーカスされたリンク要素)
 
-# �e�X�g�̖ړI
-�t�H�[�J�X���󂯎�����v�f�̔w�i���̓{�[�_�[�̐F���ω����邱�Ƃ��m�F���A���̗v�f���t�H�[�J�X���������Ƃ��A�w�i���̓{�[�_�[�̐F�̕ύX����������邱�Ƃ��m�F����B
+# テストの目的
+フォーカスを受け取った要素の背景又はボーダーの色が変化することを確認し、その要素がフォーカスを失ったとき、背景又はボーダーの色の変更が除去されることを確認する。
 
-# �e�X�g�̑ΏۂƂȂ�B��� (����)
+# テストの対象となる達成基準 (複数)
 1.4.1
 2.4.7
 
-# �֘A����B�����@ (����)
-�Ȃ�
+# 関連する達成方法 (複数)
+なし
 
-# �e�X�g�R�[�h (�e�X�g�t�@�C���ւ̃����N)
+# テストコード (テストファイルへのリンク)
 [WAIC-CODE-0036-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0036-01.html)
 
-# �e�X�g�R�[�h�̃\�[�X (����)
+# テストコードのソース (抜粋)
 ```HTML
 <ul id="mainnav">
-  <li class="page_item">�z�[��</li>
-  <li class="page_item"><a href="/services">�T�[�r�X���e</a></li>
-  <li class="page_item"><a href="/projects">�v���W�F�N�g�Љ�</a></li>
-  <li class="page_item"><a href="/demos">�f���̂��ē�</a></li>
-  <li class="page_item"><a href="/about-us">��ЊT�v</a></li>
-  <li class="page_item"><a href="/contact-us">���₢���킹</a></li>
-  <li class="page_item"><a href="/links">�����N�W</a></li>
+  <li class="page_item">ホーム</li>
+  <li class="page_item"><a href="/services">サービス内容</a></li>
+  <li class="page_item"><a href="/projects">プロジェクト紹介</a></li>
+  <li class="page_item"><a href="/demos">デモのご案内</a></li>
+  <li class="page_item"><a href="/about-us">会社概要</a></li>
+  <li class="page_item"><a href="/contact-us">お問い合わせ</a></li>
+  <li class="page_item"><a href="/links">リンク集</a></li>
 </ul>
 ```
 ```CSS
@@ -37,23 +37,23 @@ WAIC-TEST-0036-01
 </ul>
 ```
 
-# �e�X�g�菇 (���o�{����)
-�e�X�g�t�@�C���𑀍삵�A���ʂ��m�F
+# テスト手順 (視覚閲覧環境)
+テストファイルを操作し、結果を確認
 
-# ���҂���錋�� (���o�{����)
-�}�E�X�A�܂��̓L�[�{�[�h����Ń����N�����̗v�f���t�H�[�J�X���󂯎�����Ƃ��ɔw�i�F���K�p����A�t�H�[�J�X���O�ꂽ�ۂɁA�w�i�F�̕ύX�����������B
+# 期待される結果 (視覚閲覧環境)
+マウス、またはキーボード操作でリンク部分の要素がフォーカスを受け取ったときに背景色が適用され、フォーカスが外れた際に、背景色の変更が除去される。
 
-# �e�X�g���{���̒��ӓ_ (���o�{����)
-�Ȃ�
+# テスト実施時の注意点 (視覚閲覧環境)
+なし
 
-# �e�X�g�菇 (�����{����)
-�Ȃ�
+# テスト手順 (音声閲覧環境)
+なし
 
-# ���҂���錋�� (�����{����)
-�Ȃ�
+# 期待される結果 (音声閲覧環境)
+なし
 
-# �e�X�g���{���̒��ӓ_ (�����{����)
-�Ȃ�
+# テスト実施時の注意点 (音声閲覧環境)
+なし
 
-# �֘A����v�f�⑮��
-�Ȃ�
+# 関連する要素や属性
+なし
