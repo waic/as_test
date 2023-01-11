@@ -1,22 +1,22 @@
-# �e�X�g ID
+# テスト ID
 WAIC-TEST-0035-04
 
-# �e�X�g�̃^�C�g��
-�����ړI�̉摜��t�����邽�߂ɁACSS ���g�p����icontent �v���p�e�B�j
+# テストのタイトル
+CSS による装飾画像の付加（content プロパティ）
 
-# �e�X�g�̖ړI
-:before �y�� :after �^���v�f�Ƒg�ݍ��킹�Ďg�p���ꂽcontent �v���p�e�B�Ŏw�肳�ꂽ�����ړI�̉摜���A�ǂݏグ���Ȃ����m�F����B
+# テストの目的
+:before 及び :after 疑似要素と組み合わせて使用されたcontent プロパティで指定された装飾目的の画像が、読み上げられないか確認する。
 
-# �e�X�g�̑ΏۂƂȂ�B��� 
+# テストの対象となる達成基準 
 1.1.1
 
-# �֘A����B�����@ (����)
+# 関連する達成方法 (複数)
 F3
 
-# �e�X�g�R�[�h (�e�X�g�t�@�C���ւ̃����N)
+# テストコード (テストファイルへのリンク)
 [WAIC-CODE-0035-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0035-04.html)
 
-# �e�X�g�R�[�h�̃\�[�X (����)
+# テストコードのソース (抜粋)
 ```CSS
 li a {
 	display: block;
@@ -40,28 +40,28 @@ li a:after {
 ```
 ```HTML
 <ul>
-	<li><a href="#">�����N�e�L�X�g1</a></li>
-	<li><a href="#">�����N�e�L�X�g2</a></li>
-    <li><a href="#">�����N�e�L�X�g3</a></li>
+	<li><a href="#">リンクテキスト1</a></li>
+	<li><a href="#">リンクテキスト2</a></li>
+    <li><a href="#">リンクテキスト3</a></li>
 </ul>
 ```
-# �e�X�g�菇 (���o�{����)
-�Ȃ�
+# テスト手順 (視覚閲覧環境)
+なし
 
-# ���҂���錋�� (���o�{����)
-�Ȃ�
+# 期待される結果 (視覚閲覧環境)
+なし
 
-# �e�X�g���{���̒��ӓ_ (���o�{����)
-�Ȃ�
+# テスト実施時の注意点 (視覚閲覧環境)
+なし
 
-# �e�X�g�菇 (�����{����)
-�e�X�g�t�@�C���𑀍삵�A���ʂ��m�F�B
+# テスト手順 (音声閲覧環境)
+テストファイルを操作し、結果を確認。
 
-# ���҂���錋�� (�����{����)
-�摜�Ƃ��ēǂݏグ���Ȃ��B
+# 期待される結果 (音声閲覧環境)
+画像として読み上げられない。
 
-# �e�X�g���{���̒��ӓ_ (�����{����)
-�Ȃ�
+# テスト実施時の注意点 (音声閲覧環境)
+なし
 
-# �֘A����v�f�⑮��
-�Ȃ�
+# 関連する要素や属性
+なし
