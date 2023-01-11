@@ -12,7 +12,7 @@ CSSによる背景色の適用 (フォーカスされたリンク要素)
 2.4.7
 
 # 関連する達成方法 (複数)
-なし
+C15
 
 # テストコード (テストファイルへのリンク)
 [WAIC-CODE-0036-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0036-01.html)
@@ -34,7 +34,6 @@ CSSによる背景色の適用 (フォーカスされたリンク要素)
   background-color: #DCFFFF;
   color:#000066;
 }
-</ul>
 ```
 
 # テスト手順 (視覚閲覧環境)
