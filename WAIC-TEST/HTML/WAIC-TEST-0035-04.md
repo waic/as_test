@@ -11,7 +11,7 @@ CSS の疑似要素で指定された装飾目的の画像が読み上げられ�
 1.1.1
 
 # 関連する達成方法 (複数)
-F3
+C9
 
 # テストコード (テストファイルへのリンク)
 [WAIC-CODE-0035-03](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0035-04.html)
