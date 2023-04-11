@@ -9,11 +9,19 @@
 <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
 	
 <style type="text/css">
-      input.text:focus {
+input.text {
+        background-color: #000;
+        color: #7FFF00; 
+      }
+input.text:focus {
         background-color: #7FFF00; 
         color: #000;
       }
-      input[type=checkbox]:focus + label, input[type=radio]:focus + label {
+input[type=checkbox] + label, input[type=radio] + label {
+        background-color: #000;  
+        color: #FF6;
+      }      
+input[type=checkbox]:focus + label, input[type=radio]:focus + label {
         background-color: #FF6; 
         color: #000; 
       }
