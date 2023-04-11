@@ -5,14 +5,14 @@ WAIC-TEST-0036-02
 CSSによる背景色の適用 (フォーカスされた入力フィールド)
 
 # テストの目的
-CSS の疑似要素でフォーカスを受け取った入力フィールドが強調表示される
+フォーカスを受け取った入力フィールドの背景色が変更される
 
 # テストの対象となる達成基準 (複数)
 1.4.1
 2.4.7
 
 # 関連する達成方法 (複数)
-C15
+なし
 
 # テストコード (テストファイルへのリンク)
 [WAIC-CODE-0036-02](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0036-02.html)
@@ -31,11 +31,19 @@ C15
 ```
 
 ```CSS
- input.text:focus {
+input.text {
+        background-color: #000;
+        color: #7FFF00; 
+      }
+input.text:focus {
         background-color: #7FFF00; 
         color: #000;
       }
-      input[type=checkbox]:focus + label, input[type=radio]:focus + label {
+input[type=checkbox] + label, input[type=radio] + label {
+        background-color: #000;  
+        color: #FF6;
+      }      
+input[type=checkbox]:focus + label, input[type=radio]:focus + label {
         background-color: #FF6; 
         color: #000; 
       }
@@ -45,7 +53,7 @@ C15
 
 ## テスト手順 1.
 
-1. 入力フィールドにフォーカスをあわせる。
+1. 入力フィールドにフォーカスを移動する。
 2. 入力フィールドのフォーカスを外す。
 
 ## 期待される結果 1.
