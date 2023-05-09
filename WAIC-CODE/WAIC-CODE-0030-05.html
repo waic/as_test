@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0030-05</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+<script type="text/javascript">
+	//<![CDATA[
+	// array or ids on the required fields on this page
+	var requiredIds = new Array( "usrname", "pwd", "os_pc", "os_mobile", "yes", "no", "pctk", "nvda", "other");
+	// function that is run after the page has loaded to set the aria-required property on each of the
+	//elements in requiredIds array of id values
+	function setRequired(){
+	if (requiredIds){
+		var field;
+		for (var i = 0; i< requiredIds.length; i++){
+			field = document.getElementById(requiredIds[i]);
+			field.setAttribute("aria-required", "true");
+		}
+	}
+	}
+	window.onload=setRequired;
+	//]]>
+</script>
+</head>
+<body>
+<p>以下のデータを入力してください。入力必須項目はプログラムによって特定されており、併せて[*]も記載されています。</p>
+	<form action="#" method="post" onsubmit="return errorCheck1()">
+	<p>
+		<label for="usrname">ログインネーム *: </label>
+		<input type="text" name="usrname" id="usrname">
+	</p>
+	<p>
+		<label for="pwd">パスワード *: </label>
+		<input type="password" name="pwd" id="pwd" size="12">
+	</p>
+	<p>
+		<label for="os_pc">利用しているOS(PC) *: </label>
+		<select id="os_pc" name="os_pc">
+		<option value="Windows">Windows</option>
+		<option value="macOS">macOS</option>
+		</select>
+	</p>
+	<p>
+		<label for="os_mobile">利用しているOS(モバイル) *: </label>
+		<select id="os_mobile" name="OS_mobile">
+		<option value="">選択してください</option>
+		<option value="iOS">iOS</option>
+		<option value="Android">Android</option>
+		</select>
+	</p>
+	<p>スクリーンリーダーの利用状況</p>
+		<div>
+		<input type="radio" id="yes" name="sr" value="1"> *: 
+		<label for="yes">利用している</label>
+		</div>
+		<div>
+		<input type="radio" id="no" name="sr" value="2"> *: 
+		<label for="no">利用していない</label>
+		</div>
+	<p>利用しているスクリーンリーダー</p>
+		<div>
+		<input type="checkbox" id="pctk" name="pctk"> *: 
+		<label for="pctk">PC-Talker</label>
+		</div>
+		<div>
+		<input type="checkbox" id="nvda" name="nvda"> *: 
+		<label for="nvda">NVDA</label>
+		</div>
+	<p>
+		<label for="other">その他コメント *: </label>
+		<textarea id="other" name="other1"></textarea>
+	</p>
+</form>
+</body>
+</html>
