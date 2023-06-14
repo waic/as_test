@@ -52,15 +52,13 @@ ARIA2
 		<option value="Android">Android</option>
 		</select>
 	</p>
-	<p>スクリーンリーダーの利用状況</p>
-		<div>
-		<input type="radio" id="yes" name="sr" value="1" aria-required="true"/>[*]
+	<fieldset aria-required="true">
+		<legend>スクリーンリーダーの利用状況</legend>
+		<input type="radio" id="yes" name="sr" value="1"/>[*]
 		<label for="yes">利用している</label>
-		</div>
-		<div>
-		<input type="radio" id="no" name="sr" value="2" aria-required="true"/>[*]
+		<input type="radio" id="no" name="sr" value="2"/>[*]
 		<label for="no">利用していない</label>
-		</div>
+	</fieldset>
 	<p>利用しているスクリーンリーダー</p>
 		<div>
 		<input type="checkbox" id="pctk" name="pctk" aria-required="true"/>[*]
@@ -96,7 +94,7 @@ ARIA2
 		<select id="os_pc1" name="os_pc1">[*]
 		<option value="Windows">Windows</option>
 		<option value="macOS">macOS</option>
-	</select>
+		</select>
 	</p>
 	<p>
 		<label for="os_mobile1">利用しているOS(モバイル)</label>
@@ -106,15 +104,13 @@ ARIA2
 		<option value="Android">Android</option>
 		</select>
 	</p>
-	<p>スクリーンリーダーの利用状況</p>
-		<div>
+	<fieldset>
+		<legend>スクリーンリーダーの利用状況</legend>
 		<input type="radio" id="yes1" name="sr1" value="1">[*]
 		<label for="yes1">利用している</label>
-		</div>
-		<div>
 		<input type="radio" id="no1" name="sr1" value="2">[*]
 		<label for="no1">利用していない</label>
-		</div>
+	</fieldset>
 	<p>利用しているスクリーンリーダー</p>
 		<div>
 		<input type="checkbox" id="pctk1" name="pctk1">[*]
