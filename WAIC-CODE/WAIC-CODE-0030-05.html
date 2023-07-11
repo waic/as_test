@@ -9,7 +9,7 @@
 <script type="text/javascript">
 	//<![CDATA[
 	// array or ids on the required fields on this page
-	var requiredIds = new Array( "usrname", "pwd", "os_pc", "os_mobile", "yes", "no", "pctk", "nvda", "other");
+	var requiredIds = new Array( "usrname", "pwd", "os_pc", "os_mobile", "sr", "sr_yes", "sr_no", "pctk", "nvda", "other");
 	// function that is run after the page has loaded to set the aria-required property on each of the
 	//elements in requiredIds array of id values
 	function setRequired(){
@@ -51,7 +51,8 @@
 		<option value="Android">Android</option>
 		</select>
 	</p>
-	<p>スクリーンリーダーの利用状況</p>
+	<fieldset id="sr">
+		<legend>スクリーンリーダーの利用状況</legend>
 		<div>
 		<input type="radio" id="yes" name="sr" value="1"> *: 
 		<label for="yes">利用している</label>
@@ -60,6 +61,7 @@
 		<input type="radio" id="no" name="sr" value="2"> *: 
 		<label for="no">利用していない</label>
 		</div>
+	</fieldset>	
 	<p>利用しているスクリーンリーダー</p>
 		<div>
 		<input type="checkbox" id="pctk" name="pctk"> *: 
