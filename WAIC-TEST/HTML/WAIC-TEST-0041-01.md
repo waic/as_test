@@ -22,7 +22,8 @@ H7
 <h2 id="headline">東海岸で暴風雨</h2>
 
 <p>豪雨と強風が東海岸を襲い、沿岸の多くの町で洪水が発生した。
-<a id="p123" href="news.html" aria-labelledby="p123 headline">続きを読む...</a></p>
+    <a id="p123" href="news.html" aria-labelledby="headline p123">続きを読む...</a>
+</p>
 ```
 
 # テスト手順と期待される結果 (視覚閲覧環境)
