@@ -5,7 +5,7 @@ WAIC-TEST-0040-01
 aria-labelledby 属性による複数のラベルの提供（input 要素 : 複数のaria-labelledby属性値）
 
 # テストの目的
-input 要素に複数の aria-labelledby 属性でラベルの提供をおこなった場合、指定された順番でラベルの提供が行われるかの確認
+input 要素に複数の aria-labelledby 属性でラベルの提供をおこなった場合、属性値で指定された順番でラベルが読み上げられるかの確認
 
 # テストの対象となる達成基準 (複数)
 1.1.1
@@ -21,9 +21,9 @@ ARIA9
 ```HTML
 <form>
 <p>
-    <span id="timeout-label" tabindex="-1"><label for="timeout-duration">タイムアウトを延長する</label></span>
+    <span id="timeout-label" tabindex="-1"><label for="timeout-duration">タイムアウトの延長</label></span>
     <input type="text" size="3" id="timeout-duration" value="20" 
-        aria-labelledby="timeout-duration timeout-unit timeout-label">
+        aria-labelledby="timeout-label timeout-duration timeout-unit">
     <span id="timeout-unit" tabindex="-1">分</span>
 </p>
 </form>
@@ -43,7 +43,7 @@ ARIA9
 読み上げる内容を確認する。
 
 # 期待される結果 (音声閲覧環境)
-テキスト入力フィールドのラベルとして「20分タイムアウトを延長する」と読み上げられる。
+テキスト入力フィールドのラベルとして「タイムアウトの延長20分」と読み上げられる。
 
 # テスト実施時の注意点 (音声閲覧環境)
 なし
