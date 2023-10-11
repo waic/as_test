@@ -1,5 +1,5 @@
 # テスト ID
-WAIC-TEST-0042-01
+WAIC-TEST-0043-01
 
 # テストのタイトル
 リージョンとランドマークに名前 (name) を付けるために、aria-labelledby を使用する
@@ -15,7 +15,7 @@ complementary ランドマークに対して aria-labelledby を使用して名�
 ARIA13
 
 # テストコード (テストファイルへのリンク)
-[WAIC-CODE-0042-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0042-01.html)
+[WAIC-CODE-0043-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0043-01.html)
 
 # テストコードのソース (抜粋)
 ```HTML
