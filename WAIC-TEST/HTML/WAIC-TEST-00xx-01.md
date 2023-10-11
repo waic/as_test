@@ -6,6 +6,7 @@ WAIC-TEST-00xx-01
 
 # テストの目的
 
+ウェブページのセクションに対して、プログラムによるアクセスを提供する
 
 # テストの対象となる達成基準 (複数)
 1.3.1, 2.4.1
@@ -18,27 +19,48 @@ H69, SCR28
 
 # テストコードのソース (抜粋)
 ```HTML
-<div id="header" role="banner">バナー画像と導入部のタイトル</div>
-<div id="sitelookup" role="search">....</div>
-<div id="nav" role="navigation">... ここにリンクのリスト ... </div>
-<div id="content" role="main"> ... オタワはカナダの首都 ...</div>
+<div id="header" role="banner">世界への扉 旅行プランをご紹介</div>
+<div id="sitelookup" role="search">.... サイト検索 ....</div>
+<div id="nav" role="navigation">.... ホーム ....</div>
+<div id="content" role="main"> .... オタワ ....</div>
 <div id="rightsideadvert" role="complementary">.... ここに広告 ...</div>
 <div id="footer" role="contentinfo">(c)フリーダムカンパニー、123 フリーダムウェイ、ヘルプビル、USA</div>
 ```
 
 # テスト手順と期待される結果 (視覚閲覧環境)
 
+テスト不要
+
 ## テスト手順
+
+なし
 
 ## 期待される結果
 
+なし
+
 # テスト実施時の注意点 (視覚閲覧環境)
+
+なし
 
 # テスト手順 (音声閲覧環境)
 
+ページを一番上から下に向かって読み上げて、ランドマークとその内容を確認する。
+
 # 期待される結果 (音声閲覧環境)
 
+以下のランドマークとその内容が順番に確認できる。
+
+1. バナー(banner) : 「世界への扉 旅行プランをご紹介」見出し レベル1
+2. 検索(search) : 最初のラベルは「サイト検索」
+3. ナビゲーション(navigation) : 最初の要素は「ホーム」リンク
+4. メイン(main) : 最初の要素は「オタワ」見出し レベル1
+5. 補足情報(complementary) : 内容は「ここに広告」
+6. コンテンツ情報(contentinfo) : 内容は「(c)フリーダムカンパニー（以下略）」
+
 # テスト実施時の注意点 (音声閲覧環境)
+
+期待されるもの以外のランドマークが確認されないこと。
 
 # 関連する要素や属性
 div要素, role属性
