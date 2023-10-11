@@ -1,5 +1,5 @@
 # テスト ID
-WAIC-TEST-00xx-01
+WAIC-TEST-0045-01
 
 # テストのタイトル
 role 属性による見出しの特定(見出しレベルを指定しない場合)
@@ -14,7 +14,7 @@ role="heading"を適用した要素が、支援技術に見出しとして認識
 ARIA12
 
 # テストコード (テストファイルへのリンク)
-[WAIC-CODE-00xx-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-00xx-01.html)
+[WAIC-CODE-0045-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0045-01.html)
 
 # テストコードのソース (抜粋)
 ```HTML
