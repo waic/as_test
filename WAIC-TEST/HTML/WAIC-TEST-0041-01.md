@@ -12,7 +12,7 @@ a要素の内容が aria-labelledby 属性が参照する複数の要素の名�
 2.4.4
 
 # 関連する達成方法 (複数)
-H7
+ARIA7
 
 # テストコード (テストファイルへのリンク)
 [WAIC-CODE-0041-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0041-01.html)
