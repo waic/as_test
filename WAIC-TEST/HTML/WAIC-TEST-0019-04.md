@@ -59,6 +59,10 @@ H80
 # テスト実施時の注意点 (音声閲覧環境)
 なし
 
+# 期待される結果 (音声閲覧環境)に対する補足事項
+ASテストは、WCAG 2.1 達成方法集に掲載されている各事例の検証を目的としていない。
+本テストの内容は [H80](https://waic.jp/translations/WCAG21/Techniques/html/H80) と類似したものとなるが、テスト実施時の期待される結果については [達成基準 2.4.4 リンクの目的](https://waic.jp/translations/WCAG21/Understanding/link-purpose-in-context) に記載される以下についてを判断するものとしている。
+
 # 関連する要素や属性
 a 要素 , h 要素
 
