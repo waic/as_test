@@ -19,12 +19,34 @@ H69, SCR28
 
 # テストコードのソース (抜粋)
 ```HTML
-<div id="header" role="banner">世界への扉 旅行プランをご紹介</div>
-<div id="sitelookup" role="search">.... サイト検索 ....</div>
-<div id="nav" role="navigation">.... ホーム ....</div>
-<div id="content" role="main"> .... オタワ ....</div>
-<div id="rightsideadvert" role="complementary">.... ここに広告 ...</div>
-<div id="footer" role="contentinfo">(c)フリーダムカンパニー、123 フリーダムウェイ、ヘルプビル、USA</div>
+<div id="header" role="banner">
+    <h1>世界への扉 旅行プランをご紹介</h1>
+</div>
+<div id="sitelookup" role="search">
+    <form>
+        <label for="search">サイト検索</label>
+        <input type="text" id="search">
+        <button type="submit">検索</button>
+    </form>
+</div>
+<div id="nav" role="navigation">
+    <ul>
+        <li><a href="#">ホーム</a></li>
+        <li><a href="#">サービス</a></li>
+        <li><a href="#">会社概要</a></li>
+        <li><a href="#">お問い合わせ</a></li>
+    </ul>
+</div>
+<div id="content" role="main">
+    <h2>オタワ</h2>
+    ... オタワはカナダの首都 ...
+</div>
+<div id="rightsideadvert" role="complementary">
+    .... ここに広告 ...
+</div>
+<div id="footer" role="contentinfo">
+    (c)フリーダムカンパニー、123 フリーダムウェイ、ヘルプビル、USA
+</div>
 ```
 
 # テスト手順と期待される結果 (視覚閲覧環境)
@@ -49,7 +71,7 @@ H69, SCR28
 
 # 期待される結果 (音声閲覧環境)
 
-以下のランドマークとその内容が順番に確認できる。
+以下の順番で、ランドマークとその内容の組み合わせが読み上げられる。
 
 1. バナー(banner) : 「世界への扉 旅行プランをご紹介」見出し レベル1
 2. 検索(search) : 最初のラベルは「サイト検索」
