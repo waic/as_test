@@ -20,7 +20,7 @@ ARIA13
 # テストコードのソース (抜粋)
 ```HTML
 <div role="application" aria-labelledby="p123" aria-describedby="info">
-    <h1 id="p123">カレンダー<h1>
+    <h1 id="p123">カレンダー</h1>
     <p id="info">
     ボストンレッドソックスの試合スケジュールのカレンダーです。
     </p>
