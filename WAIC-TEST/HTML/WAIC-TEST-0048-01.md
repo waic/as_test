@@ -19,10 +19,11 @@ ARIA17
 # テストコードのソース (抜粋)
 ```HTML
 <div role="group" aria-labelledby="zip">
+<p>前半3桁と後半4桁に分けて入力します</p>
 <span id="zip">郵便番号</span> 
 <span style="color: #D90D0D;"> * </span>
-<input size="3" type="text" aria-required="true" title="前半3桁" />-
-<input size="4" type="text" aria-required="true" title="後半4桁" />
+<input size="3" type="text" required title="前半3桁" />-
+<input size="4" type="text" required title="後半4桁" />
 </div>
 ```
 
