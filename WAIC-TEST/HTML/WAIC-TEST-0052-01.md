@@ -5,8 +5,7 @@ WAIC-TEST-0052-01
 エラーフィールドを示すために aria-invalid を使用する
 
 # テストの目的
-
-complementary ランドマークに対して aria-labelledby を使用して名前 (name) を与えた場合に、ランドマークと名前 (name) が認識され、通知されるかどうかを確認する。
+フォーム入力フィールドに対して、JavaScript によって aria-invalid 属性が追加された際、スクリーンリーダーが認識し、通知するかどうかを確認する。
 
 # テストの対象となる達成基準 (複数)
 3.3.1
@@ -18,13 +17,12 @@ ARIA21
 [WAIC-CODE-0052-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0052-01.html)
 
 # テストコードのソース (抜粋)
-```HTML
-<div role="complementary" aria-labelledby="hdr1">
-  <h1 id="hdr1">
-    トップニュース記事
-  </h1>
-  <p>記事本文...</p>
-</div>
+```JavaScript
+if ($('#first').val() === '') {
+  $('#first').attr("aria-invalid", "true");
+  $("label[for='first']").addClass('failed');
+  eFlag++;
+}
 ```
 
 # テスト手順と期待される結果 (視覚閲覧環境)
