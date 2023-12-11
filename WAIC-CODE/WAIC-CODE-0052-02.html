@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0052-01</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+<style type="text/css">
+    label.failed {
+        border: red thin solid;
+    }
+    </style>
+</head>
+
+</head>
+<body>
+<h2 tabindex="-1" id="errText" aria-live="assertive"></h2>
+<form name="signup" id="signup" method="post" action="#">
+  <p>
+    <label for="email">電子メールアドレス (必須)</label><br>
+    <input type="text" name="email" id="email">
+  </p>
+  <p>
+    <input type="submit" name="button" id="button" value="送信">
+  </p>
+</form>
+
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script> 
+<script>
+$(document).ready(function(e) {
+	$('#signup').submit(function() {
+		$('#errText').html('');
+        $('input').removeAttr("aria-invalid");
+        $('label').removeAttr("class");
+        var eFlag = 0;
+
+        if ($('#email').val() === '') {
+            $('#email')
+                .attr("aria-invalid", "true")
+                .attr("class", "error")
+                .attr("aria-describedby", "err_1")
+            ;
+            $("label[for='email']").addClass('failed');
+
+            // Suffix error text: 
+            $('#email').parent().append('<span class="errtext" id="err_1">エラー: データが入力されていません</span>');
+            $("label[for='email']").addClass('failed');
+            eFlag++;
+        } else if ($('#email').val().indexOf('@') < 0) {
+            $('#email')
+                .attr("aria-invalid", "true")
+                .attr("class", "error")
+                .attr("aria-describedby", "err_2")
+            ;
+            $("label[for='email']").addClass('failed');
+
+            // Suffix error text: 
+            $('#email').parent().append('<span class="errtext" id="err_2">エラー: データの形式が正しくありません</span>');
+            eFlag++;
+        }
+
+        if (eFlag > 0) {
+            $('#errText').html("エラーがあります (" + eFlag + "項目)").focus();
+        }
+        return false;
+	});
+});
+</script>
+
+</body>
+</html>
