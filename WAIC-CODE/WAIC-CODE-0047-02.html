@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>WAIC-CODE-0047-02</title>
+    <meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+    <style>
+    #mysldr {
+      width: 200px;
+      height: 10px;
+      background-color: #ddd;
+      position: relative;
+      cursor: pointer;
+      margin: 10px ;
+      outline: none;
+    }
+
+    #mysldr-handle {
+      width: 20px;
+      height: 20px;
+      background-color: #3498db;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+<body>
+
+<p><span id="mysldr-lbl">旅行の日数</span>を選択してください。</p>
+<div id="mysldr" role="slider" aria-labelledby="mysldr-lbl" tabindex="0" aria-valuenow="15">
+  <div id="mysldr-handle"></div>
+</div>
+<!--<p>選択された日数: 15</p>-->
+    
+</body>
+</html>
