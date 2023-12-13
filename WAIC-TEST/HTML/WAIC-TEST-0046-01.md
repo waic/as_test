@@ -25,9 +25,9 @@ ARIA15
 # テストコードのソース (抜粋)
 
 ```HTML
-<img src="./img/WAIC-CODE-0046-01.jpg" alt="レディ・マクベス" aria-describedby="p1">
+<img src="img/logo.png" alt="ウェブアクセシビリティ基盤委員会" aria-describedby="p1">
 <p id="p1">
-    この絵画は1730年に遡り、キャンバスに油彩で描かれています。作者はジャン＝ギ・ミロームで、表現しているのは深い瞑想にふける若き貴族の姿です。
+    画像にはウェブアクセシビリティ基盤委員会(WAIC)のロゴと「Web Accessibility Infrastructure Committee ウェブアクセシビリティ基盤委員会」という文字が書かれています。
 </p>
 ```
 
