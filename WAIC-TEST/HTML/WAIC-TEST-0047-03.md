@@ -20,7 +20,7 @@ ARIA9、ARIA16
 # テストコードのソース (抜粋)
 ```HTML
 <label id="l1" for="f3">通知する</label>
-<select name="amt" id="f3" aria-labelledby="l1 f3 l2">
+<select name="amt" id="f3" aria-labelledby="f3 l2 l1">
   <option value="1">1</option>
   <option value="2">2</option>
 </select>
@@ -40,7 +40,7 @@ ARIA9、ARIA16
 select要素にフォーカスを合わせ、読み上げ内容を確認
 
 # 期待される結果 (音声閲覧環境)
-「通知 （select要素で選択された値） 日前」としてラベルが通知される
+「1日前に通知する」または「2日前に通知する」のどちらかでラベルが通知される
 
 # テスト実施時の注意点 (音声閲覧環境)
 なし
