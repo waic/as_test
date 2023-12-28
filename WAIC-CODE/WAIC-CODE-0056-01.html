@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0056-01</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+<style id="customStyle">
+        .table {
+            margin: 1em;
+            border-collapse: collapse;
+        }
+        .table td, .table th {
+            padding: 1em;
+            border: 1px solid #000;
+        }
+    </style>
+    <script>
+        function toggleStyles() {
+            var styleElement = document.getElementById('customStyle');
+            var currentStyle = styleElement.innerHTML;
+
+            if (currentStyle.trim() === "") {
+                styleElement.innerHTML = '.table { margin: 1em; border-collapse: collapse; } .table td, .table th { padding: 1em; border: 1px solid #000; }';
+                document.querySelector('button').textContent = 'CSS を無効にする';
+            } else {
+                styleElement.innerHTML = "";
+                document.querySelector('button').textContent = 'CSS を適用する';
+            }
+        }
+    </script>
+</head>
+<body>
+
+<table class="table">
+  <caption>「Web 開発」カテゴリの書籍</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">タイトル</th>
+                    <th scope="col">著者</th>
+                    <th scope="col">発行日</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Web 標準について正しく考える方法</td>
+                    <td>アンドリュー・スタノビッチ</td>
+                    <td>2024年1月</td>
+                  </tr>
+                </tbody>
+              </table>
+<button onclick="toggleStyles()">CSS を無効にする</button>
+</body>
+</html>
