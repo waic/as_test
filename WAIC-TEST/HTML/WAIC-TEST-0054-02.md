@@ -27,9 +27,9 @@ ARIA14
 ```HTML
 <div role="group" aria-labelledby="groupLabel">
     <span id="groupLabel">勤務先電話番号</span>
-    <input type="number" aria-label="市外局番">
-    <input type="number" aria-label="市内局番">
-    <input type="number" aria-label="加入者番号">
+    <input type="text" aria-label="市外局番">
+    <input type="text" aria-label="市内局番">
+    <input type="text" aria-label="加入者番号">
 </div>
 ```
 
@@ -53,7 +53,7 @@ ARIA14
 
 # 期待される結果 (音声閲覧環境)
 
-入力欄のグループに対して付けられた可視ラベルとは別に、それぞれの入力欄に対する名前が通知される
+入力欄のグループに対して付けられた可視ラベル「勤務先電話番号」とは別に、それぞれの入力欄に対して「市外局番」「市内局番」「加入者番号」の名前が通知される
 
 # テスト実施時の注意点 (音声閲覧環境)
 
