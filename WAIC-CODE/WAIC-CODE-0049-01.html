@@ -7,34 +7,6 @@
 <meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
 <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
 <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(e) {
-    $('#trigger-alertDialog').click(function() {
-        $('main').attr('aria-hidden','true');
-        $('body').addClass('show-alert');
-        var lastFocus = document.activeElement;
-        var modalOverlay = $('#modalOverlay');
-        var dialog = $('#alertDialog');
-        $('#firstButton').focus();
-
-        $('#lastElement').focusin(function(e) {
-            $('#firstButton').focus();
-        });
-        $('#firstElement').focusin(function(e) {
-            $('#lastButton').focus();
-        });
-
-        $('[role=alertdialog] button').click(function(e) {
-            $('main').attr('aria-hidden','false');
-            $('body').removeClass('show-alert');
-            lastFocus.focus();
-        });
-        return false;
-    });
-    
-});
-</script>
 <style>
 #modalOverlay {
     display: none;
@@ -75,7 +47,7 @@ $(document).ready(function(e) {
 <main>
     <p>以下に続くボタンを押下すると、エラーメッセージが提示されます。</p>
     <p>メッセージ内に含まれる「戻る」「保存する」のいずれかのボタンを押下すると、メッセージを閉じます。</p>
-    <button id="trigger-alertDialog">エラーを表示</button>
+    <button id="trigger-alertDialog" onclick="showAlertDialog()">エラーを表示</button>
 </main>
 
 <div id="modalOverlay"></div>
@@ -83,10 +55,37 @@ $(document).ready(function(e) {
     <div id="firstElement" tabindex="0"></div>
     <h1 id="alertHeading">エラー</h1>
     <div id="alertText">従業員の生年月日が入社日以降になっています。生年月日と入社日を確認してください。</div>
-    <button id="firstButton">戻る</button>
-    <button id="lastButton">保存する</button>
+    <button id="firstButton" onclick="closeAlertDialog()">戻る</button>
+    <button id="lastButton" onclick="closeAlertDialog()">保存する</button>
     <div id="lastElement" tabindex="0"></div>
 </div>
+
+
+<script>
+var lastFocus;
+var main = document.querySelector('main');
+var body = document.querySelector('body');
+var firstButton = document.querySelector('#firstButton')
+var lastButton = document.querySelector('#lastButton')
+function showAlertDialog(){
+    main.setAttribute('aria-hidden','true')
+    body.setAttribute('class', 'show-alert')
+    lastFocus = document.activeElement;
+    firstButton.focus();
+
+    document.querySelector('#lastElement').addEventListener('focusin', () => {
+        firstButton.focus();
+    });
+    document.querySelector('#firstElement').addEventListener('focusin', () => {
+        lastButton.focus();
+    });
+}
+function closeAlertDialog(){
+    main.setAttribute('aria-hidden','false');
+    body.removeAttribute('class');
+    lastFocus.focus();
+}
+</script>
 
 </body>
 </html>
