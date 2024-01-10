@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>WAIC-CODE-0044-01</title>
+    <meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+    <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+    <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+        }
+
+        #wrapper {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        #header {
+            margin: 10px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+        }
+
+        #sitelookup {
+            background-color: #f2f2f2;
+            padding: 10px 30px;
+        }
+
+        #sitelookup form {
+            display: flex;
+        }
+
+        #sitelookup form label {
+            padding: 5px;
+        }
+
+        #sitelookup form input[type="text"] {
+            flex: 1;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-right: 5px;
+        }
+
+        #sitelookup form button[type="submit"] {
+            padding: 5px 10px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        #nav {
+            background-color: #333;
+            color: #fff;
+        }
+
+        #nav ul {
+            list-style: none;
+            margin: 10px;
+            padding: 0;
+            display: flex;
+        }
+
+        #nav li {
+            margin-right: 20px;
+        }
+
+        #nav a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        #nav a:hover {
+            text-decoration: underline;
+        }
+
+        #nav {
+            background-color: #333;
+            padding: 10px;
+        }
+
+        #content {
+            margin: 10px;
+            padding: 10px;
+            flex: 1;
+        }
+
+        #rightsideadvert {
+            background-color: #f2f2f2;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        #footer {
+            height: 50px;
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="header" role="banner">
+            <h1>世界への扉 旅行プランをご紹介</h1>
+        </div>
+        <div id="sitelookup" role="search">
+            <form>
+                <label for="search">サイト検索</label>
+                <input type="text" id="search">
+                <button type="submit">検索</button>
+            </form>
+        </div>
+        <div id="nav" role="navigation">
+            <ul>
+                <li><a href="#">ホーム</a></li>
+                <li><a href="#">サービス</a></li>
+                <li><a href="#">会社概要</a></li>
+                <li><a href="#">お問い合わせ</a></li>
+            </ul>
+        </div>
+        <div id="content" role="main">
+            <h2>オタワ</h2>
+            ... オタワはカナダの首都 ...
+        </div>
+        <div id="rightsideadvert" role="complementary">
+            .... ここに広告 ...
+        </div>
+        <div id="footer" role="contentinfo">
+            (c)フリーダムカンパニー、123 フリーダムウェイ、ヘルプビル、USA
+        </div>
+    </div>
+</body>
+
+</html>
