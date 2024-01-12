@@ -45,7 +45,7 @@ ARIA19
 </script>
 
 <form name="signup" id="signup" method="post" action="">
-  <p id="errors" role="alert" aria-atomic="true"></p>
+  <div id="errors" role="alert" aria-atomic="true"></div>
   <p>
     <label for="first">ファーストネーム (必須)</label><br>
     <input type="text" name="first" id="first">
@@ -78,7 +78,7 @@ ARIA19
 
 # テスト手順 (音声閲覧環境)
 
-フォームの最後の送信ボタンのアクションを実行する（例えばフォーカスを合わせてEnterキーを押す）。
+フォームに何も入力をせずに、最後の送信ボタンのアクションを実行する（例えばフォーカスを合わせてEnterキーを押す）。
 読み上げられる内容を確認する。
 
 # 期待される結果 (音声閲覧環境)
