@@ -12,15 +12,15 @@ WAIC-TEST-0044-01
 
 # テストの対象となる達成基準 (複数)
 
-1.3.1, 2.4.1
+1.3.1, 1.3.6, 2.4.1
 
 # 関連する達成方法 (複数)
 
-H69, SCR28
+ARIA11
 
 # テストコード (テストファイルへのリンク)
 
-[WAIC-CODE-00xx-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-00xx-01.html)
+[WAIC-CODE-0044-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0044-01.html)
 
 # テストコードのソース (抜粋)
 
