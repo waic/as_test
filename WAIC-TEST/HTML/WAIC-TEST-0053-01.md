@@ -26,7 +26,7 @@ ARIA24
 
 ```HTML
 <p><strong>アイコンフォントA</strong></p>
-<p><span class="icon icon-star-bg"></span></p>
+<p><span class="icon-star-bg"></span></p>
 <p><strong>アイコンフォントB</strong></p>
 <p><span class="icon icon-star-bg" role="img" aria-label="Favorite"></span></p>
 ```
