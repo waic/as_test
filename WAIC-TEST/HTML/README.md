@@ -98,3 +98,4 @@
 * [0039-01: aria-label 属性によるラベルの提供（a 要素）](WAIC-TEST-0039-01.md)
 * [0041-01: リンクの目的を示すために aria-labelledby を使用する](WAIC-TEST-0041-01.md)
 * [0044-01: ページのリージョンを特定するために ARIA ランドマークを使用する](WAIC-TEST-0044-01.md)
+* [0049-01: role 属性によるエラーの通知（alertdialog：aria-labelledby属性、aria-describedby属性と併用）](WAIC-TEST-0049-01.md)
