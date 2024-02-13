@@ -25,23 +25,43 @@ WAIC-TEST-0056-01
 # テストコードのソース (抜粋)
 
 ```HTML
+<p>スタイルシートが適用された表組</p>
 <table class="table">
   <caption>「Web 開発」カテゴリの書籍</caption>
-                <thead>
-                  <tr>
-                    <th scope="col">タイトル</th>
-                    <th scope="col">著者</th>
-                    <th scope="col">発行日</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Web 標準について正しく考える方法</td>
-                    <td>アンドリュー・スタノビッチ</td>
-                    <td>2024年1月</td>
-                  </tr>
-                </tbody>
-              </table>
+    <thead>
+      <tr>
+        <th scope="col">タイトル</th>
+        <th scope="col">著者</th>
+        <th scope="col">発行日</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Web 標準について正しく考える方法</td>
+        <td>アンドリュー・スタノビッチ</td>
+        <td>2024年1月</td>
+      </tr>
+    </tbody>
+</table>
+    
+<p>スタイルシートが無効な表組</p>
+<table>
+  <caption>「Web 開発」カテゴリの書籍</caption>
+    <thead>
+      <tr>
+        <th scope="col">タイトル</th>
+        <th scope="col">著者</th>
+        <th scope="col">発行日</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Web 標準について正しく考える方法</td>
+        <td>アンドリュー・スタノビッチ</td>
+        <td>2024年1月</td>
+      </tr>
+    </tbody>
+</table>
 ```
 
 ```CSS
