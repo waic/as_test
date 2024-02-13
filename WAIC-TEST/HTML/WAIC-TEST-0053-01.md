@@ -25,17 +25,10 @@ ARIA24
 # テストコードのソース (抜粋)
 
 ```HTML
-<script>
-    function fontFamilyToggle() {
-    var element = document.getElementById("font-family-toggle");
-    element.classList.toggle("font-family-toggle");
-}
-</script>    
 <p><strong>アイコンフォントA</strong></p>
-<p><span class="icon icon-star-bg"></span> </p>
+<p><span class="icon icon-star-bg"></span></p>
 <p><strong>アイコンフォントB</strong></p>
 <p><span class="icon icon-star-bg" role="img" aria-label="Favorite"></span></p>
-<button onclick="fontFamilyToggle()">フォントファミリーを変更</button>
 ```
 
 ```CSS
@@ -44,9 +37,6 @@ ARIA24
 }
 .icon-star-bg::before {
     content: 'star';
-}
-.font-family-toggle *:not([role="img"]) {
-    font-family: Verdana, sans-serif !important;
 }
 ```
 # テスト手順 (視覚閲覧環境)
