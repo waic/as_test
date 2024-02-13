@@ -26,7 +26,7 @@ ARIA9、ARIA16
 # テストコードのソース (抜粋)
 
 ```HTML
-<label id="l1" for="f3">通知する</label>
+<label id="l1" for="f3">通知：</label>
 <select name="amt" id="f3" aria-labelledby="f3 l2 l1">
   <option value="1">1</option>
   <option value="2">2</option>
