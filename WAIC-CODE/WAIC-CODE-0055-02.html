@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0055-01</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+<style>
+input.text:focus {
+  background-color: #7FFF00; 
+  color: #000000;
+}
+input[type=radio]:focus + label {
+  background-color: #FFFF66; 
+  color: #000000; 
+}
+</style>
+</head>
+<body>
+	<form method="post" action="form.php">
+		<p><label for="fname">氏名: </label>
+		  <input class="text" type="text" name="fname" id="fname" />
+		</p>
+		<p>
+		  <input type="radio" name="sex" value="male" id="sm" /> <label for="sm">男性</label><br />
+		  <input type="radio" name="sex" value="female" id="sf" /> <label for="sf">女性</label>
+		<p>
+	</form>
+</body>
+</html>
