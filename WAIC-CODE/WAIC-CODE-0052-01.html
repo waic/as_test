@@ -35,35 +35,39 @@
   </p>
 </form>
 
-<script src="http://code.jquery.com/jquery-1.10.2.js"></script> 
 <script>
-$(document).ready(function(e) {
-	$('#signup').submit(function() {
-		$('#errText').html('');
-    $('input').removeAttr("aria-invalid");
-    $('label').removeAttr("class");
-    var eFlag = 0;
-		if ($('#first').val() === '') {
-			$('#first').attr("aria-invalid", "true");
-      $("label[for='first']").addClass('failed');
-      eFlag++;
-		}
-		if ($('#last').val() === '') {
-			$('#last').attr("aria-invalid", "true");
-      $("label[for='last']").addClass('failed');
-      eFlag++;
-		} 
-		if ($('#email').val() === '') {
-			$('#email').attr("aria-invalid", "true");
-      $("label[for='email']").addClass('failed');
-      eFlag++;
-		} 
+document.addEventListener("DOMContentLoaded", (event) => {
+  const signUp = document.getElementById('signup');
+  const errText = document.getElementById('errText');
+
+  const inputList = document.querySelectorAll('input[type=text]');
+
+  signUp.addEventListener('submit', (event) => {
+    let eFlag = 0;
+    errText.innerText = '';
+
+    inputList.forEach( (currentInput) => {
+      const currentId = currentInput.id;
+      const currentLabel = document.querySelector(`label[for=${currentId}]`)
+
+      if(currentInput.value === ''){
+        currentInput.setAttribute('aria-invalid', 'true');
+        currentLabel.classList.add('failed');
+        eFlag++;
+      } else {
+        currentInput.removeAttribute('aria-invalid');
+        currentLabel.classList.remove('failed');
+      }
+    });
+
     if (eFlag > 0) {
-        $('#errText').html("必須の入力欄すべてに入力してから再送信してください (残り" + eFlag + "項目)").focus();
+      errText.innerText = "必須の入力欄すべてに入力してから再送信してください (残り" + eFlag + "項目)";
+      errText.focus();
+      event.preventDefault();
     }
-		return false;
-	});
+  });
 });
+
 </script>
 
 </body>
