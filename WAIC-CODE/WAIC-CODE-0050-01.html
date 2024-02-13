@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>WAIC-CODE-0050-01</title>
+  <meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('signup').addEventListener('submit', function (e) {
+        e.preventDefault();
+        document.getElementById('errors').innerHTML = '';
+        if (document.getElementById('first').value === '') {
+          document.getElementById('errors').innerHTML += '<p>ファーストネームを入力してください。</p>';
+        }
+        if (document.getElementById('last').value === '') {
+          document.getElementById('errors').innerHTML += '<p>ラストネームを入力してください。</p>';
+        }
+        if (document.getElementById('email').value === '') {
+          document.getElementById('errors').innerHTML += '<p>メールアドレスを入力してください。</p>';
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <h1>WAIC-CODE-0050-01</h1>
+  <form name="signup" id="signup" method="post" action="">
+    <div id="errors" role="alert" aria-atomic="true"></div>
+    <p>
+      <label for="first">ファーストネーム (必須)</label><br>
+      <input type="text" name="first" id="first">
+    </p>
+    <p>
+      <label for="last">ラストネーム (必須)</label><br>
+      <input type="text" name="last" id="last">
+    </p>
+    <p>
+      <label for="email">メールアドレス (必須)</label><br>
+      <input type="text" name="email" id="email">
+    </p>
+    <p>
+      <button id="button">送信</button>
+    </p>
+  </form>
+</body>
+
+</html>
