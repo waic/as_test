@@ -1,0 +1,61 @@
+name: Update README and Create PR
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      
+      - name: Run makeindex.py
+        run: python3 .github/workflows/makeindex.py
+      
+      - name: Commit README.md updates
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git checkout -b update-readme-${{ github.run_number }}
+          git add WAIC-TEST/HTML/README.md
+          git commit -m "Update README.md automatically"
+          git push origin update-readme-${{ github.run_number }}
+      
+      - name: Check for changes
+        id: check_changes
+        uses: actions/github-script@v5
+        with:
+          script: |
+            const result = await github.rest.repos.compareCommits({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              base: 'master',
+              head: 'update-readme-${{ github.run_number }}'
+            });
+            if (result.data.files.length > 0) {
+              console.log("Changes detected");
+              core.setOutput("changes_detected", "true");
+            } else {
+              console.log("No changes detected");
+              core.setOutput("changes_detected", "false");
+            }
+      
+      - name: Create Pull Request
+        if: steps.check_changes.outputs.changes_detected == 'true'
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: update-readme-${{ github.run_number }}
+          commit-message: "Update README.md automatically"
+          title: "Automatically update README.md"
+          body: "This is an auto-generated PR to update README.md file"
+          base: master
