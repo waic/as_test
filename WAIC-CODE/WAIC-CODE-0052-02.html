@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0052-02</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+<style type="text/css">
+    label.failed {
+        border: red thin solid;
+    }
+    </style>
+</head>
+
+</head>
+<body>
+<h2 tabindex="-1" id="errText" aria-live="assertive"></h2>
+<form name="signup" id="signup" method="post" action="#">
+  <p>
+    <label for="email">電子メールアドレス (必須)</label><br>
+    <input type="text" name="email" id="email">
+  </p>
+  <p>
+    <input type="submit" name="button" id="button" value="送信">
+  </p>
+</form>
+
+<script>
+document.addEventListener("DOMContentLoaded", (event) => {
+  const signUp = document.getElementById('signup');
+  const errText = document.getElementById('errText');
+  const emailInput = document.getElementById('email');
+  const emailLabel = document.querySelector('label[for=email]');
+
+  signUp.addEventListener('submit', (event) => {
+    let eFlag = 0;
+    let errorId = '';
+    let errorMessage = '';
+    errText.innerText = '';
+
+    if(emailInput.value === ''){
+      eFlag++;
+      errorId = 'err_1';
+      errorMessage = 'エラー: データが入力されていません';
+    } else if(emailInput.value.indexOf('@') < 0){
+      eFlag++;
+      errorId = 'err_2';
+      errorMessage = 'エラー: データの形式が正しくありません';
+    }
+
+    if (eFlag > 0) {
+      emailInput.setAttribute('aria-invalid', 'true');
+      emailInput.setAttribute('aria-describedby', errorId);
+      emailInput.classList.add('error');
+
+      emailLabel.classList.add('failed');
+
+      const errorMessageSpan = document.createElement('span');
+      errorMessageSpan.id = errorId;
+      errorMessageSpan.classList.add('errtext');
+      errorMessageSpan.textContent = errorMessage;
+      emailInput.parentElement.appendChild(errorMessageSpan);
+
+      errText.textContent = "エラーがあります (" + eFlag + "項目)";
+      errText.focus();
+
+      event.preventDefault();
+    }
+  });
+
+});
+</script>
+
+</body>
+</html>
