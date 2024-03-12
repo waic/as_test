@@ -13,7 +13,7 @@ def extract_titles(directory):
                 match = re.search(r'^# テストのタイトル\s?\n\n?(.+)$', content, re.M)
                 if match:
                     # ファイル名からテストIDを抽出
-                    test_id = filename.replace('.md', '')
+                    test_id = filename.replace("WAIC-TEST-", "").replace('.md', '')
                     titles.append((test_id, match.group(1), filename))
     # テストIDでソート
     titles.sort(key=lambda x: x[0])
@@ -23,7 +23,7 @@ def update_readme(titles, readme_path):
     with open(readme_path, 'w', encoding='utf-8') as readme:
         readme.write('# テストの一覧\n\n')
         for test_id, title, filename in titles:
-            readme.write(f'* [{test_id.replace("WAIC-TEST-", "")}: {title}]({filename})\n')
+            readme.write(f'* [{test_id}: {title}]({filename})\n')
 
 if __name__ == '__main__':
     directory = 'WAIC-TEST/HTML'  # Markdownファイルが格納されているディレクトリ
