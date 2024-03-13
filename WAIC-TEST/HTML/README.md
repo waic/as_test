@@ -110,6 +110,7 @@
 * [0048-01: role 属性によるフォームのグループ化(role="group"の使用)](WAIC-TEST-0048-01.md)
 * [0049-01: role 属性によるエラーの通知（alertdialog：aria-labelledby属性、aria-describedby属性と併用）](WAIC-TEST-0049-01.md)
 * [0050-01: エラーを特定するために ARIA role=alert を使用する](WAIC-TEST-0050-01.md)
+* [0051-01: role 属性による領域の特定](WAIC-TEST-0051-01.md)
 * [0052-01: エラーフィールドを示すために aria-invalid を使用する](WAIC-TEST-0052-01.md)
 * [0052-02: エラーフィールドを示すために aria-invalid を使用する](WAIC-TEST-0052-02.md)
 * [0053-01: アイコンフォントに意味を付与するために role="img" を使用](WAIC-TEST-0053-01.md)
