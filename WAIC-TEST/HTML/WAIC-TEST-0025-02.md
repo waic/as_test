@@ -47,8 +47,8 @@ figure 要素及び figcaption 要素を指定してグループ化したコン�
 # 期待される結果 (音声閲覧環境)
 次の 1. 〜 4. をすべて満たしている
 1. figure 要素に差し掛かると、この部分が figure 要素であることを判別できるように通知される
-2. figure 要素の開始位置及び終了位置を知るための何らかの手段が提供されている
-3. figcaption 要素の内容が他の要素と区別できる何らかの手段が提供されている
+2. figure 要素の開始位置及び終了位置を知るための[何らかの手段](https://github.com/waic/as_test/blob/master/term.md#%E4%BD%95%E3%82%89%E3%81%8B%E3%81%AE%E6%89%8B%E6%AE%B5)が提供されている
+3. figcaption 要素の内容が他の要素と区別できる[何らかの手段](https://github.com/waic/as_test/blob/master/term.md#%E4%BD%95%E3%82%89%E3%81%8B%E3%81%AE%E6%89%8B%E6%AE%B5)が提供されている
 
 # テスト実施時の注意点 (音声閲覧環境)
 なし
