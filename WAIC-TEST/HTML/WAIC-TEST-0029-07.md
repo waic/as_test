@@ -44,8 +44,8 @@ ARIA1
 なし
 
 # テスト手順 (音声閲覧環境)
-button要素にフォーカスを合わせる。
-aria-labelledby 属性と aria-describedby属性で関連付けられた文章が読み上げられることを確認する。
+- button要素にフォーカスを合わせる。
+- aria-labelledby 属性と aria-describedby属性で関連付けられた文章が読み上げられることを確認する。
 
 # 期待される結果 (音声閲覧環境)
 button要素にフォーカスを合わせた際、aria-labelledby 属性と aria-describedby属性で関連付けられた文章が読み上げられる。
