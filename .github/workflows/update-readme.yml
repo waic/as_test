@@ -32,18 +32,27 @@ jobs:
         uses: actions/github-script@v5
         with:
           script: |
-            const result = await github.rest.repos.compareCommits({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              base: 'master',
-              head: 'update-readme-${{ github.run_number }}'
-            });
-            if (result.data.files.length > 0) {
-              console.log("Changes detected");
-              core.setOutput("changes_detected", "true");
-            } else {
-              console.log("No changes detected");
-              core.setOutput("changes_detected", "false");
+            try {
+              const result = await github.rest.repos.compareCommits({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                base: 'master',
+                head: 'update-readme-${{ github.run_number }}'
+              });
+              if (result.data.files.length > 0) {
+                console.log("Changes detected");
+                core.setOutput("changes_detected", "true");
+              } else {
+                console.log("No changes detected");
+                core.setOutput("changes_detected", "false");
+              }
+            } catch (error) {
+              if (error.status === 404) {
+                console.log("Branch not found, no changes detected");
+                core.setOutput("changes_detected", "false");
+              } else {
+                throw error;
+              }
             }
 
       - name: Commit README.md updates
