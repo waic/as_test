@@ -1,43 +1,52 @@
 # テスト ID
+
 WAIC-TEST-0035-04
 
 # テストのタイトル
+
 CSS による装飾画像の付加（content プロパティ）
 
 # テストの目的
+
 CSS の疑似要素で指定された装飾目的の画像が読み上げられない
 
 # テストの対象となる達成基準 (複数)
+
 1.1.1
 
 # 関連する達成方法 (複数)
+
 C9
 
 # テストコード (テストファイルへのリンク)
+
 [WAIC-CODE-0035-04](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0035-04.html)
 
 # テストコードのソース (抜粋)
+
 ```CSS
 li a {
-    display: block;
+  display: block;
 }
 li.img a::before {
-    content: url("./img/WAIC-CODE-0035-04-01.png") / "";
-    vertical-align: middle;
-    margin-right: .5em;
+  content: url("./img/WAIC-CODE-0035-04-01.png") / "";
+  vertical-align: middle;
+  margin-right: .5em;
 }
 li.img a::after {
-    content: url("./img/WAIC-CODE-0035-04-02.png") / "";
-    vertical-align: middle;
-    margin-left: .5em;
+  content: url("./img/WAIC-CODE-0035-04-02.png") / "";
+  vertical-align: middle;
+  margin-left: .5em;
 }
 ```
+
 ```HTML
 <ul>
     <li class="img"><a href="index.html">ホーム</a></li>
     <li><a href="company.html">会社概要</a></li>
 </ul>
 ```
+
 # テスト手順と期待される結果 (視覚閲覧環境)
 
 ## テスト手順
@@ -51,6 +60,7 @@ li.img a::after {
 2. 2番目のリストの項目「会社概要」のリンク要素の最初と最後に画像が表示されない
 
 # テスト実施時の注意点 (視覚閲覧環境)
+
 なし
 
 # テスト手順と期待される結果 (音声閲覧環境)
@@ -61,12 +71,16 @@ li.img a::after {
 2. 2番目のリストの項目「会社概要」のリンク要素を読み上げ、内容を確認
 
 ## 期待される結果
+
 次の 1. ～ 2. をすべて満たしている
+
 1. 1番目のリストの項目「ホーム」のリンク要素の内容の最初および最後に、画像に関する情報が含まれない
 2. 2番目のリストの項目「会社概要」のリンク要素の内容のみ読み上げられる
 
 # テスト実施時の注意点 (音声閲覧環境)
+
 なし
 
 # 関連する要素や属性
+
 なし

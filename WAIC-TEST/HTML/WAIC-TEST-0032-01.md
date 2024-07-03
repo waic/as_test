@@ -1,31 +1,38 @@
 # テスト ID
+
 WAIC-TEST-0032-01
 
 # テストのタイトル
+
 CSSによって不可視にされたリンクテキスト
 
 # テストの目的
+
 非表示に配置されたa要素がリンクの目的を説明していることを確認する。
 
 # テストの対象となる達成基準 (複数)
+
 2.4.4, 2.4.9
 
 # 関連する達成方法 (複数)
+
 C7
 
 # テストコード (テストファイルへのリンク)
+
 [WAIC-CODE-0032-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0032-01.html)
 
 # テストコードのソース (抜粋)
+
 ```css
 .visually-hidden {
-   clip-path: inset(100%);
-   clip: rect(1px, 1px, 1px, 1px);
-   height: 1px;
-   overflow: hidden;
-   position: absolute;
-   white-space: nowrap;
-   width: 1px;
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 ```
 
@@ -36,22 +43,29 @@ C7
 ```
 
 # テスト手順 (視覚閲覧環境)
+
 テストファイルを操作し、結果を確認。
 
 # 期待される結果 (視覚閲覧環境)
+
 “ワシントンが経済成長を刺激する”は表示されず、“全文表示”のリンクテキストのみが表示される
 
 # テスト実施時の注意点 (視覚閲覧環境)
+
 なし
 
 # テスト手順 (音声閲覧環境)
+
 テストファイルを操作し、結果を確認。
 
 # 期待される結果 (音声閲覧環境)
+
 “ワシントンが経済成長を刺激する 全文表示” が読み上げられる。
 
 # テスト実施時の注意点 (音声閲覧環境)
+
 なし
 
 # 関連する要素や属性
+
 a要素

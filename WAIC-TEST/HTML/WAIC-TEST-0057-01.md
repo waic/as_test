@@ -25,16 +25,16 @@ ARIA5
 # テストコードのソース (抜粋)
 
 ```HTML
-	<h2>aria-pressed 属性のないボタン要素</h2>
-	<button type="button">ボタン0</button>
+<h2>aria-pressed 属性のないボタン要素</h2>
+<button type="button">ボタン0</button>
 
-	<h2>aria-pressed 属性のあるボタン要素</h2>
-	<h3>aria-pressed 属性値が false</h3>
-	<button type="button" aria-pressed="false">ボタン1</button>
-	<h3>aria-pressed 属性値が true</h3>
-	<button type="button" aria-pressed="true">ボタン2</button>
-	<h3>aria-pressed 属性値が mixed</h3>	
-	<button type="button" aria-pressed="mixed">ボタン3</button>
+<h2>aria-pressed 属性のあるボタン要素</h2>
+<h3>aria-pressed 属性値が false</h3>
+<button type="button" aria-pressed="false">ボタン1</button>
+<h3>aria-pressed 属性値が true</h3>
+<button type="button" aria-pressed="true">ボタン2</button>
+<h3>aria-pressed 属性値が mixed</h3> 
+<button type="button" aria-pressed="mixed">ボタン3</button>
 ```
 
 # テスト手順 (視覚閲覧環境)
@@ -51,33 +51,33 @@ ARIA5
 
 # テスト手順と期待される結果 (音声閲覧環境)
 
-## テスト手順 1.
+## テスト手順 1
 
 「ボタン1」の通知内容を確認する。
 
-## 期待される結果 1.
+## 期待される結果 1
 
 通知が次の 1. 〜 2. を全て満たすことを確認する。
 
 1. 通知内容に、「トグルボタン」などと押されている状態をもつロールであることが判別できるものが含まれる。
 2. 通知内容に、押されている状態であると判別できるものが含まれない。
 
-## テスト手順 2.
+## テスト手順 2
 
 「ボタン2」の通知内容を確認する。
 
-## 期待される結果 2.
+## 期待される結果 2
 
 通知が次の 1. 〜 2. を全て満たすことを確認する。
 
 1. 通知内容に、「トグルボタン」などと押されている状態をもつロールであることが判別できるものが含まれる。
 2. 通知内容に、押されている状態であると判別できるものが含まれる。
 
-## テスト手順 3.
+## テスト手順 3
 
 「ボタン3」の通知内容を確認する。
 
-## 期待される結果 3.
+## 期待される結果 3
 
 通知が次の 1. 〜 2. を全て満たすことを確認する。
 
