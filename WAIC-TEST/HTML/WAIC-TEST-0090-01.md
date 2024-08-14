@@ -1,6 +1,6 @@
 # テスト ID
 
-WAIC-TEST-0059-01
+WAIC-TEST-0090-01
 
 # テストのタイトル
 
@@ -25,7 +25,7 @@ C14
 
 # テストコード (テストファイルへのリンク)
 
-[WAIC-CODE-0059-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0059-01.html)
+[WAIC-CODE-0090-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0090-01.html)
 
 # テストコードのソース (抜粋)
 
