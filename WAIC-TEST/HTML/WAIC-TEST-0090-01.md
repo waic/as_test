@@ -30,7 +30,7 @@ C14
 # テストコードのソース (抜粋)
 
 ```HTML
-<h1><strong>ユーザー</strong>がテキストサイズを制御できるようにする</h1>
+<h1><img src="https://waic.jp/wp-content/themes/waic/images/mark.png" alt="WAICロゴマーク" width="50" height="50"><strong>ユーザー</strong>がテキストサイズを制御できるようにする</h1>
 <p>どのサイズのテキストが自分に適しているかはユーザーのみが知ることができるので、
 テキストサイズを設定できるようにすることが<strong>非常に</strong>重要です。</p>
 ```
