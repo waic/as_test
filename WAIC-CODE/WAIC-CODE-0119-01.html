@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>WAIC-CODE-0119-01</title>
+  <meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+  <link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+  <meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+  <script>
+    function updateImage(imgId, isOver) {
+      var theImage = document.getElementById(imgId);
+
+      if (theImage != null) {
+        if (isOver) {
+          theImage.setAttribute('src', './img/WAIC-CODE-0119-01-02.png');
+        } else {
+          theImage.setAttribute('src', './img/WAIC-CODE-0119-01-01.png');
+        }
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>WAIC-CODE-0119-01</h1>
+  <p>以下のリンクにマウスオーバーするかTabキーでフォーカスし、画像の変化を確認してください</p>
+  <a
+    href="#"
+    onmouseover="updateImage('link1', true);"
+    onfocus="updateImage('link1', true);"
+    onmouseout="updateImage('link1', false);"
+    onblur="updateImage('link1', false);"
+  >
+    <img
+      src="./img/WAIC-CODE-0119-01-01.png"
+      alt=""
+      id="link1"
+      width="16"
+      height="16"
+    >
+    リンク 1
+  </a>
+  <a
+    href="#"
+    onmouseover="updateImage('link2', true);"
+    onfocus="updateImage('link2',true);"
+    onmouseout="updateImage('link2', false);"
+    onblur="updateImage('link2', false);"
+  >
+    <img
+      src="./img/WAIC-CODE-0119-01-01.png"
+      alt=""
+      id="link2"
+      width="16"
+      height="16"
+    >
+    リンク 2
+  </a>
+</body>
+</html>
