@@ -29,31 +29,14 @@ jobs:
 
       - name: Check for changes
         id: check_changes
-        uses: actions/github-script@v7
-        with:
-          script: |
-            try {
-              const result = await github.rest.repos.compareCommits({
-                owner: context.repo.owner,
-                repo: context.repo.repo,
-                base: 'master',
-                head: 'update-readme-${{ github.run_number }}'
-              });
-              if (result.data.files.length > 0) {
-                console.log("Changes detected");
-                core.setOutput("changes_detected", "true");
-              } else {
-                console.log("No changes detected");
-                core.setOutput("changes_detected", "false");
-              }
-            } catch (error) {
-              if (error.status === 404) {
-                console.log("Branch not found, no changes detected");
-                core.setOutput("changes_detected", "false");
-              } else {
-                throw error;
-              }
-            }
+        run: |
+          if git diff --quiet; then
+            echo "No changes detected"
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
+          else
+            echo "Changes detected"
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+          fi
 
       - name: Commit README.md updates
         if: steps.check_changes.outputs.changes_detected == 'true'
