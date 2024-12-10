@@ -25,12 +25,42 @@ H98
 # テストコードのソース (抜粋)
 
 ```HTML
+
+<form>
+<div>
+<label for="family-name">姓</label>
+<input type="text" id="family-name" name="family-name" autocomplete="family-name">
+</div>
+<div>
+<label for="given-name">名</label>
+<input type="text" id="given-name" name="given-name" autocomplete="given-name">
+</div>
+<div>
+<label for="email">メールアドレス</label>
+<input type="email" id="email" name="email" autocomplete="email">
+</div>
+<div>
+<label for="tel">電話番号</label>
+<input type="tel" id="tel" name="tel" autocomplete="tel">
+</div>
+<div>
+<label for="postal-code">郵便番号</label>
+<input type="text" id="postal-code" name="postal-code" autocomplete="postal-code">
+</div>
+</form>
+
 ```
 
 # テスト手順と期待される結果 (視覚閲覧環境)
+# テスト実施時の注意点 (視覚閲覧環境)
+
+事前にブラウザでオートコンプリートを有効にする必要がある
+
+# テスト手順と期待される結果 (音声閲覧環境)
+
 ## テスト手順 1
 
-[姓]をニュー力するフィールドを選択し、下矢印キーを押す
+Tabキーや矢印キーを押し、姓をニュー力するフィールドを選択し、下矢印キーを押す
 
 ## 期待される結果 1
 
@@ -38,22 +68,39 @@ H98
 
 ## テスト手順 2
 
-[名]をニュー力するフィールドを選択し、下矢印キーを押す
+Tabキーや矢印キーを押し、名をニュー力するフィールドを選択し、下矢印キーを押す
 
 ## 期待される結果 2
 
 過去に入力して記録された名前に関する情報が表示される
 
-# テスト実施時の注意点 (視覚閲覧環境)
+## テスト手順 3
 
-ブラウザでオートコンプリートが有効になっている必要がある。
+Tabキーや矢印キーを押し、メールアドレスをニュー力するフィールドを選択し、下矢印キーを押す
 
-# テスト手順と期待される結果 (音声閲覧環境)
+## 期待される結果 3
 
+過去に入力して記録されたメールアドレスに関する情報が表示される
+
+## テスト手順 4
+
+Tabキーや矢印キーを押し、電話番号をニュー力するフィールドを選択し、下矢印キーを押す
+
+## 期待される結果 4
+
+過去に入力して記録された電話番号に関する情報が表示される
+
+## テスト手順 5
+
+Tabキーや矢印キーを押し、郵便番号をニュー力するフィールドを選択し、下矢印キーを押す
+
+## 期待される結果 5
+
+過去に入力して記録されたメールアドレスに関する情報が表示される
 
 # テスト実施時の注意点 (音声閲覧環境)
 
-なし
+事前にブラウザでオートコンプリートを有効にする必要がある
 
 # 関連する要素や属性
 
