@@ -20,7 +20,7 @@ SCR16
 
 # テストコード (テストファイルへのリンク)
 
-[WAIC-CODE-0060-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0060-01.html)
+[WAIC-CODE-0121-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0121-01.html)
 
 # テストコードのソース (抜粋)
 
