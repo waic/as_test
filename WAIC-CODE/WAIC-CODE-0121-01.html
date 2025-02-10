@@ -1,0 +1,41 @@
+
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<title>WAIC-CODE-0121-01</title>
+<script>
+    function timeControl() {
+        // タイマーを40秒に設定し、利用者に確認を求める
+        setTimeout('userCheck()', 40000);
+    }
+    function userCheck() {
+        // ページの再読み込みを20秒に設定する
+        var id = setTimeout('pageReload()', 20000);
+        // 利用者が「OK」を選択した場合、タイマーがリセットされる
+        // それ以外の場合、サーバーによりページが再読み込みされる
+        if (confirm("このページは20秒後に更新されます。表示時間を延長しますか?"))
+        {
+            clearTimeout(id);
+            timeControl();
+        }
+    }
+    function pageReload() {
+        window.location.reload(true);
+    }
+    timeControl();
+    document.addEventListener("DOMContentLoaded", (event) => {
+        const timeElement = document.getElementById("currentTime");
+        if(timeElement){
+            const now = new Date();
+            timeElement.innerText = now.toLocaleTimeString();
+        }
+    });
+</script>
+</head>
+<body>
+<h1>株式市場</h1>
+<p>このページを表示した時刻: <time id="currentTime"></time></p>
+<p>1分ごとに更新されます。更新の20秒前に時間を延長するかどうか訊かれます。</p>
+<p>(ここには激しく乱高下する市場の様相が表示されているものと思ってください)</p>
+</body>
+</html>
