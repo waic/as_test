@@ -126,4 +126,4 @@ H102
 
 # 関連する要素や属性
 
-dialog要素、aria-describedby属性、aria-label属性
+dialog要素、aria-labelledby属性、aria-label属性
