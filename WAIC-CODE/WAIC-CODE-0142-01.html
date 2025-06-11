@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0142-01</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+<script>
+			function findOrange () {
+				document.getElementById("resultsmsg").textContent = "0 件の結果が返されました"
+			}
+		</script>
+</head>
+<body>
+<main>
+  <div role="search">
+    <label for="mockinput">次の語と一致する単語を検索:
+      <input type="text" name="mockinput" id="mockinput" value="オレンジ">
+    </label>
+    <button id="btn" onclick="findOrange()">検索</button>
+  </div>
+  <h2>結果</h2>
+  <p role="status" id="resultsmsg"></p>
+</main>
+</body>
+</html>
