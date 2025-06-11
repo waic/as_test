@@ -21,7 +21,7 @@ ARIA22
 # テストコードのソース (抜粋)
 
 ```html
-<div role="main">
+<main>
 <div role="search">
 <label for="mockinput">次の語と一致する単語を検索:
 <input type="text" name="mockinput" id="mockinput" value="オレンジ">
@@ -29,13 +29,13 @@ ARIA22
 <button id="btn" onclick="findOrange()">検索</button>
 </div>
 <h2>結果</h2>
-<p role="status" aria-atomic="true" id="resultsmsg"></p>
-</div>
+<p role="status" id="resultsmsg"></p>
+</main>
 ```
 
 ```JavaScript
 function findOrange () {
-document.getElementById("resultsmsg").innerHTML = "0 件の結果が返されました"
+document.getElementById("resultsmsg").textContent = "0 件の結果が返されました"
 }
 ```
 
