@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0143-01</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+<style>
+#chatMessage {
+	list-style: none;
+}
+</style>
+</head>
+
+<body>
+<div role="main">
+	<h1>チャット</h1>
+	<p>メッセージを送信すると、「会話のログ」見出しの後にメッセージが表示されます。<br>その後、3秒おきに2回、自動返信のメッセージが追加で表示されます。</p>
+	<div role="group" aria-labelledby="messageHeading">
+	<h2 id="messageHeading">メッセージ入力</h2>
+		<p id="messageDescription">（メッセージの入力内容は変更できません）</p>
+		<input type="text" name="fakeinput" readonly value="こんにちわ" aria-describedby="messageDescription">
+		<button id="messageButton" onclick="initiateChat()">メッセージを送る</button>
+	</div>
+	<div>
+		<h2 id="chatHeading">会話のログ</h2>
+		<div id="chatLog" role="log" aria-labelledby="chatHeading">
+			<ul id="chatMessage"></ul>
+		</div>
+	</div>
+</div>
+
+
+<script>
+var counter = 0;
+var myVar;
+var onetime = 0;
+function makeChat () {
+	var chatText = ["自動返信：こんにちわ！", "自動返信：返信はこれで終了です"];
+	var chatContent = document.getElementById("chatMessage");
+	var list = document.createElement("li")
+	var item = document.createTextNode(chatText[counter]);
+	list.appendChild(item);
+	chatContent.appendChild(list);
+	counter++;
+	if (counter > 1) {
+		clearInterval(myVar);
+	} 
+}
+function initiateChat () {
+	if (onetime < 1) {
+		document.getElementById("chatMessage").innerHTML += "<li>あなた：こんにちわ</li>";
+		myVar = setInterval(makeChat, 3000);
+		document.getElementById("messageButton").disabled = true;
+		onetime++;
+	} else {
+		return false;
+	}
+}
+</script>
+
+</body>
+</html>
