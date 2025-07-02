@@ -31,34 +31,70 @@ jobs:
       - name: Check for duplicate filenames
         id: check
         run: |
-          echo "Checking for duplicate filenames between HTML_見送り and HTML_未着手 folders..."
+          echo "Checking for duplicate filenames across HTML, HTML_見送り, and HTML_未着手 folders..."
           
-          # Get basenames from both directories
-          dir1_files=$(find "WAIC-TEST/HTML_見送り" -name "*.md" -exec basename {} \; 2>/dev/null | sort)
-          dir2_files=$(find "WAIC-TEST/HTML_未着手" -name "*.md" -exec basename {} \; 2>/dev/null | sort)
+          # Get basenames from all three directories
+          html_files=$(find "WAIC-TEST/HTML" -name "*.md" ! -name "README.md" -exec basename {} \; 2>/dev/null | sort)
+          miokuri_files=$(find "WAIC-TEST/HTML_見送り" -name "*.md" -exec basename {} \; 2>/dev/null | sort)
+          michakushu_files=$(find "WAIC-TEST/HTML_未着手" -name "*.md" -exec basename {} \; 2>/dev/null | sort)
           
-          # Find duplicates
-          duplicates=$(comm -12 <(echo "$dir1_files") <(echo "$dir2_files"))
+          # Find duplicates and files to delete
+          issue_body=""
+          files_to_delete=""
+          duplicates_found=false
           
-          if [ -n "$duplicates" ]; then
-            echo "❌ Duplicate filenames found:"
-            echo "$duplicates"
+          # Check HTML vs HTML_未着手 (delete from HTML_未着手)
+          html_vs_michakushu=$(comm -12 <(echo "$html_files") <(echo "$michakushu_files"))
+          if [ -n "$html_vs_michakushu" ]; then
+            echo "❌ Duplicates found between HTML and HTML_未着手:"
+            duplicates_found=true
+            for file in $html_vs_michakushu; do
+              echo "  - $file"
+              html_path=$(find WAIC-TEST/HTML -name "$file" -exec echo {} \;)
+              michakushu_path=$(find WAIC-TEST/HTML_未着手 -name "$file" -exec echo {} \;)
+              echo "    📁 HTML: $html_path"
+              echo "    📁 HTML_未着手: $michakushu_path (削除対象)"
+              issue_body="$issue_body- \`$file\`\n  - 📁 HTML: \`$html_path\`\n  - 📁 HTML_未着手: \`$michakushu_path\` (削除対象)\n\n"
+              files_to_delete="$files_to_delete$michakushu_path\n"
+            done
             echo ""
-            echo "Files exist in both HTML_見送り and HTML_未着手:"
-            
-            # Create detailed list for issue and files to delete
-            issue_body=""
-            files_to_delete=""
-            for file in $duplicates; do
+          fi
+          
+          # Check HTML vs HTML_見送り (delete from HTML_見送り)
+          html_vs_miokuri=$(comm -12 <(echo "$html_files") <(echo "$miokuri_files"))
+          if [ -n "$html_vs_miokuri" ]; then
+            echo "❌ Duplicates found between HTML and HTML_見送り:"
+            duplicates_found=true
+            for file in $html_vs_miokuri; do
+              echo "  - $file"
+              html_path=$(find WAIC-TEST/HTML -name "$file" -exec echo {} \;)
+              miokuri_path=$(find WAIC-TEST/HTML_見送り -name "$file" -exec echo {} \;)
+              echo "    📁 HTML: $html_path"
+              echo "    📁 HTML_見送り: $miokuri_path (削除対象)"
+              issue_body="$issue_body- \`$file\`\n  - 📁 HTML: \`$html_path\`\n  - 📁 HTML_見送り: \`$miokuri_path\` (削除対象)\n\n"
+              files_to_delete="$files_to_delete$miokuri_path\n"
+            done
+            echo ""
+          fi
+          
+          # Check HTML_見送り vs HTML_未着手 (delete from HTML_未着手)
+          miokuri_vs_michakushu=$(comm -12 <(echo "$miokuri_files") <(echo "$michakushu_files"))
+          if [ -n "$miokuri_vs_michakushu" ]; then
+            echo "❌ Duplicates found between HTML_見送り and HTML_未着手:"
+            duplicates_found=true
+            for file in $miokuri_vs_michakushu; do
               echo "  - $file"
               miokuri_path=$(find WAIC-TEST/HTML_見送り -name "$file" -exec echo {} \;)
               michakushu_path=$(find WAIC-TEST/HTML_未着手 -name "$file" -exec echo {} \;)
-              echo "    📁 HTML_見送り/$miokuri_path"
-              echo "    📁 HTML_未着手/$michakushu_path"
-              issue_body="$issue_body- \`$file\`\n  - 📁 \`$miokuri_path\`\n  - 📁 \`$michakushu_path\`\n\n"
+              echo "    📁 HTML_見送り: $miokuri_path"
+              echo "    📁 HTML_未着手: $michakushu_path (削除対象)"
+              issue_body="$issue_body- \`$file\`\n  - 📁 HTML_見送り: \`$miokuri_path\`\n  - 📁 HTML_未着手: \`$michakushu_path\` (削除対象)\n\n"
               files_to_delete="$files_to_delete$michakushu_path\n"
             done
-            
+            echo ""
+          fi
+          
+          if [ "$duplicates_found" = true ]; then
             echo "duplicates_found=true" >> $GITHUB_OUTPUT
             echo "duplicate_list<<EOF" >> $GITHUB_OUTPUT
             echo -e "$issue_body" >> $GITHUB_OUTPUT
@@ -66,10 +102,8 @@ jobs:
             echo "files_to_delete<<EOF" >> $GITHUB_OUTPUT
             echo -e "$files_to_delete" >> $GITHUB_OUTPUT
             echo "EOF" >> $GITHUB_OUTPUT
-            
-            # Don't fail, proceed to auto-fix
           else
-            echo "✅ No duplicate filenames found between the two directories."
+            echo "✅ No duplicate filenames found across all directories."
             echo "duplicates_found=false" >> $GITHUB_OUTPUT
           fi
 
@@ -83,9 +117,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Delete duplicate files from HTML_未着手
+      - name: Delete duplicate files
         run: |
-          echo "Deleting duplicate files from HTML_未着手 folder..."
+          echo "Deleting duplicate files..."
           
           # Delete files listed in files_to_delete
           echo -e "${{ needs.check-duplicates.outputs.files_to_delete }}" | while read -r file; do
@@ -99,18 +133,18 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "🗑️ Remove duplicate files from HTML_未着手 folder [skip ci]"
-          title: "🗑️ 重複ファイルの自動削除 (HTML_未着手)"
+          commit-message: "🗑️ Remove duplicate files across HTML folders [skip ci]"
+          title: "🗑️ 重複ファイルの自動削除"
           body: |
             ## 概要
-            HTML_見送り と HTML_未着手 フォルダ間で重複するファイルを検出し、HTML_未着手 から自動削除しました。
+            HTML、HTML_見送り、HTML_未着手 フォルダ間で重複するファイルを検出し、優先度の低いフォルダから自動削除しました。
 
             ## 削除されたファイル
             ${{ needs.check-duplicates.outputs.duplicate_list }}
 
-            ## 削除理由
-            - ファイルが HTML_見送り フォルダに既に存在するため
-            - 重複を避けるために HTML_未着手 から削除
+            ## 削除ルール
+            - 優先度: HTML > HTML_見送り > HTML_未着手
+            - 重複が見つかった場合、優先度の低い方から削除
 
             ## 確認事項
             - [ ] 削除されたファイルの内容が HTML_見送り のファイルと同一であることを確認
