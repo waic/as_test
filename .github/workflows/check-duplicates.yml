@@ -1,14 +1,10 @@
 name: Check and Resolve Duplicate Filenames
 
 on:
-  push:
-    paths:
-      - 'WAIC-TEST/HTML_見送り/**'
-      - 'WAIC-TEST/HTML_未着手/**'
   pull_request:
-    paths:
-      - 'WAIC-TEST/HTML_見送り/**'
-      - 'WAIC-TEST/HTML_未着手/**'
+    types: [closed]
+    branches:
+      - master
   workflow_dispatch:
 
 permissions:
@@ -20,6 +16,7 @@ env:
 
 jobs:
   check-duplicates:
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
     runs-on: ubuntu-latest
     outputs:
       duplicates_found: ${{ steps.check.outputs.duplicates_found }}
