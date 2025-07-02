@@ -9,9 +9,6 @@ env:
   BRANCH_PREFIX: update-readme
 
 on:
-  push:
-    branches:
-      - master
   pull_request:
     types: [closed]
     branches:
@@ -24,11 +21,8 @@ permissions:
 jobs:
   update-readme:
     # ジョブを実行する条件:
-    # 1. master ブランチへの直接プッシュ
-    # 2. master ブランチにマージされたプルリクエストのクローズ
-    if: |
-      (github.event_name == 'push' && github.ref == 'refs/heads/master') ||
-      (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
+    # master ブランチにマージされたプルリクエストのクローズ
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
