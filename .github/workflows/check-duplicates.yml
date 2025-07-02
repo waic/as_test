@@ -1,0 +1,132 @@
+name: Check and Resolve Duplicate Filenames
+
+on:
+  push:
+    paths:
+      - 'WAIC-TEST/HTML_見送り/**'
+      - 'WAIC-TEST/HTML_未着手/**'
+  pull_request:
+    paths:
+      - 'WAIC-TEST/HTML_見送り/**'
+      - 'WAIC-TEST/HTML_未着手/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+env:
+  BRANCH_PREFIX: fix-duplicate-files
+
+jobs:
+  check-duplicates:
+    runs-on: ubuntu-latest
+    outputs:
+      duplicates_found: ${{ steps.check.outputs.duplicates_found }}
+      duplicate_list: ${{ steps.check.outputs.duplicate_list }}
+      files_to_delete: ${{ steps.check.outputs.files_to_delete }}
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check for duplicate filenames
+        id: check
+        run: |
+          echo "Checking for duplicate filenames between HTML_見送り and HTML_未着手 folders..."
+          
+          # Get basenames from both directories
+          dir1_files=$(find "WAIC-TEST/HTML_見送り" -name "*.md" -exec basename {} \; 2>/dev/null | sort)
+          dir2_files=$(find "WAIC-TEST/HTML_未着手" -name "*.md" -exec basename {} \; 2>/dev/null | sort)
+          
+          # Find duplicates
+          duplicates=$(comm -12 <(echo "$dir1_files") <(echo "$dir2_files"))
+          
+          if [ -n "$duplicates" ]; then
+            echo "❌ Duplicate filenames found:"
+            echo "$duplicates"
+            echo ""
+            echo "Files exist in both HTML_見送り and HTML_未着手:"
+            
+            # Create detailed list for issue and files to delete
+            issue_body=""
+            files_to_delete=""
+            for file in $duplicates; do
+              echo "  - $file"
+              miokuri_path=$(find WAIC-TEST/HTML_見送り -name "$file" -exec echo {} \;)
+              michakushu_path=$(find WAIC-TEST/HTML_未着手 -name "$file" -exec echo {} \;)
+              echo "    📁 HTML_見送り/$miokuri_path"
+              echo "    📁 HTML_未着手/$michakushu_path"
+              issue_body="$issue_body- \`$file\`\n  - 📁 \`$miokuri_path\`\n  - 📁 \`$michakushu_path\`\n\n"
+              files_to_delete="$files_to_delete$michakushu_path\n"
+            done
+            
+            echo "duplicates_found=true" >> $GITHUB_OUTPUT
+            echo "duplicate_list<<EOF" >> $GITHUB_OUTPUT
+            echo -e "$issue_body" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            echo "files_to_delete<<EOF" >> $GITHUB_OUTPUT
+            echo -e "$files_to_delete" >> $GITHUB_OUTPUT
+            echo "EOF" >> $GITHUB_OUTPUT
+            
+            # Don't fail, proceed to auto-fix
+          else
+            echo "✅ No duplicate filenames found between the two directories."
+            echo "duplicates_found=false" >> $GITHUB_OUTPUT
+          fi
+
+  auto-fix-duplicates:
+    needs: check-duplicates
+    if: needs.check-duplicates.outputs.duplicates_found == 'true'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Delete duplicate files from HTML_未着手
+        run: |
+          echo "Deleting duplicate files from HTML_未着手 folder..."
+          
+          # Delete files listed in files_to_delete
+          echo -e "${{ needs.check-duplicates.outputs.files_to_delete }}" | while read -r file; do
+            if [ -n "$file" ] && [ -f "$file" ]; then
+              echo "Deleting: $file"
+              rm "$file"
+            fi
+          done
+
+      - name: Create Pull Request for duplicate removal
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          commit-message: "🗑️ Remove duplicate files from HTML_未着手 folder [skip ci]"
+          title: "🗑️ 重複ファイルの自動削除 (HTML_未着手)"
+          body: |
+            ## 概要
+            HTML_見送り と HTML_未着手 フォルダ間で重複するファイルを検出し、HTML_未着手 から自動削除しました。
+
+            ## 削除されたファイル
+            ${{ needs.check-duplicates.outputs.duplicate_list }}
+
+            ## 削除理由
+            - ファイルが HTML_見送り フォルダに既に存在するため
+            - 重複を避けるために HTML_未着手 から削除
+
+            ## 確認事項
+            - [ ] 削除されたファイルの内容が HTML_見送り のファイルと同一であることを確認
+            - [ ] 削除により影響を受ける他のファイルがないことを確認
+
+            ## 自動処理情報
+            - **処理日時**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
+            - **検出コミット**: ${{ github.sha }}
+            - **ワークフロー**: ${{ github.workflow }}
+            - **実行イベント**: ${{ github.event_name }}
+
+            > このPRはGitHub Actionsにより自動生成されました。マージ前に内容をご確認ください。
+          branch: ${{ env.BRANCH_PREFIX }}-${{ github.run_number }}
+          base: master
+          delete-branch: true
+
