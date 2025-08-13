@@ -16,16 +16,17 @@
 <body>
 <div role="main">
 	<h1>チャット</h1>
-	<p>メッセージを送信すると、「会話のログ」見出しの後にメッセージが表示されます。<br>その後、3秒おきに2回、自動返信のメッセージが追加で表示されます。</p>
+	<p>メッセージを送信すると、「会話のログ」見出しの後にメッセージが表示されます。<br>その後、チャットの終了を知らせるメッセージが表示されるまで、自動返信が2秒間隔で続きます。</p>
 	<div role="group" aria-labelledby="messageHeading">
 	<h2 id="messageHeading">メッセージ入力</h2>
 		<p id="messageDescription">（メッセージの入力内容は変更できません）</p>
 		<input type="text" name="fakeinput" readonly value="こんにちわ" aria-describedby="messageDescription">
 		<button id="messageButton" onclick="initiateChat()">メッセージを送る</button>
 	</div>
+	<div><a href="#chatHeading">ダミーコンテンツです。自動返信を待つ間に閲覧するメッセージで、リンク先に移動する必要はありません。ダミーコンテンツ終わり。</a></div>
 	<div>
 		<h2 id="chatHeading">会話のログ</h2>
-		<div id="chatLog" role="log" aria-labelledby="chatHeading">
+		<div id="chatLog" role="log">
 			<ul id="chatMessage"></ul>
 		</div>
 	</div>
@@ -37,21 +38,21 @@ var counter = 0;
 var myVar;
 var onetime = 0;
 function makeChat () {
-	var chatText = ["自動返信：こんにちわ！", "自動返信：返信はこれで終了です"];
+	var chatText = ["自動返信：こんにちわ！", "自動返信：5つカウントした後、返信を終了します", "自動返信：1", "自動返信：2", "自動返信：3", "自動返信：4", "自動返信：5", "自動返信：返信はこれで終了です"];
 	var chatContent = document.getElementById("chatMessage");
 	var list = document.createElement("li")
 	var item = document.createTextNode(chatText[counter]);
 	list.appendChild(item);
 	chatContent.appendChild(list);
 	counter++;
-	if (counter > 1) {
+	if (counter > 7) {
 		clearInterval(myVar);
 	} 
 }
 function initiateChat () {
 	if (onetime < 1) {
 		document.getElementById("chatMessage").innerHTML += "<li>あなた：こんにちわ</li>";
-		myVar = setInterval(makeChat, 3000);
+		myVar = setInterval(makeChat, 2000);
 		document.getElementById("messageButton").disabled = true;
 		onetime++;
 	} else {
