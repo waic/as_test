@@ -5,5 +5,8 @@
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.19.1"
   }
 }
