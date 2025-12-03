@@ -18,6 +18,10 @@ role="status" を持つ要素の内容が更新された際に、変更が通知
 
 ARIA22
 
+# テストコード (テストファイルへのリンク)
+
+[WAIC-CODE-0142-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0142-01.html)
+
 # テストコードのソース (抜粋)
 
 ```html

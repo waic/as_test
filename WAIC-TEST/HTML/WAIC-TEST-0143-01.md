@@ -18,6 +18,10 @@ role="log"を持つ要素の内容を更新した際に、更新内容だけが�
 
 ARIA23
 
+# テストコード (テストファイルへのリンク)
+
+[WAIC-CODE-0143-01](https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0143-01.html)
+
 # テストコードのソース (抜粋)
 
 ```html
