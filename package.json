@@ -1,0 +1,12 @@
+{
+  "name": "@waic/as_test",
+  "version": "1.0.0",
+  "description": "JIS X 8341-3 や WCAG2.0 における「アクセシビリティサポーテッド」に関する情報（AS情報）を作成するために必要となるテストケース・テストコードの作成を行うリポジトリです。",
+  "private": true,
+  "scripts": {
+    "test": "markdownlint-cli2 WAIC-TEST/**/*.md"
+  },
+  "devDependencies": {
+    "markdownlint-cli2": "0.19.1"
+  }
+}
