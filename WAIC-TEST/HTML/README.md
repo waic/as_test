@@ -96,6 +96,7 @@
 * [0036-02: CSSによる背景色の適用 (フォーカスされた入力フィールド)](WAIC-TEST-0036-02.md)
 * [0037-01: required 属性による必須項目の特定（input要素、select要素、textarea要素）](WAIC-TEST-0037-01.md)
 * [0038-01: aria-labelによるラベルの提供(複数のナビゲーションランドマーク)](WAIC-TEST-0038-01.md)
+* [0038-02: 領域ランドマークへのaria-labelによるラベル付け](WAIC-TEST-0038-02.md)
 * [0039-01: aria-label 属性によるラベルの提供（a 要素）](WAIC-TEST-0039-01.md)
 * [0040-01: aria-labelledby 属性による複数のラベルの提供（input 要素 : 複数のaria-labelledby属性値）](WAIC-TEST-0040-01.md)
 * [0041-01: リンクの目的を示すために aria-labelledby を使用する](WAIC-TEST-0041-01.md)
