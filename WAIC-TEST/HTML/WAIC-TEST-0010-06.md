@@ -26,7 +26,7 @@ H63
 
 ```html
 <div>
-<table border="1">
+<table>
 <caption>Contact Information</caption>
 <tr>
 <td></td>

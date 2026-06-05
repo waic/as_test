@@ -26,7 +26,7 @@ H43
 
 ```html
 <div>
-<table border="1">
+<table>
 <tr>
 <td rowspan="2">全国</td>
 <td colspan="3">東京</td>
