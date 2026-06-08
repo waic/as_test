@@ -27,7 +27,7 @@ H51
 ```html
 <div>
 <p>営業部およびマーケティング部のメンバーの連絡先は以下の通りです。</p>
-<table border="1">
+<table>
 <caption>営業部連絡先一覧</caption>
 <thead>
 <tr>
@@ -70,7 +70,7 @@ H51
 </tbody>
 </table>
 
-<table border="1">
+<table>
 <caption>マーケティング部連絡先一覧</caption>
 <thead>
 <tr>
