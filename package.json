@@ -7,6 +7,6 @@
     "test": "markdownlint-cli2 WAIC-TEST/**/*.md"
   },
   "devDependencies": {
-    "markdownlint-cli2": "0.19.1"
+    "markdownlint-cli2": "^0.23.2"
   }
 }
