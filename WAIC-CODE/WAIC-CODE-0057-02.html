@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>WAIC-CODE-0057-02</title>
+<meta name="copyright" content="This document is licensed under a Creative Commons 4.0">
+<link rel="license" href="https://creativecommons.org/licenses/by/4.0/">
+<meta name="author" content="ウェブアクセシビリティ基盤委員会（WAIC）">
+  
+
+<style>
+.slider {
+  position: relative;
+  width: 300px;
+  height: 8px;
+  margin: 30px 12px;
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.slider-thumb {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  background: #333;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  touch-action: none;
+}
+
+.slider-thumb:focus-visible {
+  outline: 3px solid #005fcc;
+  outline-offset: 3px;
+}
+
+.value {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+<h1>音量調整スライダー</h1>
+  
+<p id="volume-label">音量</p>
+
+<div
+  class="slider"
+  id="volume-slider"
+>
+  <div
+    class="slider-thumb"
+    id="volume-thumb"
+    role="slider"
+    tabindex="0"
+    aria-labelledby="volume-label"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="50"
+  ></div>
+</div>
+
+<p>
+  現在の音量：
+  <output id="volume-value" class="value">50</output>
+</p>
+
+  
+
+<script>
+const slider = document.getElementById("volume-slider");
+const thumb = document.getElementById("volume-thumb");
+const output = document.getElementById("volume-value");
+
+const min = 0;
+const max = 100;
+const step = 1;
+
+let value = 50;
+
+
+/**
+ * スライダーの値を変更する
+ */
+function setValue(newValue) {
+
+  // min～maxの範囲に収める
+  value = Math.max(min, Math.min(max, newValue));
+
+  // 現在値を支援技術へ伝える
+  thumb.setAttribute("aria-valuenow", value);
+
+  // 画面上の値を変更
+  output.textContent = value;
+
+  // つまみの位置を変更
+  const percent = ((value - min) / (max - min)) * 100;
+  thumb.style.left = percent + "%";
+}
+
+
+/**
+ * マウス・タッチ位置から値を計算
+ */
+function setValueFromPointer(clientX) {
+
+  const rect = slider.getBoundingClientRect();
+
+  let percent = (clientX - rect.left) / rect.width;
+
+  percent = Math.max(0, Math.min(1, percent));
+
+  const newValue =
+    Math.round((min + percent * (max - min)) / step) * step;
+
+  setValue(newValue);
+}
+
+
+/**
+ * キーボード操作
+ */
+thumb.addEventListener("keydown", function(event) {
+
+  switch (event.key) {
+
+    case "ArrowRight":
+    case "ArrowUp":
+      setValue(value + step);
+      event.preventDefault();
+      break;
+
+    case "ArrowLeft":
+    case "ArrowDown":
+      setValue(value - step);
+      event.preventDefault();
+      break;
+
+    case "Home":
+      setValue(min);
+      event.preventDefault();
+      break;
+
+    case "End":
+      setValue(max);
+      event.preventDefault();
+      break;
+
+    case "PageUp":
+      setValue(value + step * 10);
+      event.preventDefault();
+      break;
+
+    case "PageDown":
+      setValue(value - step * 10);
+      event.preventDefault();
+      break;
+  }
+
+});
+
+
+/**
+ * スライダーをクリックした場合
+ */
+slider.addEventListener("pointerdown", function(event) {
+
+  setValueFromPointer(event.clientX);
+
+  thumb.focus();
+
+  thumb.setPointerCapture(event.pointerId);
+});
+
+
+/**
+ * ドラッグ操作
+ */
+thumb.addEventListener("pointermove", function(event) {
+
+  if (!thumb.hasPointerCapture(event.pointerId)) {
+    return;
+  }
+
+  setValueFromPointer(event.clientX);
+});
+
+
+/**
+ * 初期値を反映
+ */
+setValue(value);
+
+</script>
+
+</body>
+</html>
