@@ -181,4 +181,4 @@ H91
 
 # 関連する要素や属性
 
-role="slider" が指定された要素 , aria-labelledby 属性 , aria-valuemin 属性 , aria-valuemax 属性 , aria-valuenow 属性 , tabindex 属性
+role="slider" を持つ要素 , aria-labelledby 属性 , aria-valuemin 属性 , aria-valuemax 属性 , aria-valuenow 属性 , tabindex 属性
