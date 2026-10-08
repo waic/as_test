@@ -21,7 +21,7 @@
 .slider-thumb {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   width: 24px;
   height: 24px;
   background: #333;
@@ -59,13 +59,13 @@
     aria-labelledby="volume-label"
     aria-valuemin="0"
     aria-valuemax="100"
-    aria-valuenow="50"
+    aria-valuenow="30"
   ></div>
 </div>
 
 <p>
   現在の音量：
-  <output id="volume-value" class="value">50</output>
+  <output id="volume-value" class="value">30</output>
 </p>
 
   
@@ -79,7 +79,7 @@ const min = 0;
 const max = 100;
 const step = 1;
 
-let value = 50;
+let value = 30;
 
 
 /**
