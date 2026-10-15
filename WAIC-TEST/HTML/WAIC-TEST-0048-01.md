@@ -76,4 +76,4 @@ ARIA17
 
 # 関連する要素や属性
 
-role="group"が指定されたinput要素
+- [role="group"]

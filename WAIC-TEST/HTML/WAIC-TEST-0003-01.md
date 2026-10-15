@@ -139,10 +139,10 @@ H4
 
 # 関連する要素や属性
 
-- type="text" を持つ input 要素
-- type="radio" を持つ input 要素
-- type="checkbox" を持つ input 要素
-- type="submit" を持つ input 要素
-- type="reset" を持つ input 要素
-- type="button" を持つ button 要素
-- tabindex 属性
+- input[type="text"]
+- input[type="radio"]
+- input[type="checkbox"]
+- input[type="submit"]
+- input[type="reset"]
+- button[type="button"]
+- [tabindex]

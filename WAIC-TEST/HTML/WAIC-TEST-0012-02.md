@@ -86,4 +86,5 @@ H44
 
 # 関連する要素や属性
 
-type="checkbox" を持つ input 要素 , label 要素
+- input[type="checkbox"]
+- label

@@ -64,4 +64,5 @@ if(currentInput.value === ''){
 
 # 関連する要素や属性
 
-input要素、aria-invalid属性
+- input
+- [aria-invalid]

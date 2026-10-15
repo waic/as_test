@@ -67,4 +67,7 @@ H37
 
 # 関連する要素や属性
 
-img 要素 , map 要素 , usemap 属性, alt 属性
+- img
+- map
+- [usemap]
+- [alt]

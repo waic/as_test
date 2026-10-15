@@ -60,4 +60,4 @@ button要素の内容`X`は読み上げられないこと
 
 # 関連する要素や属性
 
-aria-label属性
+- [aria-label]

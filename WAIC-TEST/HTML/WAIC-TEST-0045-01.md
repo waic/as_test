@@ -73,4 +73,4 @@ WAI-ARIAの仕様では、aria-levelの指定が必須とされている(参考�
 
 # 関連する要素や属性
 
-role="heading"が指定されたdiv要素
+- div[role="heading"]
