@@ -90,4 +90,5 @@ ARIA19
 
 # 関連する要素や属性
 
-role 属性, aria-atomic 属性
+- [role]
+- [aria-atomic]

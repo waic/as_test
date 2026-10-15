@@ -89,4 +89,6 @@ H71
 
 # 関連する要素や属性
 
-fieldset 要素 , legend 要素 , type="checkbox" を持つ input 要素
+- fieldset
+- legend
+- input[type="checkbox"]

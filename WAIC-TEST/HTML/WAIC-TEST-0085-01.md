@@ -130,4 +130,5 @@ autocompleteによって記録された情報は、各入力項目を選択し�
 
 # 関連する要素や属性
 
-input 要素,autocomplete 属性
+- input
+- [autocomplete]

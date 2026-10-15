@@ -73,4 +73,5 @@ H101
 
 # 関連する要素や属性
 
-nav要素、aria-labelledby属性
+- nav
+- [aria-labelledby]

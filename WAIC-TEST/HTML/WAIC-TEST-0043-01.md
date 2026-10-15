@@ -64,4 +64,7 @@ complementary ランドマークは「補足」「補足情報」のように通
 
 # 関連する要素や属性
 
-div要素、role属性、aria-labelledby属性、id属性
+- div
+- [role]
+- [aria-labelledby]
+- [id]

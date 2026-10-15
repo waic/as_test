@@ -87,4 +87,6 @@ H63
 
 # 関連する要素や属性
 
-値に "col" を持つ scope 属性, th 要素 , td 要素
+- [scope="col"]
+- th
+- td

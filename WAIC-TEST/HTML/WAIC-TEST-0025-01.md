@@ -68,4 +68,5 @@ figure 要素及び figcaption 要素を指定してグループ化したコン�
 
 # 関連する要素や属性
 
-figure 要素及び figcaption 要素
+- figure
+- figcaption

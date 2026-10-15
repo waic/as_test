@@ -59,4 +59,4 @@ H36
 
 # 関連する要素や属性
 
-type="image" を持つ input 要素
+- input[type="image"]

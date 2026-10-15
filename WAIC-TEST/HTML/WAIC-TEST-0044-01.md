@@ -92,4 +92,5 @@ ARIA11
 
 # 関連する要素や属性
 
-div要素, role属性
+- div
+- [role]
