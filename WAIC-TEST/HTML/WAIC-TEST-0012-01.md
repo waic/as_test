@@ -89,4 +89,5 @@ H44
 
 # 関連する要素や属性
 
-type="text" を持つ input 要素 , label 要素
+- input[type="text"]
+- label

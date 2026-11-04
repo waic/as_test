@@ -154,4 +154,6 @@ required属性が設定された要素にフォーカスを移動した際、支
 
 # 関連する要素や属性
 
-required 属性が指定されているinput 要素、select 要素、textarea 要素
+- input[required]
+- select[required]
+- textarea[required]

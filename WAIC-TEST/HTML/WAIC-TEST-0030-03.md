@@ -192,4 +192,8 @@ ARIA2
 
 # 関連する要素や属性
 
-aria-required 属性, role 属性値として "textbox" "combobox" "radiogroup" "checkbox" のいずれかを持つ div要素
+- [aria-required]
+- div[role="textbox"]
+- div[role="combobox"]
+- div[role="radiogroup"]
+- div[role="checkbox"]

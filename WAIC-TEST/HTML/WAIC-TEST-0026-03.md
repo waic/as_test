@@ -71,4 +71,4 @@ main 要素の role 属性に main を指定した場合、main ランドマー�
 
 # 関連する要素や属性
 
-role="main" を持つ main 要素
+- main[role="main"]

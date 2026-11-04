@@ -80,4 +80,4 @@ function makeChat () {
 
 # 関連する要素や属性
 
-role属性
+- [role]

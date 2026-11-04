@@ -79,4 +79,5 @@ H85
 
 # 関連する要素や属性
 
-optgroup 要素 , option 要素
+- optgroup
+- option

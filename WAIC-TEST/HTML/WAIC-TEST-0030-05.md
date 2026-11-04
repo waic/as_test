@@ -159,4 +159,6 @@ ARIA2
 
 # 関連する要素や属性
 
-aria-required 属性が指定されているinput 要素、select 要素、textarea 要素
+- input[aria-required]
+- select[aria-required]
+- textarea[aria-required]

@@ -56,4 +56,6 @@ ARIA16
 
 # 関連する要素や属性
 
-aria-labelledby属性、id属性、aria-labelledby 属性が指定された input 要素
+- [aria-labelledby]
+- [id]
+- input[aria-labelledby]

@@ -93,4 +93,5 @@ H42
 
 # 関連する要素や属性
 
-section 要素、h1 要素
+- section
+- h1

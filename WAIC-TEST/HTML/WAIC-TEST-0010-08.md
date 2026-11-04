@@ -80,4 +80,6 @@ H43
 
 # 関連する要素や属性
 
-id 属性を持つ th 要素 , headers 属性を持つ th 要素及び td 要素
+- th[id]
+- th[headers]
+- td[headers]

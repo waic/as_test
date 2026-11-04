@@ -59,4 +59,5 @@ input要素にフォーカスを合わせた際、aria-describedby属性で関�
 
 # 関連する要素や属性
 
-input要素、aria-describedby属性
+- input
+- [aria-describedby]

@@ -78,4 +78,4 @@ SCR16
 
 # 関連する要素や属性
 
-script 要素
+- script

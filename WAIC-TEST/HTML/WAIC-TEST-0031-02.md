@@ -72,4 +72,6 @@ ARIA4
 
 # 関連する要素や属性
 
-role="tree" をもつ ul 要素、role="treeitem" をもつ li 要素、role="group" をもつ ul 要素。
+- ul[role="tree"]
+- li[role="treeitem"]
+- ul[role="group"]

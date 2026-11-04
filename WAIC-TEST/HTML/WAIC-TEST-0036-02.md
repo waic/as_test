@@ -95,4 +95,4 @@ input[type=checkbox]:focus + label, input[type=radio]:focus + label {
 
 # 関連する要素や属性
 
-なし
+- なし

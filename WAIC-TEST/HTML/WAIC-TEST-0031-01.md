@@ -62,4 +62,4 @@ ARIA4
 
 # 関連する要素や属性
 
-role="toolbar" をもつ div 要素
+- div[role="toolbar"]

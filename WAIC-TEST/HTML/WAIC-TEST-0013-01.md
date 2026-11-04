@@ -62,4 +62,5 @@ H45
 
 # 関連する要素や属性
 
-longdesc 属性、 img 要素
+- [longdesc]
+- img

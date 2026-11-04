@@ -69,4 +69,4 @@ ARIA20
 
 # 関連する要素や属性
 
-role="region"が指定されたdiv要素
+- div[role="region"]

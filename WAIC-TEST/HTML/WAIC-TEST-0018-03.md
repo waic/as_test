@@ -79,4 +79,5 @@ H71
 
 # 関連する要素や属性
 
-fieldset 要素 , legend 要素
+- fieldset
+- legend

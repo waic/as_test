@@ -60,4 +60,6 @@ ARIA15
 
 # 関連する要素や属性
 
-img要素, alt属性, aria-describedby属性
+- img
+- [alt]
+- [aria-describedby]

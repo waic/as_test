@@ -69,4 +69,4 @@ document.getElementById("resultsmsg").textContent = "0 件の結果が返され�
 
 # 関連する要素や属性
 
-role 属性
+- [role]

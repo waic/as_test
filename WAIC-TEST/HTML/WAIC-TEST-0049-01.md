@@ -76,4 +76,6 @@ alertdialog ロールは「ダイアログ」や「アラートダイアログ�
 
 # 関連する要素や属性
 
-role="alertdialog" をもつ div 要素、aria-labelledby属性、aria-describedby属性
+- div[role="alertdialog"]
+- [aria-labelledby]
+- [aria-describedby]

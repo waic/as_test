@@ -78,4 +78,6 @@ ARIA16
 
 # 関連する要素や属性
 
-aria-labelledby属性、id属性、role属性
+- [aria-labelledby]
+- [id]
+- [role]

@@ -95,4 +95,7 @@ Tab キーを押下し、リンクテキスト「サービス」から他の要�
 
 # 関連する要素や属性
 
-a 要素、:hover 疑似クラス、:active 疑似クラス、:focus 疑似クラス
+- a
+- :hover
+- :active
+- :focus

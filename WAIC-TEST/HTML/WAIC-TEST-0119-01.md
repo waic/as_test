@@ -89,4 +89,8 @@ function updateImage(imgId, isOver) {
 
 # 関連する要素や属性
 
-script 要素, a・buttonなどのフォーカス可能な要素, イベントハンドラー属性
+- script
+- a[onmouseover]
+- a[onfocus]
+- a[onmouseout]
+- a[onblur]

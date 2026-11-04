@@ -62,4 +62,5 @@ ARIA9
 
 # 関連する要素や属性
 
-type="text" を持つ input要素、aria-labellebdy属性
+- input[type="text"]
+- [aria-labelledby]

@@ -66,4 +66,6 @@ button要素にフォーカスを合わせた際、aria-labelledby 属性と ari
 
 # 関連する要素や属性
 
-button要素、aria-labelledby属性、aria-describedby属性
+- button
+- [aria-labelledby]
+- [aria-describedby]

@@ -61,4 +61,6 @@ ARIA10
 
 # 関連する要素や属性
 
-img要素、alt属性、role属性
+- img
+- [alt]
+- [role]

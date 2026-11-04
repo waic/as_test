@@ -62,4 +62,4 @@ strong {
 
 # 関連する要素や属性
 
-strong 要素
+- strong

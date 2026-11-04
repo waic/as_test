@@ -90,4 +90,5 @@ ARIA5
 
 # 関連する要素や属性
 
-button 要素, aria-pressed 属性
+- button
+- [aria-pressed]

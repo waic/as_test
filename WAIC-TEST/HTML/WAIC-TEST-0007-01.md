@@ -69,4 +69,4 @@ H32
 
 # 関連する要素や属性
 
-type="submit" を持つ input 要素
+- input[type="submit"]
