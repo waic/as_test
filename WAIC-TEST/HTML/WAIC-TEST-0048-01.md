@@ -76,4 +76,4 @@ ARIA17
 
 # 関連する要素や属性
 
-- [role="group"]
+- div[role="group"]
