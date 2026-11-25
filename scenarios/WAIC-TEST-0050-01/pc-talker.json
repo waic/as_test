@@ -1,0 +1,9 @@
+{
+  "testId": "WAIC-TEST-0050-01",
+  "title": "エラーを特定するために ARIA role=alert を使用する",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0050-01.html",
+  "steps": [
+    {"name": "[Tab] 送信ボタンまで進む(送信)", "procedure": "Tab キーで「送信」ボタンに移動し、何も入力せずに Enter キーを押した。", "keys": ["tab"], "until": "送信"},
+    {"name": "[Enter] 何も入力せずに送信してエラーを通知させる", "keys": ["enter"], "waitMs": 3000}
+  ]
+}

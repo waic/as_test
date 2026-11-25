@@ -1,0 +1,8 @@
+{
+  "testId": "WAIC-TEST-0027-03",
+  "title": "main ランドマークへの直接移動 (main 要素 : main のみ)",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0026-02.html",
+  "steps": [
+    {"name": "[D] 次のランドマークへ(メイン)", "procedure": "D キーで次のランドマーク(main)に移動した。", "keys": ["d"], "until": "メイン"}
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "testId": "WAIC-TEST-0006-01",
+  "title": "a 要素に指定したテキスト",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0006-01.html",
+  "steps": [
+    {"name": "[Tab] 次のリンクへ(ウェブアクセシビリティ基盤委員会)", "procedure": "Tab キーでリンク「ウェブアクセシビリティ基盤委員会」に移動した。", "keys": ["tab"], "until": "ウェブアクセシビリティ基盤委員会"}
+  ]
+}

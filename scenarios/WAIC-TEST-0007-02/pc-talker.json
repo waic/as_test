@@ -1,0 +1,13 @@
+{
+  "testId": "WAIC-TEST-0007-02",
+  "title": "セレクトメニューと送信ボタン",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0007-02.html",
+  "steps": [
+    {"name": "[Tab] セレクトメニューへ(トップページ)", "procedure": "Tab キーでセレクトメニューに移動し、Space キーで開いて、Shift+↓ キーで選択肢を変更し、Enter キーで確定した。", "keys": ["tab"], "until": "トップページ"},
+    {"name": "[Space] セレクトメニューを開く", "keys": ["space"]},
+    {"name": "[Shift+↓] 選択肢を変える(ブログ)", "keys": ["shift", "down"]},
+    {"name": "[Enter] 選択を確定する。何も発生しないことを確認", "keys": ["enter"]},
+    {"name": "[Tab] 送信ボタンへ(選択したページへ移動する)", "procedure": "Tab キーで「選択したページへ移動する」ボタンに移動し、Enter キーを押した。", "keys": ["tab"]},
+    {"name": "[Enter] 送信ボタンを押して、選択したページへ遷移させる", "keys": ["enter"], "waitMs": 3000}
+  ]
+}

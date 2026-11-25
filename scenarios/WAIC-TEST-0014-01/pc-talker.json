@@ -1,0 +1,11 @@
+{
+  "testId": "WAIC-TEST-0014-01",
+  "title": "順序付きリスト (ol 要素)",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0014-01.html",
+  "steps": [
+    {"name": "[L] 次のリストへ(リストの項目数・開始位置)", "procedure": "L キーで次のリストに移動した。", "keys": ["l"]},
+    {"name": "[↓] 1つ目のリスト項目を読み上げ", "procedure": "↓ キーでリスト項目を順に読み上げた。", "keys": ["down"]},
+    {"name": "[↓] 2つ目のリスト項目を読み上げ", "keys": ["down"]},
+    {"name": "[↓] リストの終了を確認", "keys": ["down"]}
+  ]
+}
