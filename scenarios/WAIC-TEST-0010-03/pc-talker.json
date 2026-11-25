@@ -1,0 +1,8 @@
+{
+  "testId": "WAIC-TEST-0010-03",
+  "title": "テーブルの行数及び列数",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0010-03.html",
+  "steps": [
+    {"name": "[T] 次のテーブルへ(行数・列数の通知)", "procedure": "T キーでテーブルに移動した。", "keys": ["t"]}
+  ]
+}

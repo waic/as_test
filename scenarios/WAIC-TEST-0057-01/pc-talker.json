@@ -1,0 +1,11 @@
+{
+  "testId": "WAIC-TEST-0057-01",
+  "title": "aria-pressed 属性による状態の明示 (ボタン要素)",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0057-01.html",
+  "steps": [
+    {"name": "[Tab] aria-pressed なしのボタンへ(ボタン0)", "keys": ["tab"]},
+    {"name": "[Tab] aria-pressed=false のボタンへ(ボタン1)", "procedure": "Tab キーで「ボタン1」に移動し、通知内容を確認した。", "keys": ["tab"]},
+    {"name": "[Tab] aria-pressed=true のボタンへ(ボタン2)", "procedure": "Tab キーで「ボタン2」に移動し、通知内容を確認した。", "keys": ["tab"]},
+    {"name": "[Tab] aria-pressed=mixed のボタンへ(ボタン3)", "procedure": "Tab キーで「ボタン3」に移動し、通知内容を確認した。", "keys": ["tab"]}
+  ]
+}

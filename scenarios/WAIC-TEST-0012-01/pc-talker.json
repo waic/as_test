@@ -1,0 +1,11 @@
+{
+  "testId": "WAIC-TEST-0012-01",
+  "title": "テキスト入力フィールドとラベル (label 要素)",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0012-01.html",
+  "steps": [
+    {"name": "[Tab] 1つ目の入力欄へ(姓)", "procedure": "Tab キーで 1 番目のテキスト入力フィールド「姓」にフォーカス移動した。", "keys": ["tab"]},
+    {"name": "[Tab] 2つ目の入力欄へ(名)", "procedure": "Tab キーで 2 番目のテキスト入力フィールド「名」にフォーカス移動した。", "keys": ["tab"]},
+    {"name": "[Tab] 3つ目の入力欄へ(住所)", "procedure": "Tab キーで 3 番目のテキスト入力フィールド「住所」にフォーカス移動した。", "keys": ["tab"]},
+    {"name": "[Tab] 4つ目の入力欄へ(電話番号)", "procedure": "Tab キーで 4 番目のテキスト入力フィールド「電話番号」にフォーカス移動した。", "keys": ["tab"]}
+  ]
+}

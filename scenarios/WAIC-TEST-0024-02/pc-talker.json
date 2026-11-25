@@ -1,0 +1,10 @@
+{
+  "testId": "WAIC-TEST-0024-02",
+  "title": "nav 要素への直接移動",
+  "url": "https://waic.github.io/as_test/WAIC-CODE/WAIC-CODE-0024-02.html",
+  "steps": [
+    {"name": "[D] 次のランドマークへ(1つ目の nav)", "procedure": "D キーで次のランドマーク(nav)に移動した。", "keys": ["d"], "until": "ナビゲーション"},
+    {"name": "[D] 次のランドマークへ(2つ目の nav)", "keys": ["d"]},
+    {"name": "[Shift+D] 前のランドマークへ(1つ目の nav)", "procedure": "Shift+D キーで前のランドマーク(nav)に移動した。", "keys": ["shift", "d"]}
+  ]
+}
